@@ -1,0 +1,14 @@
+[2026-10-08 19:22:29] terse rewrites
+[2026-10-08 19:59:18] terse embeddings
+[2026-10-08 19:59:53] terse retrieval
+[2026-10-08 20:02:31] terse intents qwen3.5:latest
+[2026-10-08 20:18:21] terse select plain qwen3.5:latest
+[2026-10-08 20:42:58] terse select sibling qwen3.5:latest
+[2026-10-08 22:33:32] terse intents qwen3:1.7b
+[2026-10-08 22:35:13] terse select plain qwen3:1.7b
+[2026-10-08 22:39:56] terse select sibling qwen3:1.7b
+[2026-10-08 22:59:23] terse guard on retrieval
+[2026-10-08 22:59:26] references
+[2026-10-08 23:37:41] guard on retrieval
+[2026-10-08 23:37:44] analyze
+[2026-10-08 23:37:50] done

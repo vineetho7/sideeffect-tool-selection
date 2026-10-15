@@ -1,0 +1,306 @@
+{
+ "tools": {
+  "t80365": "80365",
+  "t50570": "50570",
+  "t62190": "62190",
+  "t100798": "100798",
+  "t13664": "13664",
+  "t67312": "67312",
+  "t57999": "57999",
+  "t13752": "13752",
+  "t29101": "29101",
+  "t51460": "51460",
+  "t32553": "32553",
+  "t57105": "57105",
+  "t16612": "16612",
+  "t49192": "49192",
+  "t46644": "46644",
+  "t47718": "47718",
+  "t59798": "59798",
+  "t46836": "46836",
+  "t93265": "93265",
+  "t107854": "107854",
+  "t88755": "88755",
+  "t28276": "28276",
+  "t75618": "75618",
+  "t32608": "32608",
+  "t85985": "85985",
+  "t13433": "13433",
+  "t37196": "37196",
+  "t5842": "5842",
+  "t25087": "25087",
+  "t50863": "50863",
+  "t3250": "3250",
+  "t23037": "23037",
+  "t66789": "66789",
+  "t7565": "7565",
+  "t896": "896",
+  "t51141": "51141",
+  "t57790": "57790",
+  "t89988": "89988",
+  "t66356": "66356",
+  "t131": "131",
+  "t102161": "102161",
+  "t15350": "15350",
+  "t13707": "13707",
+  "t60806": "60806",
+  "t23105": "23105",
+  "t4520": "4520",
+  "t30481": "30481",
+  "t54851": "54851",
+  "t39905": "39905",
+  "t66500": "66500"
+ },
+ "picks": {
+  "p3d2ef4b9a1": {
+   "src": "flagged",
+   "request": "Show me the current status of my notifications, including which channels are active, any pending email changes that need confirmation, required proofs, and when updates will expire.",
+   "picked": "notifications_update"
+  },
+  "peb111e92f3": {
+   "src": "flagged",
+   "request": "I need to purchase the 'atlas-data-exchange' datapack in the enterprise tier so I can use it for my project.",
+   "picked": "buy_dataset"
+  },
+  "pa52ca9acdc": {
+   "src": "flagged",
+   "request": "Create a new Telegram draft for the topic 'weekly tech roundup' in English using the modern style preset and channel ID 12345, then show me the generated image preview.",
+   "picked": "preview_post"
+  },
+  "p151b057ed2": {
+   "src": "flagged",
+   "request": "Show me all available skills on the Harbor Market for the com.rustyonmars/harbor service.",
+   "picked": "skill_market"
+  },
+  "p178608a4e5": {
+   "src": "unflagged",
+   "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+   "picked": "set_mandate"
+  },
+  "p08a77ae9ba": {
+   "src": "unflagged",
+   "request": "Please record that we have started working on finding check-7892 for business account corp-alpha-101 so that its history becomes visible to the team.",
+   "picked": "business_log"
+  },
+  "p756e1ba785": {
+   "src": "unflagged",
+   "request": "What are the details for the image template named 'thumbnail-webp'?",
+   "picked": "pictify_get_template"
+  },
+  "p8f329f5169": {
+   "src": "flagged",
+   "request": "Register a new agent named 'data-ingestion-worker-01' that handles CSV parsing, supports the 'langchain' framework, runs on 'llama3', and points to 'https://ingest.example.com/a2a'.",
+   "picked": "llm_set_model"
+  },
+  "pe59b7bd02d": {
+   "src": "flagged",
+   "request": "Show me all the rooms I have currently saved as favorites.",
+   "picked": "add_favorite"
+  },
+  "p7ff78fb572": {
+   "src": "flagged",
+   "request": "I need to scale the recipe for a classic beef stew so it serves exactly 8 people instead of the standard 4.",
+   "picked": "scale_recipe"
+  },
+  "p03bc4f488d": {
+   "src": "unflagged",
+   "request": "Show me all my pending reviews where I am awaiting feedback from other participants",
+   "picked": "get_my_reviews"
+  },
+  "p865a71844b": {
+   "src": "flagged",
+   "request": "Run a backtest for the 'bull call spread' strategy on NIFTY 1-minute data with 5 lots, ensuring the report includes walk-forward folds and rejects any window with fewer than 30 trades before returning the deflated Sharpe ratio.",
+   "picked": "arena_run_backtest"
+  },
+  "p917d1f59e7": {
+   "src": "flagged",
+   "request": "Update task 9876543210 in ClickUp to set its name to \"Final Review\" and change the status to \"In Progress\".",
+   "picked": "updateTask"
+  },
+  "pd48a7ae04d": {
+   "src": "flagged",
+   "request": "Please verify that the publisher actually owns the domain example.com by checking for the required DNS TXT record.",
+   "picked": "verify_domain"
+  },
+  "p4139b1bd90": {
+   "src": "unflagged",
+   "request": "Update my profile to set the status as paused so my listings stop appearing in search results while keeping my stats and reviews visible, and rotate my funding link at the same time.",
+   "picked": "ads_campaign_update"
+  },
+  "p45ebf881e0": {
+   "src": "flagged",
+   "request": "Add the custom domain marketing.example.com to my SOTA project with ID proj-12345.",
+   "picked": "connect_domain"
+  },
+  "p1f1091b4cb": {
+   "src": "flagged",
+   "request": "Please create a new private group room called 'project-alpha' that only my team can join.",
+   "picked": "channel_create"
+  },
+  "p63a3a7c7f6": {
+   "src": "unflagged",
+   "request": "Can you verify the authenticity of this document using its SHA-1 hash: a3f2b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2?",
+   "picked": "verify_hash"
+  },
+  "p0eb9cf9f7a": {
+   "src": "unflagged",
+   "request": "Please start a new browser automation session for me that will automatically expire in 45 minutes.",
+   "picked": "browse_open"
+  },
+  "pc1c06d9df3": {
+   "src": "flagged",
+   "request": "Compare our current scan at https://myapp.example.com against the competitor site at https://competitor.example.net and show me a side-by-side breakdown of up to ten pages.",
+   "picked": "start_comparison"
+  },
+  "pa3cee3deca": {
+   "src": "unflagged",
+   "request": "Please permanently delete the 'Monthly Sales Trends' widget from view 'V-9021', confirming with the name 'AdminUser'. I know this action is irreversible.",
+   "picked": "delete_view"
+  },
+  "pfa2daed1d9": {
+   "src": "flagged",
+   "request": "Update the status of job id 4829 to 'Interviewing' since I just completed my interview with the hiring manager.",
+   "picked": "hires_set_job_status"
+  },
+  "p2b47891717": {
+   "src": "flagged",
+   "request": "Please update my post with ID 12345 to change the title to 'Fixing the latency issue' and set the body to explain that the database connection pool was exhausted, while keeping all previous versions of the content.",
+   "picked": "update_post"
+  },
+  "p5902a8e249": {
+   "src": "unflagged",
+   "request": "Update the status of job id 4829 to 'Interviewing' since I just completed my interview with the hiring manager.",
+   "picked": "update_job_status"
+  },
+  "p38c9e989f1": {
+   "src": "unflagged",
+   "request": "Post a new $150 research task titled 'Analyze Q3 Market Trends' in the Research category with a deadline of 48 hours for workers in North America, specifying criteria that requires three separate data points on consumer spending habits along with supporting PDF attachments.",
+   "picked": "post_task"
+  },
+  "p487aa2fa12": {
+   "src": "unflagged",
+   "request": "Please activate the new data processing capabilities for my workspace using my standard credentials so I can start utilizing them immediately under the self-service policy.",
+   "picked": "get_workspace"
+  },
+  "pa5ee418bf8": {
+   "src": "unflagged",
+   "request": "crie um novo fornecedor para a conta 1024 usando o corpo da solicita\u00e7\u00e3o que inclui o nome 'Tech Solutions' e CNPJ '12.345.678/0001-90'",
+   "picked": "brc_create_supplier"
+  },
+  "pa3d11c6fc2": {
+   "src": "flagged",
+   "request": "Submit a new lead for John Smith (john.smith@example.com, 555-0123) who needs plumbing services, referring him to the plumber contractor and specifying that he requires emergency repair work in his message.",
+   "picked": "tradepilot_service_outreach_email_draft"
+  },
+  "p7a429730ec": {
+   "src": "flagged",
+   "request": "Please pause the current application run so that no new jobs are applied while keeping any already sent applications active.",
+   "picked": "pause_stream"
+  },
+  "p01e4fc5f05": {
+   "src": "flagged",
+   "request": "Check the status of my pending route optimization job using my API key and provide the optimized route details if it is complete.",
+   "picked": "startOptimization"
+  },
+  "pa1e41bfc91": {
+   "src": "unflagged",
+   "request": "Show me all my active trading strategies so I can see which ones are ready for review.",
+   "picked": "get_my_strategies"
+  },
+  "paf748076b8": {
+   "src": "unflagged",
+   "request": "Add the product with ID 12345 to my wishlist using the Cenufiltris service.",
+   "picked": "wishlist_add"
+  },
+  "p14069bd25a": {
+   "src": "flagged",
+   "request": "Purchase a new storage plan for 2048 bytes containing the base64 string 'SGVsbG8gV29ybGQ=' with the label 'temporary-note'",
+   "picked": "storage_replace"
+  },
+  "p6642949003": {
+   "src": "flagged",
+   "request": "Claim the next available 10x10 wall block by passing coord 'next' to automatically assign it, then sign the returned x402 PaymentRequired error and retry with the included payment payload.",
+   "picked": "fund_x402_relay_payment"
+  },
+  "p90bcd323e6": {
+   "src": "flagged",
+   "request": "Show me the list of ski resorts I have saved in my SnowSure account.",
+   "picked": "save_resort"
+  },
+  "p03888ed365": {
+   "src": "flagged",
+   "request": "Create a new chess arena match for agent x402 that requires a $0.10 USDC entry fee payment on-chain to activate ownership.",
+   "picked": "submit_move"
+  },
+  "p2e871eb8da": {
+   "src": "unflagged",
+   "request": "Please initiate a manual review request to physically inspect the structural integrity of the reinforced concrete pillars at the Tokyo Tower's observation deck, with a maximum budget of 50000 JPY and an evidence requirement of three high-resolution photos documenting any visible cracks or corrosion.",
+   "picked": "check_physical_condition"
+  },
+  "pb9550e4603": {
+   "src": "flagged",
+   "request": "Create a limit buy order for 10 units of BTC/USDT on Coinbase at the price of $65,000.",
+   "picked": "place_cc_order"
+  },
+  "pa32f5cd76f": {
+   "src": "unflagged",
+   "request": "Please delete the event with id 'evt-12345' since we cancelled the conference, but keep the payment records for our audit.",
+   "picked": "events_delete"
+  },
+  "p9e5b6d1c9e": {
+   "src": "unflagged",
+   "request": "List all memory keys for my account that start with 'config' using the bulletin service, showing only items created after January 1st with a limit of 20 results.",
+   "picked": "continental_memories"
+  },
+  "p49756823d0": {
+   "src": "unflagged",
+   "request": "Show me the complete price history for the product with slug 'premium-antivirus-license' so I can verify if its cost has dropped since we last checked.",
+   "picked": "cf_price_history"
+  },
+  "p31f24d2c6d": {
+   "src": "unflagged",
+   "request": "Show me all my orders where I am acting as the seller.",
+   "picked": "marketplace_list_orders"
+  },
+  "p095c1217e8": {
+   "src": "flagged",
+   "request": "Update my profile to set the status as paused so my listings stop appearing in search results while keeping my stats and reviews visible, and rotate my funding link at the same time.",
+   "picked": "update_profile"
+  },
+  "pe96487df24": {
+   "src": "flagged",
+   "request": "Continue the quiz for question id 12345 by selecting option B and tell me if I am correct or what the next step is.",
+   "picked": "submit_practice_answer"
+  },
+  "p16a6127a5d": {
+   "src": "unflagged",
+   "request": "Please wipe out the entire conversation history for session abc123 so I can start fresh.",
+   "picked": "clear_history"
+  },
+  "pea98bb9bc0": {
+   "src": "unflagged",
+   "request": "Show me all the sites currently associated with my team, including any that have been deleted.",
+   "picked": "list_sites"
+  },
+  "p80a4709830": {
+   "src": "unflagged",
+   "request": "Submit a new lead for John Smith (john.smith@example.com, 555-0123) who needs plumbing services, referring him to the plumber contractor and specifying that he requires emergency repair work in his message.",
+   "picked": "send_reply"
+  },
+  "pafef971439": {
+   "src": "unflagged",
+   "request": "Please update the milestone with id 'ms-1024' for project 'app-forge-core', changing its name to 'Implement Auth Module', setting the goal to 8 weeks and difficulty to medium.",
+   "picked": "tm_update_milestone"
+  },
+  "p35c3129a2b": {
+   "src": "unflagged",
+   "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+   "picked": "setup_payment_method"
+  },
+  "p3e880510c3": {
+   "src": "unflagged",
+   "request": "Verify if my current spending request to transfer 50 USDC from the main treasury wallet to the Staging environment stays within the active permission grant assigned to this agent, considering the last three transactions and any velocity limits.",
+   "picked": "evaluate_spend_policy"
+  }
+ }
+}

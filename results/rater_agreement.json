@@ -1,0 +1,20 @@
+{
+ "raters": {
+  "author (yhf7)": {
+   "answered": 100,
+   "unsure": 2,
+   "tools_vs_first": {
+    "n": 49,
+    "agreement": 0.6530612244897959,
+    "kappa": 0.5314960629921259
+   },
+   "picks_vs_first": {
+    "n": 49,
+    "agreement": 0.6122448979591837,
+    "kappa": 0.16352201257861637
+   },
+   "missed_escalation_rate": 0.3333333333333333
+  }
+ },
+ "pairs": {}
+}

@@ -1,0 +1,19 @@
+{
+  "reviews": {
+    "rmv86xjmdpr5d": {
+      "answers": {
+        "c429cf9450d": "no",
+        "c5c57ed9a66": "no",
+        "c9cd8d7b76b": "no",
+        "cd9494c97b1": "no",
+        "cebf4ee1214": "no"
+      },
+      "count": 5,
+      "createdAt": "2026-10-14T14:13:54.709Z",
+      "rater": "author",
+      "submitted": true,
+      "submittedAt": "2026-10-14T15:48:39.601Z",
+      "updatedAt": "2026-10-14T15:48:39.902Z"
+    }
+  }
+}

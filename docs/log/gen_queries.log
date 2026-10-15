@@ -1,0 +1,29 @@
+escalation-capable groups 3483 servers 1392 chosen 700
+gen 25 63
+gen 50 127
+gen 75 193
+gen 100 253
+gen 125 319
+gen 150 380
+gen 175 444
+gen 200 509
+gen 225 571
+gen 250 637
+gen 275 704
+gen 300 771
+gen 325 834
+gen 350 898
+gen 375 960
+gen 400 1023
+gen 425 1088
+gen 450 1147
+gen 475 1211
+gen 500 1273
+gen 525 1337
+Traceback (most recent call last):
+  File "./src/gen_queries.py", line 94, in <module>
+    golds = [rng.choice(by_sev[0])]
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>", line 347, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence

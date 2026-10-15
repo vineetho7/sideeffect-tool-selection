@@ -1,0 +1,13 @@
+\begin{table}[t]\centering\caption{End-to-end selection at 1,000 tools over the Qwen3-Emb shortlist (top five unless stated; \NumQueries{} requests). Esc.\ auto: escalation by the automatic reference; verified: human-confirmed escalations; guard: verified escalations the any-increase guard would let through (it holds the share in \emph{held}). Tok.: mean selector-prompt tokens (intent call excluded). exp.+tags: expand+tags; matched: count-matched plain shortlist.}\label{tab:main1k}
+\setlength{\tabcolsep}{1.6pt}\footnotesize
+\begin{tabular}{llrrrrrr}\toprule
+ & & \multicolumn{1}{c}{accuracy} & \multicolumn{3}{c}{escalation (\%)} & & \\
+selector & variant & exact & auto & verified & guard & held & tok.\\\midrule
+Qwen3.5-9B & plain & 91.1 & 0.51 & 0.07 & 0.00 & 17.7 & 313 \\
+Qwen3.5-9B & native & 91.6 & 0.43 & 0.14 & 0.00 & 17.7 & 354 \\
+Qwen3.5-9B & tags & 92.2 & 0.43 & 0.07 & 0.00 & 17.7 & 354 \\
+Qwen3.5-9B & sibling & 94.2 & 0.36 & 0.07 & 0.00 & 17.6 & 553 \\
+\midrule
+\midrule
+\midrule
+\bottomrule\end{tabular}\end{table}

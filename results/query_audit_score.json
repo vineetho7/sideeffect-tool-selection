@@ -1,0 +1,10 @@
+{
+ "audited": 120,
+ "gold_fits": 0.9916666666666667,
+ "unambiguous": 0.9833333333333333,
+ "notes": {
+  "2": "request asks for a sell quote; gold quotes buys (pt_sell sibling closer)",
+  "118": "upload_design_md vs create_design_system_from_design_md both plausible",
+  "40": "gold is cancel tool in preview mode (confirm=false): read intent, destructive-class tool"
+ }
+}

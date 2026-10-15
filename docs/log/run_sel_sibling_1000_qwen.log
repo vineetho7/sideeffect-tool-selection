@@ -1,0 +1,14 @@
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 100/1386 acc=96.0 eta=2842s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 200/1386 acc=95.0 eta=2602s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 300/1386 acc=94.0 eta=2368s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 400/1386 acc=93.5 eta=2174s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 500/1386 acc=94.2 eta=1973s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 600/1386 acc=93.3 eta=1734s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 700/1386 acc=93.7 eta=1471s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 800/1386 acc=94.1 eta=1241s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 900/1386 acc=93.7 eta=1006s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 1000/1386 acc=93.6 eta=794s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 1100/1386 acc=93.4 eta=584s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 1200/1386 acc=93.2 eta=379s
+sibling_n1000_qwen3emb_qwen3.5-latest_k5 1300/1386 acc=93.3 eta=175s
+DONE sibling_n1000_qwen3emb_qwen3.5-latest_k5: acc=93.0 incand=98.8 ptok=553

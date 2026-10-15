@@ -1,0 +1,25 @@
+{
+  "reviews": {
+    "rmv9lu23dk6w8": {
+      "answers": {
+        "d0160b8c68d": "yes",
+        "d1245db5238": "yes",
+        "d480245681a": "no",
+        "d5dbc953ebe": "yes",
+        "d5eef5eb2f7": "no",
+        "d6544fb53f7": "yes",
+        "d90e9010bf0": "no",
+        "d9d622dbbd4": "no",
+        "db99a493a85": "yes",
+        "dc3aa3ed868": "no",
+        "de1b1c18b94": "yes"
+      },
+      "count": 11,
+      "createdAt": "2026-10-15T13:58:52.441Z",
+      "rater": "author",
+      "submitted": true,
+      "submittedAt": "2026-10-15T15:36:12.949Z",
+      "updatedAt": "2026-10-15T15:36:13.165Z"
+    }
+  }
+}

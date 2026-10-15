@@ -1,0 +1,22 @@
+Agents connected to many tool servers retrieve a few candidate tools and let a language model
+pick one. Evaluations of this step count every wrong tool alike, but real catalogs pair each read
+operation with tools that create, send, overwrite or delete on the same resource, and choosing one
+of those when the user only asked to look would be an incident, not a near miss. We measure this
+selection-time \emph{side-effect escalation} on the public Model Context Protocol ecosystem:
+\NumRawTools{} tool definitions harvested from \NumRespondingServers{} registry servers, a
+\NumCatTools{}-tool catalog with \NumSibGroups{} sibling groups, and a targeted benchmark of
+\NumQueries{} validated requests. A tool's nearest neighbour on its own server in embedding space is a sibling
+\NNSibQwen\,\% of the time (\NNChance\,\% by chance). Routing to the top retrieved tool selects a tool that changes state for
+\RWRetRate\,\% of read requests at \NumPoolTools{} tools; LLM selection over a
+shortlist lowers this to \RWQPlainRate\,\% for Qwen3.5, and overall escalation from
+\GRNonePoolConf\,\% to \SelQPlainPoolConf\,\% of requests, but never removes it. Automatic severity
+labels are unreliable: only \EscPrec\,\% of the escalations they flag survive human review, most often
+because servers mark ordinary overwrites as destructive. Whether a pick ``does more than asked'' is
+itself contested: the two authors, rating independently, agree only slightly ($\kappa=\IndKappa$), so we
+report human-reviewed labels, with independent double-rating and consensus on a stratified subset, and show
+how the estimates move with the rater. Side-effect annotations in
+the prompt barely change what the selector picks; adding each candidate's sibling group raises
+accuracy by 2.6--4.5 points for the larger selectors, and for Gemma3 and Phi-4 a plain shortlist of the same length does not
+come close, so a longer list alone does not explain the gain; an escalation guard removes most remaining
+escalation at the price of holding 15--20\,\% of calls for confirmation. We derive guidance for agent builders
+on routing, annotations and confirmation policies.

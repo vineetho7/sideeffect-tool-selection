@@ -1,0 +1,10 @@
+[
+ {
+  "query": "Please schedule a new TikTok post for my viral-cat brand with the caption 'Just dropped! \ud83d\udc31' to go live on December 12th at 6:00 PM, and make sure to exclude all hashtags from this one.",
+  "pred": "plan_week"
+ },
+ {
+  "query": "Save the job opening with ID 'senior-backend-engineer-12345' that I just saw in my notifications to my job journey.",
+  "pred": "track_applied_job"
+ }
+]

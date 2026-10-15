@@ -1,0 +1,99 @@
+{"retriever": "bm25", "N": 200, "n": 1351, "acc1": 0.676, "recall_k": 0.904, "seer1": 0.081, "mean_esc": 0.137, "deesc1": 0.101, "exposure_k_read": 0.576, "sibling_share_of_errors": 0.331, "acc1_gold_sev0": 0.698, "acc1_gold_sev1": 0.586, "acc1_gold_sev2": 0.69, "acc1_gold_sev3": 0.693}
+{"retriever": "bm25", "N": 1000, "n": 1351, "acc1": 0.634, "recall_k": 0.856, "seer1": 0.09, "mean_esc": 0.141, "deesc1": 0.113, "exposure_k_read": 0.549, "sibling_share_of_errors": 0.263, "acc1_gold_sev0": 0.658, "acc1_gold_sev1": 0.536, "acc1_gold_sev2": 0.657, "acc1_gold_sev3": 0.648}
+{"retriever": "bm25", "N": 5000, "n": 1351, "acc1": 0.574, "recall_k": 0.778, "seer1": 0.085, "mean_esc": 0.137, "deesc1": 0.132, "exposure_k_read": 0.533, "sibling_share_of_errors": 0.193, "acc1_gold_sev0": 0.6, "acc1_gold_sev1": 0.494, "acc1_gold_sev2": 0.582, "acc1_gold_sev3": 0.581}
+{"retriever": "bm25", "N": 30000, "n": 1351, "acc1": 0.474, "recall_k": 0.672, "seer1": 0.087, "mean_esc": 0.142, "deesc1": 0.172, "exposure_k_read": 0.473, "sibling_share_of_errors": 0.111, "acc1_gold_sev0": 0.503, "acc1_gold_sev1": 0.414, "acc1_gold_sev2": 0.493, "acc1_gold_sev3": 0.442}
+{"retriever": "qwen3emb", "N": 200, "n": 1351, "acc1": 0.719, "recall_k": 0.936, "seer1": 0.053, "mean_esc": 0.082, "deesc1": 0.084, "exposure_k_read": 0.522, "sibling_share_of_errors": 0.347, "acc1_gold_sev0": 0.726, "acc1_gold_sev1": 0.632, "acc1_gold_sev2": 0.732, "acc1_gold_sev3": 0.768}
+{"retriever": "qwen3emb", "N": 1000, "n": 1351, "acc1": 0.689, "recall_k": 0.9, "seer1": 0.055, "mean_esc": 0.09, "deesc1": 0.089, "exposure_k_read": 0.491, "sibling_share_of_errors": 0.279, "acc1_gold_sev0": 0.698, "acc1_gold_sev1": 0.586, "acc1_gold_sev2": 0.709, "acc1_gold_sev3": 0.745}
+{"retriever": "qwen3emb", "N": 5000, "n": 1351, "acc1": 0.611, "recall_k": 0.835, "seer1": 0.066, "mean_esc": 0.101, "deesc1": 0.097, "exposure_k_read": 0.448, "sibling_share_of_errors": 0.179, "acc1_gold_sev0": 0.633, "acc1_gold_sev1": 0.51, "acc1_gold_sev2": 0.638, "acc1_gold_sev3": 0.629}
+{"retriever": "qwen3emb", "N": 30000, "n": 1351, "acc1": 0.494, "recall_k": 0.706, "seer1": 0.08, "mean_esc": 0.115, "deesc1": 0.106, "exposure_k_read": 0.372, "sibling_share_of_errors": 0.079, "acc1_gold_sev0": 0.527, "acc1_gold_sev1": 0.393, "acc1_gold_sev2": 0.521, "acc1_gold_sev3": 0.483}
+{"retriever": "bgebase", "N": 200, "n": 1351, "acc1": 0.755, "recall_k": 0.939, "seer1": 0.053, "mean_esc": 0.075, "deesc1": 0.056, "exposure_k_read": 0.516, "sibling_share_of_errors": 0.293, "acc1_gold_sev0": 0.756, "acc1_gold_sev1": 0.682, "acc1_gold_sev2": 0.742, "acc1_gold_sev3": 0.828}
+{"retriever": "bgebase", "N": 1000, "n": 1351, "acc1": 0.701, "recall_k": 0.9, "seer1": 0.066, "mean_esc": 0.092, "deesc1": 0.056, "exposure_k_read": 0.462, "sibling_share_of_errors": 0.21, "acc1_gold_sev0": 0.706, "acc1_gold_sev1": 0.623, "acc1_gold_sev2": 0.681, "acc1_gold_sev3": 0.775}
+{"retriever": "bgebase", "N": 5000, "n": 1351, "acc1": 0.629, "recall_k": 0.816, "seer1": 0.078, "mean_esc": 0.111, "deesc1": 0.063, "exposure_k_read": 0.408, "sibling_share_of_errors": 0.144, "acc1_gold_sev0": 0.647, "acc1_gold_sev1": 0.569, "acc1_gold_sev2": 0.606, "acc1_gold_sev3": 0.659}
+{"retriever": "bgebase", "N": 30000, "n": 1351, "acc1": 0.527, "recall_k": 0.713, "seer1": 0.074, "mean_esc": 0.11, "deesc1": 0.083, "exposure_k_read": 0.373, "sibling_share_of_errors": 0.083, "acc1_gold_sev0": 0.541, "acc1_gold_sev1": 0.49, "acc1_gold_sev2": 0.516, "acc1_gold_sev3": 0.536}
+{"retriever": "minilm", "N": 200, "n": 1351, "acc1": 0.643, "recall_k": 0.869, "seer1": 0.071, "mean_esc": 0.103, "deesc1": 0.114, "exposure_k_read": 0.509, "sibling_share_of_errors": 0.284, "acc1_gold_sev0": 0.652, "acc1_gold_sev1": 0.552, "acc1_gold_sev2": 0.615, "acc1_gold_sev3": 0.727}
+{"retriever": "minilm", "N": 1000, "n": 1351, "acc1": 0.586, "recall_k": 0.811, "seer1": 0.078, "mean_esc": 0.114, "deesc1": 0.129, "exposure_k_read": 0.454, "sibling_share_of_errors": 0.213, "acc1_gold_sev0": 0.608, "acc1_gold_sev1": 0.498, "acc1_gold_sev2": 0.531, "acc1_gold_sev3": 0.659}
+{"retriever": "minilm", "N": 5000, "n": 1351, "acc1": 0.515, "recall_k": 0.729, "seer1": 0.086, "mean_esc": 0.129, "deesc1": 0.144, "exposure_k_read": 0.41, "sibling_share_of_errors": 0.145, "acc1_gold_sev0": 0.546, "acc1_gold_sev1": 0.41, "acc1_gold_sev2": 0.484, "acc1_gold_sev3": 0.562}
+{"retriever": "minilm", "N": 30000, "n": 1351, "acc1": 0.401, "recall_k": 0.591, "seer1": 0.089, "mean_esc": 0.131, "deesc1": 0.16, "exposure_k_read": 0.396, "sibling_share_of_errors": 0.087, "acc1_gold_sev0": 0.434, "acc1_gold_sev1": 0.339, "acc1_gold_sev2": 0.38, "acc1_gold_sev3": 0.397}
+{
+ "qwen3emb": {
+  "sibling_pairs": {
+   "mean": 0.5609793663024902,
+   "p10": 0.40040507912635803,
+   "p50": 0.5256852507591248,
+   "p90": 0.7979234457015991
+  },
+  "same_server_nonsibling": {
+   "mean": 0.665704607963562,
+   "p10": 0.5190132856369019,
+   "p50": 0.667239785194397,
+   "p90": 0.8115646839141846
+  },
+  "cross_server": {
+   "mean": 0.5524094104766846,
+   "p10": 0.44314539432525635,
+   "p50": 0.555526852607727,
+   "p90": 0.657779335975647
+  },
+  "query_margin_gold_minus_best_sibling": {
+   "mean": 0.0711579923714469,
+   "p10": -0.011125922203063965,
+   "p50": 0.0655980110168457,
+   "p90": 0.1635860800743103
+  },
+  "frac_queries_sibling_outscores_gold": 0.14803849000740193
+ },
+ "bgebase": {
+  "sibling_pairs": {
+   "mean": 0.5754328966140747,
+   "p10": 0.4573730528354645,
+   "p50": 0.5442721843719482,
+   "p90": 0.7418737411499023
+  },
+  "same_server_nonsibling": {
+   "mean": 0.5824049115180969,
+   "p10": 0.46719279885292053,
+   "p50": 0.5753977298736572,
+   "p90": 0.708857536315918
+  },
+  "cross_server": {
+   "mean": 0.4805043935775757,
+   "p10": 0.4099787473678589,
+   "p50": 0.4791108965873718,
+   "p90": 0.5525339245796204
+  },
+  "query_margin_gold_minus_best_sibling": {
+   "mean": 0.08589449683707524,
+   "p10": -0.00330960750579834,
+   "p50": 0.08041790127754211,
+   "p90": 0.18818399310112
+  },
+  "frac_queries_sibling_outscores_gold": 0.11250925240562547
+ },
+ "minilm": {
+  "sibling_pairs": {
+   "mean": 0.30499592423439026,
+   "p10": 0.09507883340120316,
+   "p50": 0.25280526280403137,
+   "p90": 0.6108935475349426
+  },
+  "same_server_nonsibling": {
+   "mean": 0.3463170826435089,
+   "p10": 0.1349523365497589,
+   "p50": 0.3307892084121704,
+   "p90": 0.5787272453308105
+  },
+  "cross_server": {
+   "mean": 0.16162236034870148,
+   "p10": 0.03570818901062012,
+   "p50": 0.1559111624956131,
+   "p90": 0.29376259446144104
+  },
+  "query_margin_gold_minus_best_sibling": {
+   "mean": 0.10722701152239263,
+   "p10": -0.038596510887145996,
+   "p50": 0.0926063060760498,
+   "p90": 0.27738267183303833
+  },
+  "frac_queries_sibling_outscores_gold": 0.17690599555884529
+ }
+}

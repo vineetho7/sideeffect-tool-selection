@@ -1,0 +1,272 @@
+[
+ {
+  "id": "qa9d27b2561",
+  "qid": "q00193",
+  "request": "Create a new API key named production-server-v2",
+  "right": "key_create",
+  "right_desc": "Create a new API key. Returns the secret once \u2014 save it immediately.",
+  "picked": "create_api_key",
+  "picked_desc": "Create an additional API key for this account. Requires an existing API key. Unverified accounts may have only one key; verified accounts may have three. Usage is counted per account, not per key."
+ },
+ {
+  "id": "q5f729854cd",
+  "qid": "q00597",
+  "request": "Show me all my API keys with their scopes, credit limits, expiration dates, and which one is currently active for the com.hookdetector service.",
+  "right": "list_keys",
+  "right_desc": "Your API keys and what each may do. keys: key_id, name, prefix, created_at,\n    last_used_at and current (true for the key making this call). access, per key_id:\n    scopes, credit_limit, credits_used, expires_at and expired. scopes: the calling key's.\n    The original signup key has key_id \"origina",
+  "picked": "list_api_keys",
+  "picked_desc": "List all active API keys for the authenticated operator. Returns key IDs, prefixes, scopes, rate limits, usage counts, and creation/expiry timestamps. Requires a valid API key or SIWE session."
+ },
+ {
+  "id": "q180e07d068",
+  "qid": "q00105",
+  "request": "Cancel the active inbox webhook registration so I stop receiving push notifications and must poll for messages instead.",
+  "right": "delete_webhook",
+  "right_desc": "[STATE] Delete YOUR wallet's inbox webhook registration (push notifications stop; your mailbox keeps working via agent_get_messages polling). Idempotent. Requires agent_verify_wallet this session.",
+  "picked": "delete_webhook",
+  "picked_desc": "Delete a registered webhook."
+ },
+ {
+  "id": "qbbd602d53e",
+  "qid": "q00023",
+  "request": "Retrieve the line items and estimated totals for my shopping cart with id 'CART-9021' so I can review what's currently added before checkout.",
+  "right": "get_cart",
+  "right_desc": "Read back one of YOUR carts by id: line items and estimated totals. Owner-scoped, so another agent's id returns not_found. REQUIRES IDENTITY on a signature-required Terminal.",
+  "picked": "get_cart",
+  "picked_desc": "Get the cart contents\n\nPrices in the response are integers in the currency's ISO 4217 minor units, paired with\na currency code: {\"amount\": 600, \"currency\": \"USD\"} is $6.00 and {\"amount\": 2500,\n\"currency\": \"USD\"} is $25.00. Convert to major units before quoting a price to a buyer\n(divide by 100 for t"
+ },
+ {
+  "id": "q238c183114",
+  "qid": "q00932",
+  "request": "Please delete the configuration file located at /etc/app/settings.json from the 'production-data' drive.",
+  "right": "drive_delete_file",
+  "right_desc": "Delete one file from a drive.",
+  "picked": "delete_file",
+  "picked_desc": "Delete one or more files."
+ },
+ {
+  "id": "q467d25b058",
+  "qid": "q00467",
+  "request": "Create a new AANet workspace for my swarm task using the label 'production-swarm-alpha' so I can start deploying agents immediately.",
+  "right": "aanet_create_workspace",
+  "right_desc": "Create a real AANet workspace with a prepaid USDC balance \u2014 the entry\n    point for an orchestrator agent starting a new swarm task. Use\n    aanet_create_trial_workspace instead if you want to explore the API\n    before paying anything.\n\n    On success, returns {workspace_id, label, owner_key, creat",
+  "picked": "create_workspace",
+  "picked_desc": "Create a workspace you own. private: only members (via invites) can see it. public: every agent can\n    read its files and index; only you can write. Returns workspace_id."
+ },
+ {
+  "id": "q96ca2b7685",
+  "qid": "q01235",
+  "request": "Show me all the custom domains registered for my 'acme-corp' project so I can check which ones are still pending verification.",
+  "right": "list-domains",
+  "right_desc": "List all custom domains for a sota.io project. Shows domain name, status (pending/verified/active), and ID for each domain. Use get-domain with a domain ID to see DNS instructions and full details.",
+  "picked": "list_domains",
+  "picked_desc": "List connected custom domains with status."
+ },
+ {
+  "id": "q25bd396b96",
+  "qid": "q00545",
+  "request": "Show me the first page of saved templates that output as PDF, limited to 10 results per page.",
+  "right": "pictify_list_templates",
+  "right_desc": "List saved templates in your Pictify account with pagination and filtering. Templates are reusable HTML designs with {{variableName}} placeholders for dynamic content. Use this to discover available templates before rendering. Returns template names, IDs, dimensions, output formats, and pagination i",
+  "picked": "list_templates",
+  "picked_desc": "List Kamy's public system PDF templates. No authentication required."
+ },
+ {
+  "id": "qf59c3f9387",
+  "qid": "q00901",
+  "request": "Delete the note titled 'Project Alpha Q3 Roadmap' from my mu.micro/mu service.",
+  "right": "notes_delete",
+  "right_desc": "Delete one note by title",
+  "picked": "delete_note",
+  "picked_desc": "Soft-delete a note."
+ },
+ {
+  "id": "q54e43cb28d",
+  "qid": "q01248",
+  "request": "Please refresh the documentation page at /docs/api-reference using the internal docs reference ID 'api-ref-v2' and tell me if the content was fetched from the network or served from cache.",
+  "right": "refresh_doc_page",
+  "right_desc": "Force-refresh a docs page and report whether content came from the network, cache, or stale fallback.",
+  "picked": "docs_refresh",
+  "picked_desc": "Reconnect to SDK documentation and refresh available tools. Use if docs seem stale or unavailable."
+ },
+ {
+  "id": "q3dd9e71ed7",
+  "qid": "q00309",
+  "request": "Check the current status of booking 12345 for journey abc789 within this active session.",
+  "right": "get_booking",
+  "right_desc": "Look up the status of a booking that was created in this MCP connection. Requires the same active MCP session that created the booking. For a booking outside this session, use the secure link in the confirmation email. Only bookings made through this connector can be looked up.",
+  "picked": "get_booking_status",
+  "picked_desc": "Current status of a booking: awaiting_contact, awaiting_payment (with payment_url and amount left), paid or expired. A paid booking carries ticket_url \u2014 the one link to share with the buyer, which adapts to their device (wallet on a phone, PDF and choices elsewhere) \u2014 plus the explicit ticket_pdf_ur"
+ },
+ {
+  "id": "qa907bf346f",
+  "qid": "q01340",
+  "request": "What is the current status and progress of background job 48291?",
+  "right": "get_job_status",
+  "right_desc": "Check the status and progress of a background job.",
+  "picked": "get_job",
+  "picked_desc": "Poll a background job by id until status is succeeded or failed. A failed job carries its user-safe error reason \u2014 show it to your user. Jobs run on a background worker that claims queued work on a schedule, so a job sitting at \"queued\" (0 attempts) for the first few minutes is NORMAL, not a fault \u2014"
+ },
+ {
+  "id": "q2d0d6b8a0b",
+  "qid": "q01302",
+  "request": "Please update the existing webhook for the fleet with id 'fiche-viewed-alert' to send notifications for events 'fiche.viewed' and 'share.created' at the URL 'https://hooks.internal.example.com/receive', and make sure it is set to active.",
+  "right": "update_webhook",
+  "right_desc": "Update url, events, or active. Fleet/Platform. Requires Bearer.",
+  "picked": "theprotocol_updateWebhook",
+  "picked_desc": "Update fields on an existing webhook. Only supplied fields change."
+ },
+ {
+  "id": "q4a4d2aecca",
+  "qid": "q00520",
+  "request": "Create a new task named 'Review quarterly budget' in list ID 7890 with a due date of next Friday at 5pm.",
+  "right": "clickup_create_task",
+  "right_desc": "WRITE: create a new task in a list. `name` is required; the list is the {list_id} path param, not a body field. ClickUp REST: POST /list/{list_id}/task.",
+  "picked": "create_task",
+  "picked_desc": "Create a task and return the created task. list_id defaults to the org's first list when omitted; feature_id / insight_id link it to the spine and sprint_id schedules it into a sprint. Resolve list/status/feature/insight/member ids via pm_meta and sprint_id via list_sprints \u2014 never guess them. Only "
+ },
+ {
+  "id": "q5011dc7231",
+  "qid": "q00874",
+  "request": "Cancel my open task with ID 'agentmesh-7342' so I can get a full refund from escrow.",
+  "right": "cancel_task",
+  "right_desc": "Cancel your own OPEN task \u2014 full refund from escrow.",
+  "picked": "octopus_cancel_task",
+  "picked_desc": "Cancel a task for a full refund. Allowed while open, or while claimed-and-overdue."
+ },
+ {
+  "id": "q402774eb08",
+  "qid": "q00292",
+  "request": "Show me the latest 10 questions I've asked that are currently in the pending state.",
+  "right": "list_questions",
+  "right_desc": "List a bounded page of questions you asked, newest first. Optionally filter by state; use page while has_more is true.",
+  "picked": "list_questions",
+  "picked_desc": "Browse questions from other agents (status: open|answered). Answering an open question is the most valuable thing you can do here."
+ },
+ {
+  "id": "qaa1dd813f3",
+  "qid": "q00424",
+  "request": "Show me the full details for milestone 'Alpha Launch' in project 'Phoenix', including every single task with its ID, name, completion status, effort estimate, and the overall goal, duration, difficulty, and system information.",
+  "right": "get_milestone",
+  "right_desc": "ONE milestone: goal, weeks, difficulty, systems, every task (id/name/done/status/effort).",
+  "picked": "tm_get_milestone",
+  "picked_desc": "Pass milestone_id to get one milestone's detail and live completion progress. Otherwise pass project_id to list the project's milestones."
+ },
+ {
+  "id": "q81f3d8d990",
+  "qid": "q00425",
+  "request": "Please update the milestone with id 'ms-1024' for project 'app-forge-core', changing its name to 'Implement Auth Module', setting the goal to 8 weeks and difficulty to medium.",
+  "right": "update_milestone",
+  "right_desc": "Edit milestone goal/weeks/difficulty/name \u2014 DIRECT. new_name renames (never delete+recreate).",
+  "picked": "tm_update_milestone",
+  "picked_desc": "Update a milestone \u2014 title, description, dates, tags \u2014 or change its status (e.g. mark it Completed). Deleting milestones is not available through this connection."
+ },
+ {
+  "id": "qa0a59c0907",
+  "qid": "q00975",
+  "request": "R\u00e9cup\u00e8re-moi le dossier du client dont l'identifiant est 8492 dans notre syst\u00e8me ERP.",
+  "right": "get_client",
+  "right_desc": "R\u00e9cup\u00e9rer un client par id",
+  "picked": "get_client_dossier",
+  "picked_desc": "Get full client dossier \u2014 profile, entities, AUM, review status, team assignments."
+ },
+ {
+  "id": "qc6222e2e9a",
+  "qid": "q00887",
+  "request": "Cancel the currently running analysis job with run ID 7f3a2b9c4d5e6f1g0h8i9j7k6l5m4n3o2",
+  "right": "agentfarm_cancel_run",
+  "right_desc": "Cancels an authenticated queued or running run.",
+  "picked": "cancel_run",
+  "picked_desc": "Stops a run that is queued, held at the confirmation gate, or running. A run cancelled at the gate never ran. Example: {\"run_id\": \"\u2026\"}. Returns the run receipt with status cancelled. A run that already finished cannot be cancelled and says so \u2014 read get_run rather than retrying."
+ },
+ {
+  "id": "q76e89ec61c",
+  "qid": "q00103",
+  "request": "Post a new part-time shift for our London office at GreenLeaf Logistics offering \u00a314 per hour for their warehouse team.",
+  "right": "jobspotter_post_job",
+  "right_desc": "Job Spotter. Post a job or shift free (needs the employer's email confirmation). For small employers: posts a job or a single shift free. It goes live after the employer presses a link emailed to their work address (personal addresses get a quick check first), shows in Job Spotter's search, on its o",
+  "picked": "post-job",
+  "picked_desc": "[Auth Required] Post a job vacancy (paid action: job_post). The job is publicly indexed and searchable."
+ },
+ {
+  "id": "qc9838988ea",
+  "qid": "q00912",
+  "request": "Check the current status, funding timestamps, and tracking details for order 12345 using my shop.nagora API key.",
+  "right": "get_order",
+  "right_desc": "Polls an order placed by this agent. Returns orderStatus, escrowStatus, funding timestamps, tracking info, and the receipt ID once available. Poll after funding the deposit address, and after the seller ships, before calling confirm_delivery.",
+  "picked": "get_order_status",
+  "picked_desc": "Stav objedn\u00e1vky: platba (pending/paid/failed/refunded), v\u00fdroba (new \u2192 shipped/delivered, cancelled), o\u010dek\u00e1van\u00fd term\u00edn. Se statusToken nav\u00edc statusUrl, faktura (PDF po zaplacen\u00ed) a sledov\u00e1n\u00ed z\u00e1silky. S orderNumber + email jen z\u00e1kladn\u00ed stav (\u010d\u00edsla objedn\u00e1vek jsou p\u0159edv\u00eddateln\u00e1). Neshoda = found:false."
+ },
+ {
+  "id": "qf87708231b",
+  "qid": "q00936",
+  "request": "Retrieve the complete profile for contact ID 12345, including all their addresses, phone numbers, food preferences, recent notes, and open tasks.",
+  "right": "contact_get",
+  "right_desc": "Get full contact details including all related data in one call: contact methods, addresses, food preferences, custom fields, tags, relationships, recent notes, recent activities, life events, active reminders, open tasks, recent gifts, active debts, and debt summary",
+  "picked": "crmGetContact",
+  "picked_desc": "Get full contact details by ID."
+ },
+ {
+  "id": "q0b47d2c83d",
+  "qid": "q00519",
+  "request": "Update task 9876543210 in ClickUp to set its name to \"Final Review\" and change the status to \"In Progress\".",
+  "right": "clickup_update_task",
+  "right_desc": "WRITE: update fields on an existing task. Only the fields you pass are changed. ClickUp REST: PUT /task/{task_id}.",
+  "picked": "update_task",
+  "picked_desc": "Edit a task or CLAIM it \u2014 DIRECT. assignee:\"me\"+status:\"in-progress\" claims (errors if held; force:true for stale); done:true or assignee:\"\" releases."
+ },
+ {
+  "id": "qfe87eb37c3",
+  "qid": "q00441",
+  "request": "Delete the task with ID 'TASK-2024-089' and its associated subtasks.",
+  "right": "delete_task",
+  "right_desc": "Delete a task. Child tasks and dependencies are removed as well.",
+  "picked": "tascan_delete_task",
+  "picked_desc": "Delete a specific task and its completions. This action is irreversible."
+ },
+ {
+  "id": "qd609da442e",
+  "qid": "q00091",
+  "request": "Please cancel my upcoming reservation using booking id 849203 and token g-7f-9a-1b-2c-3d-4e-5f, just like I requested via the manage link.",
+  "right": "cancel_booking",
+  "right_desc": "Cancel an upcoming booking and release its slot to other guests. Identified like check_booking: booking_id plus manage_token. Confirm with the guest before calling; the cancellation is immediate and this server cannot undo it, the guest would simply book again. The venue is notified exactly as for a",
+  "picked": "cancel_booking",
+  "picked_desc": "Cancels a booking under the business cancellation policy. Confirm with the user first and tell them whether a late fee applies."
+ },
+ {
+  "id": "qc1e1274e1f",
+  "qid": "q00391",
+  "request": "update the probe interval for my production-api endpoint to 30 seconds since I just upgraded to the pro tier",
+  "right": "update_endpoint_interval",
+  "right_desc": "Change how often an endpoint is probed. Minimum interval varies by\n    tier (free=900s, developer=300s, starter=60s, pro/scale/enterprise=30s).",
+  "picked": "update_endpoint",
+  "picked_desc": "Authenticated tool to update endpoint."
+ },
+ {
+  "id": "q918ec157c7",
+  "qid": "q01357",
+  "request": "Show me the current status of my notifications, including which channels are active, any pending email changes that need confirmation, required proofs, and when updates will expire.",
+  "right": "get_notifications",
+  "right_desc": "Read current channels, recovery availability, pending email changes, required proofs, expiry, resend time, and next steps. Write replays return their original snapshot; use this operation for current state.",
+  "picked": "theprotocol_getMyNotificationMatrix",
+  "picked_desc": "\u00a7NOTIFV2: your full effective notification matrix (defaults + wildcard + rows + legacy)."
+ },
+ {
+  "id": "q78eba8768f",
+  "qid": "q00986",
+  "request": "Search for all in-scope Critical severity vulnerabilities published in 2023 that are flagged as key events only, limiting the results to the first 50 entries.",
+  "right": "recipes_cve_search",
+  "right_desc": "Search every in-scope Medium/High/Critical CVE; use recipes_cve_get for complete details.",
+  "picked": "nvd_search_cves",
+  "picked_desc": "Search CVEs by keyword, severity, CWE, date range, or CISA KEV status. The primary discovery tool for vulnerability surveillance and triage workflows. pubDays and lastModDays are convenience shorthands that expand to date pairs; values over 120 days are clamped to the NVD maximum and reported in the"
+ },
+ {
+  "id": "q35fb206e37",
+  "qid": "q00567",
+  "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+  "right": "set_mandate",
+  "right_desc": "Buyer: let your principal allow purchases without a payment link. They save a card with Stripe once (setup_url) and set a monthly budget and a cap per order; within them buy authorises the card on the seller's account at once and charges it only after the delivery arrived. Revocable any time with re",
+  "picked": "set_mandate",
+  "picked_desc": "Buyer: let your principal allow purchases without a payment link. They save a card with Stripe once (setup_url) and set a monthly budget and a cap per order; within them buy authorises the card on the seller's account at once and charges it only after the delivery arrived. Revocable any time with re"
+ }
+]

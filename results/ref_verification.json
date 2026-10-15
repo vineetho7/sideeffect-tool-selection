@@ -1,0 +1,354 @@
+{
+ "toolret": {
+  "arxiv": "2503.01763",
+  "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+  "authors": [
+   "Zhengliang Shi",
+   "Yuhan Wang",
+   "Lingyong Yan",
+   "Pengjie Ren",
+   "Shuaiqiang Wang",
+   "Dawei Yin",
+   "Zhaochun Ren"
+  ],
+  "year": "2025"
+ },
+ "toolrerank": {
+  "arxiv": "2403.06551",
+  "title": "ToolRerank: Adaptive and Hierarchy-Aware Reranking for Tool Retrieval",
+  "authors": [
+   "Yuanhang Zheng",
+   "Peng Li",
+   "Wei Liu",
+   "Yang Liu",
+   "Jian Luan",
+   "Bin Wang"
+  ],
+  "year": "2024"
+ },
+ "gorilla": {
+  "arxiv": "2305.15334",
+  "title": "Gorilla: Large Language Model Connected with Massive APIs",
+  "authors": [
+   "Shishir G. Patil",
+   "Tianjun Zhang",
+   "Xin Wang",
+   "Joseph E. Gonzalez"
+  ],
+  "year": "2023"
+ },
+ "toolllm": {
+  "arxiv": "2307.16789",
+  "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+  "authors": [
+   "Yujia Qin",
+   "Shihao Liang",
+   "Yining Ye",
+   "Kunlun Zhu",
+   "Lan Yan",
+   "Yaxi Lu",
+   "Yankai Lin",
+   "Xin Cong",
+   "Xiangru Tang",
+   "Bill Qian",
+   "Sihan Zhao",
+   "Lauren Hong",
+   "Runchu Tian",
+   "Ruobing Xie",
+   "Jie Zhou",
+   "Mark Gerstein",
+   "Dahai Li",
+   "Zhiyuan Liu",
+   "Maosong Sun"
+  ],
+  "year": "2023"
+ },
+ "ragmcp": {
+  "arxiv": "2505.03275",
+  "title": "RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation",
+  "authors": [
+   "Tiantian Gan",
+   "Qiyao Sun"
+  ],
+  "year": "2025"
+ },
+ "mcpzero": {
+  "arxiv": "2506.01056",
+  "title": "MCP-Zero: Active Tool Discovery for Autonomous LLM Agents",
+  "authors": [
+   "Xiang Fei",
+   "Xiawu Zheng",
+   "Hao Feng"
+  ],
+  "year": "2025"
+ },
+ "scalemcp": {
+  "arxiv": "2505.06416",
+  "title": "ScaleMCP: Dynamic and Auto-Synchronizing Model Context Protocol Tools for LLM Agents",
+  "authors": [
+   "Elias Lumer",
+   "Anmol Gulati",
+   "Vamse Kumar Subbiah",
+   "Pradeep Honaganahalli Basavaraju",
+   "James A. Burke"
+  ],
+  "year": "2025"
+ },
+ "livemcpbench": {
+  "arxiv": "2508.01780",
+  "title": "LiveMCPBench: Can Agents Navigate an Ocean of MCP Tools?",
+  "authors": [
+   "Guozhao Mo",
+   "Wenliang Zhong",
+   "Jiawei Chen",
+   "Qianhao Yuan",
+   "Xuanang Chen",
+   "Yaojie Lu",
+   "Hongyu Lin",
+   "Ben He",
+   "Xianpei Han",
+   "Le Sun"
+  ],
+  "year": "2025"
+ },
+ "mcpbench": {
+  "arxiv": "2508.20453",
+  "title": "MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers",
+  "authors": [
+   "Zhenting Wang",
+   "Qi Chang",
+   "Hemani Patel",
+   "Shashank Biju",
+   "Cheng-En Wu",
+   "Quan Liu",
+   "Aolin Ding",
+   "Alireza Rezazadeh",
+   "Ankit Shah",
+   "Yujia Bao",
+   "Eugene Siow"
+  ],
+  "year": "2025"
+ },
+ "mcpverse": {
+  "arxiv": "2508.16260",
+  "title": "MCPVerse: An Expansive, Real-World Benchmark for Agentic Tool Use",
+  "authors": [
+   "Fei Lei",
+   "Yibo Yang",
+   "Wenxiu Sun",
+   "Dahua Lin"
+  ],
+  "year": "2025"
+ },
+ "mcpatlas": {
+  "arxiv": "2602.00933",
+  "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+  "authors": [
+   "Chaithanya Bandi",
+   "Razvan-Gabriel Dumitru",
+   "Ben Hertzberg",
+   "Divyansh Agarwal",
+   "Geobio Boo",
+   "Tejas Polakam",
+   "Sami Hassaan",
+   "Jeff Da",
+   "HiJae Kim",
+   "Vipul Gupta",
+   "Manasi Sharma",
+   "Andrew Park",
+   "Martin Dimakis",
+   "Ernesto Gabriel Hernandez Montoya",
+   "Dan Rambado",
+   "Ivan Salazar",
+   "Rafael Cruz",
+   "MohammadHossein Rezaei",
+   "Chetan Rane",
+   "Ben Levin",
+   "Daniel Yue Zhang",
+   "Brad Kenstler",
+   "Bing Liu"
+  ],
+  "year": "2026"
+ },
+ "smelly": {
+  "arxiv": "2602.14878",
+  "title": "Model Context Protocol (MCP) Tool Descriptions Are Smelly! Towards Improving AI Agent Efficiency with Augmented MCP Tool Descriptions",
+  "authors": [
+   "Mohammed Mehedi Hasan",
+   "Hao Li",
+   "Gopi Krishnan Rajbahadur",
+   "Bram Adams",
+   "Ahmed E. Hassan"
+  ],
+  "year": "2026"
+ },
+ "docs2desc": {
+  "arxiv": "2602.18914",
+  "title": "From Docs to Descriptions: Smell-Aware Evaluation of MCP Server Descriptions",
+  "authors": [
+   "Peiran Wang",
+   "Ying Li",
+   "Yuqiang Sun",
+   "Chengwei Liu",
+   "Yang Liu",
+   "Yuan Tian"
+  ],
+  "year": "2026"
+ },
+ "randomdraw": {
+  "arxiv": "2609.10962",
+  "title": "What a Random Draw from the MCP Registry Contains, and What Tool-Use Benchmarks Contain Instead",
+  "authors": [
+   "Haseeb Mohammed Afsar"
+  ],
+  "year": "2026"
+ },
+ "mcpapps": {
+  "arxiv": "2607.25635",
+  "title": "An Empirical Study of Model Context Protocol Applications",
+  "authors": [
+   "Muhammad Hamza Arshad Majeed",
+   "May Mahmoud",
+   "Sarah Nadi"
+  ],
+  "year": "2026"
+ },
+ "rest2mcp": {
+  "arxiv": "2507.16044",
+  "title": "From REST to MCP: An Empirical Study of API Wrapping and Automated Server Generation for LLM Agents",
+  "authors": [
+   "Meriem Mastouri",
+   "Emna Ksontini",
+   "Amine Barrak",
+   "Wael Kessentini"
+  ],
+  "year": "2025"
+ },
+ "semdisc": {
+  "arxiv": "2603.20313",
+  "title": "Semantic Tool Discovery for Large Language Models: A Vector-Based Approach to MCP Tool Selection",
+  "authors": [
+   "Sarat Mudunuri",
+   "Jian Wan",
+   "Ally Qin",
+   "Srinivasan Manoharan"
+  ],
+  "year": "2026"
+ },
+ "toolmisuse": {
+  "arxiv": "2604.01508",
+  "title": "ToolMisuseBench: An Offline Deterministic Benchmark for Tool Misuse and Recovery in Agentic Systems",
+  "authors": [
+   "Akshey Sigdel",
+   "Rista Baral"
+  ],
+  "year": "2026"
+ },
+ "boundary": {
+  "arxiv": "2609.15397",
+  "title": "When Tool Calls Succeed but Workflows Fail: Anomalies at the Agent-Tool Boundary",
+  "authors": [
+   "Artem Trofimov",
+   "Boris Novikov"
+  ],
+  "year": "2026"
+ },
+ "toollery": {
+  "arxiv": "2609.22218",
+  "title": "Toollery: Scaling LLM Agents to Thousands of Skills and Tools",
+  "authors": [
+   "Xiangxi Tian",
+   "Ran Guan"
+  ],
+  "year": "2026"
+ },
+ "patool": {
+  "arxiv": "2510.07248",
+  "title": "Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models",
+  "authors": [
+   "Jonggeun Lee",
+   "Woojung Song",
+   "Jongwook Han",
+   "Haesung Pyun",
+   "Yohan Jo"
+  ],
+  "year": "2025"
+ },
+ "hnsw": {
+  "arxiv": "1603.09320",
+  "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
+  "authors": [
+   "Yu. A. Malkov",
+   "D. A. Yashunin"
+  ],
+  "year": "2016"
+ },
+ "acorn": {
+  "arxiv": "2403.04871",
+  "title": "ACORN: Performant and Predicate-Agnostic Search Over Vector Embeddings and Structured Data",
+  "authors": [
+   "Liana Patel",
+   "Peter Kraft",
+   "Carlos Guestrin",
+   "Matei Zaharia"
+  ],
+  "year": "2024"
+ },
+ "qwen3emb": {
+  "arxiv": "2506.05176",
+  "title": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models",
+  "authors": [
+   "Yanzhao Zhang",
+   "Mingxin Li",
+   "Dingkun Long",
+   "Xin Zhang",
+   "Huan Lin",
+   "Baosong Yang",
+   "Pengjun Xie",
+   "An Yang",
+   "Dayiheng Liu",
+   "Junyang Lin",
+   "Fei Huang",
+   "Jingren Zhou"
+  ],
+  "year": "2025"
+ },
+ "toolemu": {
+  "arxiv": "2309.15817",
+  "title": "Identifying the Risks of LM Agents with an LM-Emulated Sandbox",
+  "authors": [
+   "Yangjun Ruan",
+   "Honghua Dong",
+   "Andrew Wang",
+   "Silviu Pitis",
+   "Yongchao Zhou",
+   "Jimmy Ba",
+   "Yann Dubois",
+   "Chris J. Maddison",
+   "Tatsunori Hashimoto"
+  ],
+  "year": "2023"
+ },
+ "bge": {
+  "arxiv": "2309.07597",
+  "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+  "authors": [
+   "Shitao Xiao",
+   "Zheng Liu",
+   "Peitian Zhang",
+   "Niklas Muennighoff",
+   "Defu Lian",
+   "Jian-Yun Nie"
+  ],
+  "year": "2023"
+ },
+ "sbert": {
+  "arxiv": "1908.10084",
+  "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+  "authors": [
+   "Nils Reimers",
+   "Iryna Gurevych"
+  ],
+  "year": "2019"
+ }
+}

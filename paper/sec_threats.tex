@@ -1,0 +1,39 @@
+\textbf{Construct validity.} Severity is a four-level, study-specific ordering; some creates
+(sending money, filing a form) are graver than some updates, which is why the primary outcome is
+read-to-write and we report effect types. Whether a pick ``does more than asked'' is a judgment
+call, and raters differ. Of the 55 independently checked items, both raters answered \IndN; the two authors, rating independently, agreed on
+\IndAgree\,\% ($\kappa=\IndKappa$, slight; positive agreement \IndPos); on flagged items
+$\kappa=\IndFlagKappa$. The two then reviewed all \IndDis{} disagreements (17 among these, plus 4 where one rater answered
+``can't tell'' or did not answer) together with the full
+tool descriptions and agreed on all but one, which is reported as ambiguous. Their consensus
+replaced the first author's label on the double-rated items; the other flagged pairs rest on the first author
+alone. On the double-rated flagged items the consensus found more escalations than the first author
+(\ConsFlagYes{} vs.\ \IndFlagAuthorYes), so single-rater verified counts are, if anything, low.
+On unflagged picks the direction reverses: on the 116 unflagged picks the first author labeled blind in
+earlier rounds, the first author marked \MissSelAuthor\,\% (LLM selection) and \MissRetAuthor\,\% (retriever) as
+escalations, which would raise the estimates to \EstQPlainAuthor\,\%
+(Qwen3.5) and \EstRetAuthor\,\% (retriever), while consensus on the independent sample found none.
+The miss share is therefore the least certain quantity; its consensus estimate rests on 30 items. Consensus between two raters settles disagreements but
+does not prove either reading right, and both raters are authors; a third rater from outside the team on the disputed and unflagged items
+would test this, and we did not have one.
+An LLM generated and validated the requests, produced the reference severities and the tool-type
+labels the profilers are scored against, and gave a first-pass escalation verdict; no reported
+escalation rate uses that verdict. For retrievers other than Qwen3-Embedding we report automatic
+rates only, and terse-request escalations are not human-labeled.
+
+Sibling groups are built from shared resource names, so part of their embedding proximity
+(RQ1) follows from the definition itself; the nearest-neighbour result shows how often that
+proximity matters, not that it is surprising.
+
+\textbf{Internal validity.} Requests are LLM-generated, and a validator kept only requests it could
+route within the sibling group. This makes requests explicit about the operation; the terse rewrites
+lower accuracy by about 20 points, so our main rates may understate realistic traffic. The validator (Gemma3-12B) and the generator (Qwen3.5-9B) are also evaluated selectors: the
+validator may be favoured on the sibling-level decision, and the generator may find its own
+phrasing easier to route. Phi-4 and Qwen3-1.7B played neither role and show escalation rates in
+the same range. All models run locally with 4-bit quantization at temperature~0.
+
+\textbf{External validity.} The corpus contains only servers reachable without credentials, so
+popular authenticated servers (source hosting, issue trackers, cloud consoles) are under-represented,
+and these are exactly the ones whose destructive operations matter most. We tested four open models of
+1.7B to 14B parameters; hosted frontier models may differ. We study single-step selection; multi-step agents compound or recover
+from selection errors in ways we do not measure.

@@ -1,0 +1,47 @@
+{
+ "labeled": 300,
+ "rule_covered": 285,
+ "rule_exact_acc": 0.7964912280701755,
+ "rule_kappa": 0.7224880382775121,
+ "rule_read_vs_write_acc": 0.8491228070175438,
+ "rule_underestimates_severity": 0.03859649122807018,
+ "rule_overestimates_severity": 0.1649122807017544,
+ "per_class_precision": {
+  "read": {
+   "n": 90,
+   "precision": 0.9444444444444444
+  },
+  "create": {
+   "n": 60,
+   "precision": 0.6666666666666666
+  },
+  "update": {
+   "n": 75,
+   "precision": 0.6533333333333333
+  },
+  "destructive": {
+   "n": 60,
+   "precision": 0.8833333333333333
+  }
+ },
+ "confusion": {
+  "create->read": 3,
+  "update->read": 2,
+  "read->create": 17,
+  "update->create": 2,
+  "destructive->create": 1,
+  "read->update": 20,
+  "destructive->update": 3,
+  "create->update": 3,
+  "update->destructive": 5,
+  "create->destructive": 1,
+  "read->destructive": 1
+ },
+ "annotation_present": 0.64,
+ "annotation_read_vs_write_acc": 0.9583333333333334,
+ "rule_read_vs_write_acc_on_same_annotated": 0.8494623655913979,
+ "true_destructive": 57,
+ "true_destructive_flagged_by_annotation": 32,
+ "true_destructive_without_any_annotation": 24,
+ "true_destructive_flagged_by_rule": 53
+}

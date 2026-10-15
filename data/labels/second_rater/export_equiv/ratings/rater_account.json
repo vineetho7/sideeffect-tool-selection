@@ -1,0 +1,44 @@
+{
+  "reviews": {
+    "rmv6xvboigpjx": {
+      "answers": {
+        "q0b47d2c83d": "no",
+        "q180e07d068": "yes",
+        "q238c183114": "yes",
+        "q25bd396b96": "no",
+        "q2d0d6b8a0b": "yes",
+        "q35fb206e37": "yes",
+        "q3dd9e71ed7": "yes",
+        "q402774eb08": "no",
+        "q467d25b058": "no",
+        "q4a4d2aecca": "no",
+        "q5011dc7231": "yes",
+        "q54e43cb28d": "no",
+        "q5f729854cd": "yes",
+        "q76e89ec61c": "no",
+        "q78eba8768f": "yes",
+        "q81f3d8d990": "yes",
+        "q918ec157c7": "yes",
+        "q96ca2b7685": "yes",
+        "qa0a59c0907": "yes",
+        "qa907bf346f": "yes",
+        "qa9d27b2561": "yes",
+        "qaa1dd813f3": "yes",
+        "qbbd602d53e": "yes",
+        "qc1e1274e1f": "yes",
+        "qc6222e2e9a": "yes",
+        "qc9838988ea": "yes",
+        "qd609da442e": "yes",
+        "qf59c3f9387": "yes",
+        "qf87708231b": "yes",
+        "qfe87eb37c3": "yes"
+      },
+      "count": 30,
+      "createdAt": "2026-10-13T17:12:28.386Z",
+      "rater": "author",
+      "submitted": true,
+      "submittedAt": "2026-10-14T06:12:09.970Z",
+      "updatedAt": "2026-10-14T06:12:10.273Z"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+escalation-capable groups 3483 servers 1392 chosen 700
+gen 550 1398
+gen 575 1461
+gen 600 1521
+gen 625 1586
+gen 650 1652
+gen 675 1710
+gen 700 1771
+val 100 {'generated': 131, 'validated': 98, 'leak_or_parse_fail': 31, 'validator_disagreed': 2}
+val 200 {'generated': 252, 'validated': 192, 'leak_or_parse_fail': 52, 'validator_disagreed': 8}
+val 300 {'generated': 378, 'validated': 290, 'leak_or_parse_fail': 78, 'validator_disagreed': 10}
+val 400 {'generated': 506, 'validated': 389, 'leak_or_parse_fail': 106, 'validator_disagreed': 11}
+val 500 {'generated': 624, 'validated': 484, 'leak_or_parse_fail': 124, 'validator_disagreed': 16}
+val 600 {'generated': 750, 'validated': 583, 'leak_or_parse_fail': 150, 'validator_disagreed': 17}
+val 700 {'generated': 879, 'validated': 678, 'leak_or_parse_fail': 179, 'validator_disagreed': 22}
+val 800 {'generated': 1007, 'validated': 777, 'leak_or_parse_fail': 207, 'validator_disagreed': 23}
+val 900 {'generated': 1136, 'validated': 875, 'leak_or_parse_fail': 236, 'validator_disagreed': 25}
+val 1000 {'generated': 1266, 'validated': 972, 'leak_or_parse_fail': 266, 'validator_disagreed': 28}
+val 1100 {'generated': 1382, 'validated': 1071, 'leak_or_parse_fail': 282, 'validator_disagreed': 29}
+val 1200 {'generated': 1506, 'validated': 1170, 'leak_or_parse_fail': 306, 'validator_disagreed': 30}
+val 1300 {'generated': 1636, 'validated': 1270, 'leak_or_parse_fail': 336, 'validator_disagreed': 30}
+val 1400 {'generated': 1750, 'validated': 1370, 'leak_or_parse_fail': 350, 'validator_disagreed': 30}
+done {'generated': 1771, 'validated': 1386, 'leak_or_parse_fail': 355, 'validator_disagreed': 30}

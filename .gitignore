@@ -1,0 +1,7 @@
+.venv/
+data/raw/
+data/processed/*.npy
+data/processed/*cache*.json
+__pycache__/
+.DS_Store
+data/processed/catalog.json

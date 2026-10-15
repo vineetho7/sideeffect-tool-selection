@@ -1,0 +1,27 @@
+[2026-10-06 00:15:02] reference profiler audit (gemma3)
+[2026-10-06 00:22:27] audit samples
+[2026-10-06 00:22:28] query embeddings
+[2026-10-06 00:27:42] reference severities for eval groups
+[2026-10-06 01:10:36] retrieval eval (RQ1/RQ2)
+[2026-10-06 01:18:08] hnsw control
+[2026-10-06 01:18:36] intents qwen3.5
+[2026-10-06 01:38:21] select plain N=1000 qwen3.5
+[2026-10-06 02:11:28] select tags N=1000 qwen3.5
+[2026-10-06 02:47:16] select sibling N=1000 qwen3.5
+[2026-10-06 03:34:43] select native N=1000 qwen3.5
+[2026-10-06 04:08:40] select plain N=0 qwen3.5
+[2026-10-06 04:38:06] select tags N=0 qwen3.5
+[2026-10-06 05:08:12] select sibling N=0 qwen3.5
+[2026-10-06 06:02:51] select native N=0 qwen3.5
+[2026-10-06 06:39:37] intents gemma3
+[2026-10-06 07:07:03] select plain N=0 gemma3
+[2026-10-06 12:39:03] select sibling N=0 gemma3
+[2026-10-06 19:33:35] select tags N=0 gemma3
+[2026-10-06 20:47:30] intents qwen3:1.7b
+[2026-10-06 20:49:50] select plain N=0 qwen3:1.7b
+[2026-10-06 20:55:43] select sibling N=0 qwen3:1.7b
+[2026-10-06 21:08:10] select tags N=0 qwen3:1.7b
+[2026-10-06 21:14:41] reference severities for predictions
+[2026-10-06 22:24:39] retrieval eval with full references
+[2026-10-06 22:32:24] analyze
+[2026-10-06 22:32:28] done

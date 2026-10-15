@@ -1,0 +1,15 @@
+{
+ "groups": 6363,
+ "read_and_update_or_destructive_rule": 3489,
+ "fully_annotated": 4000,
+ "no_annotation_at_all": 2077,
+ "read_and_destructive_rule": 1231,
+ "read_and_destructive_hybrid": 1881,
+ "tools_known_op_with_resource": 85368,
+ "tools_in_groups": 25903,
+ "servers_total": 8554,
+ "servers_with_group": 2495,
+ "servers_with_esc_group": 1393,
+ "servers_ge10_tools": 2779,
+ "servers_ge10_with_esc_group": 1093
+}

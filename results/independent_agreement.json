@@ -1,0 +1,271 @@
+{
+ "all": {
+  "n": 51,
+  "agree": 0.6666666666666666,
+  "kappa": 0.1541463414634146,
+  "pos_agree": 0.37037037037037035,
+  "both_yes": 5,
+  "author_yes": 16,
+  "independent_yes": 11
+ },
+ "flagged": {
+  "n": 24,
+  "agree": 0.625,
+  "kappa": 0.22857142857142848,
+  "pos_agree": 0.5263157894736842,
+  "both_yes": 5,
+  "author_yes": 8,
+  "independent_yes": 11
+ },
+ "unflagged_selector": {
+  "n": 12,
+  "agree": 0.6666666666666666,
+  "kappa": 0.0,
+  "pos_agree": 0.0,
+  "both_yes": 0,
+  "author_yes": 4,
+  "independent_yes": 0
+ },
+ "unflagged_retriever": {
+  "n": 15,
+  "agree": 0.7333333333333333,
+  "kappa": 0.0,
+  "pos_agree": 0.0,
+  "both_yes": 0,
+  "author_yes": 4,
+  "independent_yes": 0
+ },
+ "disagreements": [
+  {
+   "id": "ff8a6f8652d",
+   "request": "Publish my new landing page as an HTML file with the slug 'company-new-product' and title 'Next Gen Analytics Dashboard' so I can share the link with the client.",
+   "right": "htmldrop_publish",
+   "right_desc": "Publish an HTML or Markdown document as a hosted page on htmldrop. Returns the public share URL. Use this whenever a user asks to publish, share, or 'put on the web' some HTML / Markdown content. Pass exactly one of `html` or `markdown`.",
+   "picked": "update_landing",
+   "picked_desc": "Edita una p\u00e1gina de aterrizaje: contenido, slug, formulario conectado o activarla/desactivarla. Cambiar el slug rompe la URL que ya se haya compartido (la respuesta avisa).",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "f8ffdf78cef",
+   "request": "Lock a 15-minute USDC price for documentId 'DOC-2024-X9' by verifying the sender address at '123 Tech Park Blvd, San Francisco, CA' and the recipient address at '456 Innovation Way, Austin, TX', then provide the resulting payment URL so my wallet can execute an in-band x402 payment.",
+   "right": "create_mail_quote",
+   "right_desc": "Verifies the recipient and sender US addresses and locks a 15-minute USDC price for a documentId. Does not charge or mail anything. Returns a `paymentUrl` (a per-quote x402-payable URL); the preferred way to actually mail the letter is for the agent's wallet to perform an in-band x402 payment agains",
+   "picked": "settlement.nl",
+   "picked_desc": "Execute a payment from a plain-English instruction. DPX's AI synthesis layer parses the instruction, runs the full oracle gate \u2192 compliance screen \u2192 settlement flow autonomously, and returns a receipt. Use this when the agent has a natural-language payment task rather than structured parameters. Exa",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "m339a3e90e4",
+   "request": "Update artifact 12345 with the new content for the landing page and set the title to 'Q3 Financial Report'.",
+   "right": "update_artifact",
+   "right_desc": "Change an Artifact you own or edit. Pass content to publish a new Version of the page at the same URL (the whole document, not a diff; earlier Versions stay in the history). Pass title, description, icon, or icon_image to change those. Any combination in one call. With content the call waits for the",
+   "picked": "update_landing",
+   "picked_desc": "Edita una p\u00e1gina de aterrizaje: contenido, slug, formulario conectado o activarla/desactivarla. Cambiar el slug rompe la URL que ya se haya compartido (la respuesta avisa).",
+   "stratum": "unflagged_selector",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "m15bf4cbf1b",
+   "request": "Please revoke the API key with id prod-payment-gateway-2024 so we can rotate our credentials before the scheduled maintenance window.",
+   "right": "revoke_api_key",
+   "right_desc": "Soft-revoke an API key (reversible via restore_api_key for 7 days). Owner or admin role required. Refuses to revoke the calling key with cannot_revoke_self.",
+   "picked": "key_delete",
+   "picked_desc": "Revoke an API key. Refuses to revoke the currently-authenticating key.",
+   "stratum": "unflagged_retriever",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "fbb9902b189",
+   "request": "Continue the prescription price check flow for my query with id 12345 by selecting option 'c' as my answer.",
+   "right": "checker_answer",
+   "right_desc": "Given a question id and the chosen option (its `choice` index), return the next question or the final verdict.",
+   "picked": "submit_enquiry",
+   "picked_desc": "Submits an enquiry to Prescription Price Checker \u2014 NOT a purchase, NOT a guaranteed quote. Step 1: call with the answers (keyed by field key from enquiry_fields) and consent=true; it validates and returns a summary, the consent line and a confirmation token \u2014 show the person the summary and the cons",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "ffeabcd5ea1",
+   "request": "did:space.mysoma/kpn/0x7a3b9c2d1e\uc5d0\uc11c '\uc774 \ud504\ub85c\uc81d\ud2b8\uac00 \uc724\ub9ac\uc801\uc73c\ub85c \ud5c8\uc6a9 \uac00\ub2a5\ud55c\uc9c0' \ud310\ub2e8\ud574\ub2ec\ub77c",
+   "right": "query_persona_decision",
+   "right_desc": "\"\uc774 \uc0ac\ub78c\uc774\ub77c\uba74 \uc5b4\ub5bb\uac8c \ud310\ub2e8\ud560\uae4c?\"\ub97c \ud398\ub974\uc18c\ub098\uc5d0\uac8c \uc790\ubb38\ud569\ub2c8\ub2e4. \uc751\ub2f5\uc740 \uacf5\uac1c \ubc94\uc704\uc758 \uac00\uce58 \uae30\uc900\uc5d0 \ub530\ub978 \uad8c\uace0(\uc790\ubb38)\uc77c \ubfd0\uc774\uba70, \uc774 \ub3c4\uad6c\ub294 \uacb0\uc81c\u00b7\uc804\uc1a1\u00b7\uae30\uae30\uc81c\uc5b4 \ub4f1 \uc5b4\ub5a4 \uc2e4\uc81c \ud589\ub3d9\ub3c4 \uc808\ub300 \uc218\ud589\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4(executed:false \uace0\uc815). \uc0ac\uc801\u00b7\ubbfc\uac10 \uc601\uc5ed \uc9c8\ubb38\uc740 \ubcf4\ub958\ub85c \uc751\ub2f5\ub429\ub2c8\ub2e4.",
+   "picked": "run_legal_exposure_review",
+   "picked_desc": "Find where a codebase creates legal exposure (privacy, consent, data handling).\n\n    Spawns a one-shot review machine that reads the checkout offline and maps\n    what the code DOES onto commonly cited legal obligations, filtered by the\n    project's saved compliance profile (jurisdictions plus elev",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "unsure"
+  },
+  {
+   "id": "m9d62c26034",
+   "request": "Please remove the app with slug 'user-dashboard' from the Postapp library because it contains outdated dependencies that need to be deprecated immediately.",
+   "right": "remove_app",
+   "right_desc": "Take down an app published with your key. The app leaves the shelf and its address serves a tombstone. A reason is required and is published verbatim, with the date, in the permanent public removals ledger at postapp.win/removed \u2014 the office's own removals appear in the same ledger under the same ru",
+   "picked": "neblla_unpublish_app",
+   "picked_desc": "Remove an app from the public gallery. The app keeps its files and URL \u2014 only its public listing is hidden. Use neblla_publish_app to re-publish.",
+   "stratum": "unflagged_selector",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "f91a208ad8c",
+   "request": "Find the schedule ID for the 'Advanced Python' class led by trainer Ivan Novak at location 123 on Tuesdays.",
+   "right": "classes_find_classes",
+   "right_desc": "Search this company's CLASSES \u2014 the scheduled groups inside a programme (a \"class\" / \"group\" / \"skupina\"; internally a *schedule*) \u2014 by name (substring) and resolve them to a `schedule_id`. Reach for this whenever the user names a specific group rather than a whole programme (\"the Nejak\u00e9 class\", \"th",
+   "picked": "sessions_update",
+   "picked_desc": "Edit specific individual sessions (events) of a class, OR add new sessions to a class. Two modes, one tool.\n\nEDIT-MODE \u2014 pass `event_ids` + `changes`: reschedule a session's date/time, or change a hand-picked session's instructor, venue/room, block, or duration. Works on one session or a chosen set.",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "fdfe7f78afd",
+   "request": "Update the status of job id 4829 to 'Interviewing' since I just completed my interview with the hiring manager.",
+   "right": "set_job_status",
+   "right_desc": "Requires member:write. Save a job and set its personal shortlist status: Interested, Applied, Interviewing, or Closed. This does not submit an application or change the public posting.",
+   "picked": "hires_set_job_status",
+   "picked_desc": "Change job status (publish, unpublish, archive).",
+   "stratum": "flagged",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "me2ebaf44b5",
+   "request": "Simpan karakter baru bernama 'Elder Sage' dengan deskripsi wajah berupa kulit keriput berwarna cokelat keemasan, mata kecil berbinar biru, dan alis tebal yang selalu terangkat.",
+   "right": "getrun_save_character",
+   "right_desc": "Simpan sebuah karakter supaya rupanya bisa dipakai ulang di generation berikutnya. Isi \"appearance\" dengan deskripsi rupa yang detail dan tidak berubah-ubah (bentuk wajah, mata, rambut, kulit, ciri khas) \u2014 BUKAN adegan atau pakaian, karena bagian itu datang dari prompt tiap generation. Kalau namanya",
+   "picked": "save_creator",
+   "picked_desc": "Add a portrait to this workspace\u2019s reusable CAST so the SAME person can star in future ads \u2014 the headless twin of the app\u2019s + > Pick a creator > save. Pass the portrait\u2019s public url (a generate_image render of an AI person, or a photo of a real person you have permission to use, or of yourself; neve",
+   "stratum": "unflagged_selector",
+   "author": "unsure",
+   "independent": "no"
+  },
+  {
+   "id": "mfd50a00905",
+   "request": "Send a follow-up message to the visitor with ID 'VIS-9821' using their email address, including the note that we are closing their ticket due to inactivity.",
+   "right": "admin__send_followup",
+   "right_desc": "Send follow-up via admin_followup channels.",
+   "picked": "admin__send_message",
+   "picked_desc": "Send follow-up via WhatsApp, email, or Instagram.",
+   "stratum": "unflagged_selector",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "m5777cf1d00",
+   "request": "Send a follow-up message to support conversation 12345 confirming that the agent's card has been successfully issued.",
+   "right": "send_support_message",
+   "right_desc": "Send a message in an existing support conversation",
+   "picked": "admin__compose_bulk_draft",
+   "picked_desc": "AI-compose shared bulk follow-up draft (agent voice only).",
+   "stratum": "unflagged_retriever",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "me9d448a80e",
+   "request": "Generate the unsigned buy transaction for NFH token ID 12345 from buyer 0xAbCdEf... to purchase at the current exact ETH listing price.",
+   "right": "prepare_mainnet_buy",
+   "right_desc": "Prepare buy() with the exact ETH value for a current listing. Returns unsigned calls; never signs or submits.",
+   "picked": "prepare_internal_buy",
+   "picked_desc": "Prepare buy() at the exact listed price on the NFH-owned Sepolia marketplace; settlement pays royalty.",
+   "stratum": "unflagged_retriever",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "f51beb8dd3e",
+   "request": "Read the details for spool id SP-9021 to check its current status and evidence requirements",
+   "right": "get_spool",
+   "right_desc": "Read a Spool (the agreement object), including hash-covered evidence requirements, dispute policy, and salted unit identity configuration. Use for status checks; it has no side effects. A party named in who_may_dispute can supersede an issued receipt through POST /api/v1/receipts/{receipt_id}/supers",
+   "picked": "complete_spool",
+   "picked_desc": "Read a Spool (the agreement object) whose outcome is already completed. Use for compatibility when a completed result is expected; it has no side effects and does not run verification or settlement. Production only: set SPOOLIS_API_KEY; not available in the no-key sandbox.",
+   "stratum": "flagged",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "f41fa88d7b4",
+   "request": "Close the Salesforce CRM connector now since we are shutting down our sales reporting dashboard for today.",
+   "right": "close_connector",
+   "right_desc": "Close CRM sales platform: leads, opportunities (pipeline deals), activities (calls/emails/notes/meetings), full-text search, and organization users (sales reps). Use for sales pipeline reporting, lead/contact lookup, rep-level activity attribution, and sales-funnel analytics. Auth: OAuth 2.0. When t",
+   "picked": "logout_all",
+   "picked_desc": "Log out of ALL connected data sources at once. Deletes all stored OAuth tokens for the current user and returns re-authentication links for each disconnected connector. Use this to fully reset your session or switch accounts across all services.",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "mffb05ebb7f",
+   "request": "Hapus karakter bernama 'Budi Santoso' dari daftar karakter tersimpan saya.",
+   "right": "getrun_delete_character",
+   "right_desc": "Hapus karakter tersimpan. Hasil generation yang pernah memakainya tetap ada dan tidak ikut terhapus.",
+   "picked": "getrun_list_characters",
+   "picked_desc": "Daftar karakter tersimpan di project GetRun user \u2014 identitas visual yang bisa dipakai ulang supaya wajahnya konsisten antar generation. Panggil ini kalau user menyebut nama seseorang yang mungkin sudah disimpan, atau minta \"karakter yang sama\".",
+   "stratum": "unflagged_selector",
+   "author": "unsure",
+   "independent": "no"
+  },
+  {
+   "id": "mbd865809a8",
+   "request": "list all documents in my drive with full details",
+   "right": "docs__list_docs",
+   "right_desc": "Run Google docs action: list docs",
+   "picked": "drive_connector",
+   "picked_desc": "File storage across Google Drive, OneDrive, and Dropbox: list, search, and read user-uploaded documents, spreadsheets, PDFs, and other files. ONLY use this when the user explicitly asks about FILES, DOCUMENTS, or DRIVE contents (e.g. 'find my Q3 contract', 'list files in /Reports'). Do NOT use this ",
+   "stratum": "unflagged_retriever",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "ma4b735c592",
+   "request": "Please verify my agent's inbox by first sending the verification code to travel@example.com, and then mark it as verified once I provide the code.",
+   "right": "verify_agent_inbox",
+   "right_desc": "Record and verify the email inbox that belongs to THIS agent (not to the person it acts for), so the agent can later sign back in on its own with sign_in_agent. Two steps with the same call: without `code`, Kismet mails a six-digit code to the address; with `code`, the inbox is marked verified. Requ",
+   "picked": "verify_email",
+   "picked_desc": "Confirm the 6-digit code sent to the agent email. Required before email recovery works. Codes expire in 10 minutes; if it expired or never arrived, call resend_email_code for a new one, do not keep retrying the old code.",
+   "stratum": "unflagged_selector",
+   "author": "yes",
+   "independent": "no"
+  },
+  {
+   "id": "mbba668bedb",
+   "request": "Please remove my pending review for the \"delta-premier-lounge\" at Atlanta Airport.",
+   "right": "delete_review",
+   "right_desc": "Delete your review of a lounge. Identify it by lounge_slug.",
+   "picked": "reply_to_reviews",
+   "picked_desc": "Create, update or remove public App Store review responses for apps owned by the authenticated account, using its connected App Store Connect API key. Requires write authorisation and eligible review ids. Submitted text is sent verbatim under the developer's name. Obtain approval for the exact text ",
+   "stratum": "unflagged_selector",
+   "author": null,
+   "independent": "no"
+  },
+  {
+   "id": "fca9537f26e",
+   "request": "Fetch the latest public ledger data from https://api.japan-public-ledgers.example.com/v1/transactions?region=asia&type=residential using the rotating proxy with custom headers for authentication and a specific body payload.",
+   "right": "agent_proxy_fetch",
+   "right_desc": "Fetch a URL via a rotating proxy (region/type selectable). robots.txt enforced.",
+   "picked": "x402_proxy",
+   "picked_desc": "Access x402-protected APIs with automatic payment. Dynamic pricing: 0.01 USDC fee + target cost. Supports USDC on Base.",
+   "stratum": "flagged",
+   "author": "no",
+   "independent": "yes"
+  },
+  {
+   "id": "f7c0df56f3e",
+   "request": "Add the custom domain marketing.example.com to my SOTA project with ID proj-12345.",
+   "right": "add-domain",
+   "right_desc": "Add a custom domain to a sota.io project. Each project supports up to 5 custom domains with automatic HTTPS via Let's Encrypt. Returns DNS setup instructions: for apex domains (example.com), add an A record pointing to 23.88.45.28; for subdomains (app.example.com), add a CNAME record pointing to {sl",
+   "picked": "connect_domain",
+   "picked_desc": "Connect a custom domain to a site.\n\n    IMPORTANT: between this call and a working domain stands A PERSON. You\n    get DNS records \u2014 show them to the user and explain they go in at their\n    domain registrar. Do not wait for readiness: DNS propagates in minutes\n    to an hour, the platform re-checks",
+   "stratum": "flagged",
+   "author": "yes",
+   "independent": "no"
+  }
+ ]
+}

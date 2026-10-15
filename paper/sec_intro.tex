@@ -1,0 +1,55 @@
+An agent connected to a GitHub server, a project tracker and a cloud console can call hundreds of
+operations. Because connecting every schema to the model is too costly, production agents first
+\emph{retrieve} a handful of candidate tools by embedding similarity and let the language model
+choose among them~\cite{ragmcp,semdisc,scalemcp,mcpzero}. Research on this step reports
+recall and hit rate: did the right tool reach the shortlist~\cite{toolret,toolrerank,livemcpbench}?
+
+Recall treats every wrong tool as equally wrong. Operationally they are not. Real catalogs are
+built from resources and the verbs that act on them, so the neighbours of
+\texttt{get\_deployment} are \texttt{update\_deployment}, \texttt{restart\_deployment} and
+\texttt{delete\_deployment}: tools that share nearly all of their vocabulary and differ only in
+what they do to the world. If the user asked to \emph{see} a deployment, returning the list
+endpoint is a nuisance; calling the delete endpoint would be an incident. We call the second kind of
+mistake a \emph{side-effect escalation}: the selected tool has a stronger side effect than the
+operation the user requested. Deletion is the vivid case, but not the common one: in our verified
+data the most frequent transition is a read request answered by a tool that creates a record
+(\EscTrueReadCreate{} of \EscTrue{} verified pairs), and only \EffDelete{} of \EffPairs{} distinct
+escalations at the largest catalog size delete anything.
+
+The Model Context Protocol (MCP) anticipates this with optional tool annotations
+(\texttt{readOnlyHint}, \texttt{destructiveHint})~\cite{mcpspec}, but the protocol treats them as
+untrusted hints~\cite{mcpannotations} and servers frequently omit them~\cite{randomdraw}. Whether
+annotations, or anything else in today's tool-selection stacks, actually prevents escalation has
+not been measured.
+
+This paper measures it on the public MCP ecosystem. We harvest \NumRawTools{} tool definitions
+from \NumRespondingServers{} publicly reachable servers listed in the official MCP
+registry~\cite{mcpregistry}, build a catalog of \NumCatTools{} tools, and find
+\NumSibGroups{} \emph{sibling groups}: sets of tools on one server that act on the same resource
+with different side effects. We ask:
+
+\begin{itemize}
+\item \textbf{RQ1} How close are sibling operations in embedding space, compared with other tools?
+\item \textbf{RQ2} How often do retrievers and LLM selectors route a request to a tool with a
+stronger side effect, above all a read request to a tool that writes (creates, sends, overwrites, starts or
+deletes something), and how reliably can
+automatic labels and human raters tell?
+\item \textbf{RQ3} What reduces escalation or improves selection (side-effect metadata in the
+prompt, longer or sibling-expanded shortlists, confirmation guards), and at what cost in accuracy,
+confirmations and tokens?
+\end{itemize}
+
+\noindent Our contributions are:
+(1)~an empirical characterization of how real MCP catalogs expose agents to operations with
+stronger side effects than requested, and of how reliably servers annotate them;
+(2)~selection-time escalation metrics, led by the read-to-write rate, on a targeted benchmark of
+\NumQueries{} validated requests, with every flag labeled by the first author and a stratified subset double-rated blind by the
+second author and resolved by consensus, and the finding that automatic
+severity labels overstate escalation \EscOverstate-fold;
+(3)~an evaluation of retriever-only routing, LLM selection, operation metadata, sibling expansion
+and confirmation guards with three embedders and four open LLMs across catalogs of 200 to
+\NumPoolTools{} tools, under controlled candidate budgets, with accuracy, token and confirmation
+costs; and
+(4)~guidance for agent builders on retrieval, annotation use, confirmation policies and testing
+for side-effect errors before deployment.
+All code, data and labels are released.\footnote{\url{https://github.com/vineetho7/sideeffect-tool-selection}}

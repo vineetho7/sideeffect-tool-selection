@@ -1,0 +1,90 @@
+[
+ {
+  "id": "dc3aa3ed868",
+  "request": "Please save my nickname as 'Sarah' and set my mood to 'calm' so the system remembers these preferences for next time.",
+  "right": "spa.remember",
+  "right_desc": "Save a nickname, mood, or free-form preferences. The spa remembers them durably across sessions.",
+  "picked": "set_agent_memory",
+  "picked_desc": "Store or update ONE durable memory entry (key \u2192 value) for this user so context survives across sessions \u2014 preferences, prior conclusions, working context. Replace semantics per key (reusing a key overwrites it). Do NOT store a number you would later cite as a fact: financial figures come from data "
+ },
+ {
+  "id": "d9d622dbbd4",
+  "request": "Update the visual theme for my project using riddle UUID 5f4e3d2c1b0a9876 to a new palette named 'Ocean Blue' that sets the background color to '#007bff', the font name to 'Open Sans', and adjusts the primary button style to use rounded corners.",
+  "right": "palette_customize",
+  "right_desc": "Changes the palette (colors, fonts, button styles, background) of ONE Riddle, as a path => value map, e.g. {\"bgColor\": \"#ffffff\", \"font.name\": \"Roboto\"} - the paths are palette_get's or riddle://reference/palette/fields. Never affects another Riddle: a palette inherited from the account/project defa",
+  "picked": "update_design_system",
+  "picked_desc": "Updates a design system for a project. Use this tool when the user wants to change the overall visual theme, style, or branding of the application.\nThis includes configuring:\n- Color Palette: Presets, custom primary colors, and saturation levels.\n- Typography: Font families (e.g., Inter, Roboto, etc"
+ },
+ {
+  "id": "d5eef5eb2f7",
+  "request": "What is the current status of application abc123xyz?",
+  "right": "get_application_status",
+  "right_desc": "Read an application status for the consent-envelope candidate.",
+  "picked": "check_application_status",
+  "picked_desc": "Jobs \u2014 Check an application Worklittle is filling out: its status, which form fields are filled, and a live view link. Only the status completed means it was submitted."
+ },
+ {
+  "id": "d1245db5238",
+  "request": "Please update the checkout for order ID modmillennialdesigns-1001 to remove the gift item and recalculate the final total with any applicable taxes.",
+  "right": "update_checkout",
+  "right_desc": "Updates a checkout. Returns checkout details, including line items, totals, and any applicable discounts or taxes.\n\nPrices in the response are integers in the currency's ISO 4217 minor units, paired with\na currency code: {\"amount\": 600, \"currency\": \"USD\"} is $6.00 and {\"amount\": 2500,\n\"currency\": \"U",
+  "picked": "remove_order_item",
+  "picked_desc": "Remove a line item from an order. Recomputes the order total. Only allowed while the order is pending or confirmed; otherwise it fails with 409 CONFLICT \"Order lines can only be changed while the order is pending or confirmed\". Use get_order to find the order's externalId and the item's itemId. The "
+ },
+ {
+  "id": "d6544fb53f7",
+  "request": "Update the price for knowledge unit 'sensor-calibration-v2' to 0.50 dollars and enable the trial sale period.",
+  "right": "set_knowledge_price",
+  "right_desc": "Set what buyers pay for a knowledge unit your operator sells (requires auth, free). The price covers every version of the unit and carries over to revisions. price: dollars and cents (\"0.25\"), 0 for free, null for the platform default; at least $0.01 when paid, no cap. You keep the first $0.10 of ea",
+  "picked": "buy_knowledge_with_credits",
+  "picked_desc": "Spends money: buys a knowledge unit its seller priced from your operator's credits (requires auth; no wallet). Call it only when the user asked for this unit or approved the purchase \u2014 get_knowledge_full answers 402 with the price when a unit must be bought. It buys the listing: every version then r"
+ },
+ {
+  "id": "d5dbc953ebe",
+  "request": "Set up an email alert for the saved site with id 'dc-site-dallas-01' that notifies me whenever its DCPI score drops below 75.",
+  "right": "set_site_alert",
+  "right_desc": "Arm an email watch on a site you already saved (FREE with a key) \u2014 DC Hub emails you when that site\u2019s DCPI score, grid capacity, or nearby facilities move, so you don\u2019t have to keep re-checking. On the free tier the alert is delivered to your human\u2019s bound email (call bind_email first; notify_email ",
+  "picked": "alert_update",
+  "picked_desc": "Update an Alert (name, query, destination, threshold, or status). Only provided fields change. If `query` is provided it must still include at least one `query.any` mention term. Not metered. (requires a free Prowlo account \u2014 call it to get a signup link)"
+ },
+ {
+  "id": "d480245681a",
+  "request": "Show me the first page of saved templates that output as PDF, limited to 10 results per page.",
+  "right": "pictify_list_templates",
+  "right_desc": "List saved templates in your Pictify account with pagination and filtering. Templates are reusable HTML designs with {{variableName}} placeholders for dynamic content. Use this to discover available templates before rendering. Returns template names, IDs, dimensions, output formats, and pagination i",
+  "picked": "pictify_render_template",
+  "picked_desc": "Render a saved template with variable substitutions to produce an image or a PDF. This is also how you get a PDF out of Pictify: pass format: 'pdf'. For a multi-page PDF \u2014 one page per row of data, e.g. a run of invoices or certificates in a single file \u2014 pass variableSets instead of variables. WORK"
+ },
+ {
+  "id": "db99a493a85",
+  "request": "Upload the new Markdown content for the book with ID 'how-to-code-in-python' as version 3.0, using the changelog entry 'Fixed syntax highlighting errors in Chapter 2'.",
+  "right": "post_book_version",
+  "right_desc": "Upload a version of a book you authored. The content is stored as Markdown and becomes the new HEAD.",
+  "picked": "update_book",
+  "picked_desc": "Update a book: change status, rating, notes, or update reading progress (current page)."
+ },
+ {
+  "id": "d90e9010bf0",
+  "request": "Please restore the contact with ID '12345' that I accidentally soft-deleted earlier.",
+  "right": "contact_restore",
+  "right_desc": "Restore a soft-deleted contact",
+  "picked": "restore_change",
+  "picked_desc": "Undo a reviewed destructive change by restore_id within 30 days: deleted rows come back with their links, archived or overwritten fields revert, and inserted history rows are removed. Refuses if the record was edited since; repeats are no-ops. Call-time aliases: restore_food, restore_place, restore_"
+ },
+ {
+  "id": "d0160b8c68d",
+  "request": "Check my answer for question id uk.co.idvdeadline.site.q1 where I selected option 2 to see if I should proceed to the next step or get a verdict.",
+  "right": "checker_answer",
+  "right_desc": "Given a question id and the chosen option (its `choice` index), return the next question or the final verdict.",
+  "picked": "submit_practice_answer",
+  "picked_desc": "Records the signed-in student's answer to a multiple-choice practice question so it counts toward their Fiveable progress. Accepts a question id previously served by Fiveable MCP and returns whether the answer was correct plus the explanation."
+ },
+ {
+  "id": "de1b1c18b94",
+  "request": "Update the schedule with ID 'sch-9281' to reflect the new working hours from Monday through Friday, 9 AM to 5 PM EST, while keeping it private.",
+  "right": "update-schedule",
+  "right_desc": "[Auth Required] Update an existing agent schedule. Pass API key via X-Agent-Key header or Authorization: Bearer.",
+  "picked": "owner_set_schedule",
+  "picked_desc": "Only for business owners signed in to Awning. Replace weekly hours of the business, or of one staff member/room with resource_id. Existing bookings are kept."
+ }
+]

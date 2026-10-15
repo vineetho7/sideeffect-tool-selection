@@ -1,0 +1,67 @@
+{
+ "all": {
+  "tools": 107870,
+  "any_annotation": 0.6470381014183739,
+  "readOnlyHint_present": 0.6350421804023362,
+  "destructiveHint_present": 0.5291183832390841,
+  "readOnly_true_on_update_or_delete_named": 1400,
+  "readOnly_false_on_read_named": 2359,
+  "destructive_true_on_read_named": 315,
+  "delete_named_tools": 1887,
+  "delete_named_with_destructiveHint_true": 1169,
+  "delete_named_with_no_hint": 611,
+  "examples_readonly_true_on_write": [
+   "io.sqlguard/sqlguard::sqlguard_challenge",
+   "io.sqlguard/sqlguard::sqlguard_bind",
+   "io.sqlguard/sqlguard::sqlguard_buy",
+   "io.github.mcp-dir/removebg-mcp::connect",
+   "com.a2awire/benchmark-ap-exception-review-2026-09-10-run-037bea::data_session_funding_package",
+   "com.a2awire/benchmark-ap-exception-review-2026-09-10-run-037bea::onboard_start",
+   "ch.antevo/wealth::run_technical_analysis",
+   "io.github.mcp-dir/pref_rs_tres_coroas_cnd-mcp::connect",
+   "io.github.mcp-dir/mda_sead_dap-mcp::connect",
+   "io.github.cyanheads/exchange-rates-mcp-server::fx_dataframe_query",
+   "io.github.mcp-dir/certidao_debitos_pf-mcp::connect",
+   "io.github.pipeworx-io/arcgis-puyallup::polymarket_fill_risk",
+   "io.github.pipeworx-io/arcgis-puyallup::release_calendar_markets",
+   "com.a2awire/data-cybersecurity-news-breach-alert::onboard_start",
+   "com.a2awire/data-cybersecurity-news-breach-alert::data_session_funding_package"
+  ]
+ },
+ "sibling_group_tools": {
+  "tools": 25903,
+  "any_annotation": 0.6845925182411303,
+  "readOnlyHint_present": 0.6609273057174845,
+  "destructiveHint_present": 0.6027487163648998,
+  "readOnly_true_on_update_or_delete_named": 361,
+  "readOnly_false_on_read_named": 719,
+  "destructive_true_on_read_named": 123,
+  "delete_named_tools": 1639,
+  "delete_named_with_destructiveHint_true": 1062,
+  "delete_named_with_no_hint": 503,
+  "examples_readonly_true_on_write": [
+   "io.github.cyanheads/exchange-rates-mcp-server::fx_dataframe_query",
+   "io.github.zkp2p/peer::peer_indexer_intents_by_deposit_ids",
+   "io.github.zkp2p/peer::peer_indexer_delegations_by_deposit",
+   "io.github.zkp2p/peer::peer_market_explorer_deposit",
+   "io.github.zkp2p/peer::peer_stake_balance",
+   "io.github.zkp2p/peer::peer_stake_owner",
+   "io.github.zkp2p/peer::peer_cash_order",
+   "dev.workers.nadirventurelabs.agent-revenue-network/agent-revenue-network::json_normalize",
+   "io.orbitwan/orbitwan::prepare_bridge_to_earn",
+   "app.ottodata/otto::partner_my_trades",
+   "cc.thecolony/mcp-server::colony_wiki_recent_changes",
+   "io.github.cyanheads/bls-labor-mcp-server::bls_dataframe_query",
+   "com.lazyweb/discovery::lazyweb_install_mcp",
+   "xyz.558686.gpt55/token-gateway::gpt55_x402_paid_api_contract_test_suite",
+   "xyz.558686.gpt55/token-gateway::gpt55_x402_paid_mcp_authorization_bridge"
+  ]
+ },
+ "escalation_groups": 3489,
+ "escalation_groups_fully_annotated": 2327,
+ "op_source": {
+  "name": 79024,
+  "none": 17713,
+  "description": 11133
+ }
+}

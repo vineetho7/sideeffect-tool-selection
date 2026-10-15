@@ -1,0 +1,18 @@
+[
+ {
+  "query": "I need to request a challenge nonce so I can prove possession of my ed25519 public key before attempting to read any letters.",
+  "pred": "get_registration_challenge"
+ },
+ {
+  "query": "Can you show me all the webhooks currently registered for my io.github.FrankShen18/agentspub service?",
+  "pred": "manage_webhooks"
+ },
+ {
+  "query": "Reject the pending bid with ID 7f3a9c2b1e0d using my api key.",
+  "pred": "adspace_bid_cancel"
+ },
+ {
+  "query": "I need to purchase the 'atlas-data-exchange' datapack in the enterprise tier so I can use it for my project.",
+  "pred": "get_dataset"
+ }
+]

@@ -1,0 +1,4 @@
+probed 21699 ok 12997 ok_with_tools 12989 raw tools 212972
+[('HTTPError', 7584), ('URLError', 935), ('TimeoutError', 91), ('RuntimeError', 51), ('JSONDecodeError', 24), ('RemoteDisconnected', 17)]
+[('HTTPError: HTTP Error 401: Unauthorized', 4666), ('HTTPError: HTTP Error 429: Too Many Requests', 1539), ('HTTPError: HTTP Error 404: Not Found', 588), ('HTTPError: HTTP Error 400: Bad Request', 130), ('HTTPError: HTTP Error 502: Bad Gateway', 88), ('HTTPError: HTTP Error 503: Service Unavailable', 84), ('HTTPError: HTTP Error 500: Internal Server Error', 62), ('HTTPError: HTTP Error 307: Temporary Redirect', 62)]
+raw annotated 0.4740435362395057

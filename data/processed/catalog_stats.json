@@ -1,0 +1,241 @@
+{
+ "servers_unique": 8554,
+ "servers_duplicate_skipped": 361,
+ "servers_publisher_capped": 4074,
+ "publisher_cap": 25,
+ "tools": 107870,
+ "tools_with_description": 107806,
+ "op_from_name": 79024,
+ "op_from_description": 11133,
+ "op_unknown": 17713,
+ "op_dist": {
+  "read": 66954,
+  "null": 17713,
+  "create": 11927,
+  "update": 9389,
+  "destructive": 1887
+ },
+ "annotated_any": 69796,
+ "annotated_readonly_hint": 68502,
+ "annotated_destructive_hint": 57076,
+ "sibling_groups": 6363,
+ "tools_in_sibling_groups": 25903,
+ "servers_with_sibling_groups": 2495,
+ "escalation_capable_groups": 3489,
+ "group_size_dist": {
+  "3": 1461,
+  "2": 2535,
+  "4": 849,
+  "5": 522,
+  "6": 307,
+  "8": 529,
+  "7": 160
+ },
+ "publishers": 7150,
+ "top_publishers_by_tools": [
+  [
+   "io.github.whiteknightonhorse",
+   1408
+  ],
+  [
+   "io.github.davidmosiah",
+   1098
+  ],
+  [
+   "io.github.pipeworx-io",
+   1001
+  ],
+  [
+   "io.github.lonniev",
+   881
+  ],
+  [
+   "io.github.sadri-dridi",
+   775
+  ],
+  [
+   "co.ainumbers",
+   729
+  ],
+  [
+   "com.adbutler",
+   627
+  ],
+  [
+   "com.thetempleofdoom.osint-mcp",
+   457
+  ],
+  [
+   "ai.oobeprotocol.sap.mcp",
+   453
+  ],
+  [
+   "io.github.tresor4k",
+   446
+  ]
+ ],
+ "sibling_groups_by_publisher_top": [
+  [
+   "io.github.lonniev",
+   114
+  ],
+  [
+   "com.tttkmbb",
+   65
+  ],
+  [
+   "com.adbutler",
+   55
+  ],
+  [
+   "io.github.theluckystrike",
+   50
+  ],
+  [
+   "io.github.conquext",
+   49
+  ],
+  [
+   "co.ainumbers",
+   41
+  ],
+  [
+   "ai.oobeprotocol.sap.mcp",
+   40
+  ],
+  [
+   "io.usefulapi",
+   39
+  ],
+  [
+   "co.lovie",
+   39
+  ],
+  [
+   "cloud.theprotocol",
+   38
+  ]
+ ],
+ "top_resources": [
+  [
+   "enquiry",
+   351
+  ],
+  [
+   "agent",
+   120
+  ],
+  [
+   "project",
+   74
+  ],
+  [
+   "task",
+   64
+  ],
+  [
+   "order",
+   60
+  ],
+  [
+   "job",
+   58
+  ],
+  [
+   "product",
+   55
+  ],
+  [
+   "checker",
+   45
+  ],
+  [
+   "booking",
+   45
+  ],
+  [
+   "message",
+   43
+  ],
+  [
+   "listing",
+   41
+  ],
+  [
+   "post",
+   40
+  ],
+  [
+   "feedback",
+   40
+  ],
+  [
+   "webhook",
+   40
+  ],
+  [
+   "account",
+   38
+  ],
+  [
+   "domain",
+   37
+  ],
+  [
+   "document",
+   36
+  ],
+  [
+   "file",
+   35
+  ],
+  [
+   "contact",
+   34
+  ],
+  [
+   "session",
+   34
+  ],
+  [
+   "payment",
+   33
+  ],
+  [
+   "profile",
+   32
+  ],
+  [
+   "app",
+   31
+  ],
+  [
+   "template",
+   31
+  ],
+  [
+   "campaign",
+   30
+  ],
+  [
+   "service",
+   29
+  ],
+  [
+   "event",
+   28
+  ],
+  [
+   "watch",
+   28
+  ],
+  [
+   "image",
+   28
+  ],
+  [
+   "site",
+   27
+  ]
+ ]
+}

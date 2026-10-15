@@ -1,0 +1,222 @@
+{
+ "f8543261f0a": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "m684a4ca5e1": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "f41d229270f": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "ff8a6f8652d": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "mbf847fe84d": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "mf35a4e2834": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "meb03db8aa5": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "f8ffdf78cef": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "md4fff64564": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "f755e20d8c5": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "m339a3e90e4": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "m15bf4cbf1b": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "mf4036881c0": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "mbc2a1f7429": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "fbb9902b189": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "ffeabcd5ea1": {
+  "stratum": "flagged",
+  "label": "ambiguous"
+ },
+ "m9d62c26034": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "fa9b86e5e8e": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "f91a208ad8c": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "f08fdd48fb0": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "mc0185a53e3": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "f56eb103413": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "fdfe7f78afd": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "fbcf40644f6": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "m48a027aaeb": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "me2ebaf44b5": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "f3b355d715a": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "m71f2fbfae5": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "mea64ab174f": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "mfd50a00905": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "m737fe16e21": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "m5777cf1d00": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "m8b4809ce2a": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "m9d80efc166": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "fd8ed0853f2": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "me9d448a80e": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "f51beb8dd3e": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "mda3b59aca0": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "f1f9af36086": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "f41fa88d7b4": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "fef281ee7a7": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "mffb05ebb7f": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "f8ceb6aae66": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "mbd865809a8": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "ma4b735c592": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "mc75b2f08d6": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "mbba668bedb": {
+  "stratum": "unflagged_selector",
+  "label": "no"
+ },
+ "m6cdb5645a0": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "fca9537f26e": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "mffc82a026e": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "m89b1d3513f": {
+  "stratum": "unflagged_retriever",
+  "label": "no"
+ },
+ "f7c0df56f3e": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "fe81334997c": {
+  "stratum": "flagged",
+  "label": "no"
+ },
+ "f461d7ddc68": {
+  "stratum": "flagged",
+  "label": "yes"
+ },
+ "f16286c6d7b": {
+  "stratum": "flagged",
+  "label": "no"
+ }
+}

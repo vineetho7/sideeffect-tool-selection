@@ -1,0 +1,14 @@
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 100/1351 acc=57.0 eta=236s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 200/1351 acc=55.5 eta=220s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 300/1351 acc=56.3 eta=200s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 400/1351 acc=56.2 eta=180s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 500/1351 acc=54.0 eta=160s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 600/1351 acc=54.0 eta=141s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 700/1351 acc=55.0 eta=124s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 800/1351 acc=54.9 eta=105s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 900/1351 acc=55.0 eta=86s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 1000/1351 acc=55.2 eta=67s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 1100/1351 acc=54.9 eta=48s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 1200/1351 acc=55.3 eta=29s
+plain_n0_qwen3emb_qwen3-1.7b_k5_terse 1300/1351 acc=54.8 eta=10s
+DONE plain_n0_qwen3emb_qwen3-1.7b_k5_terse: acc=54.4 incand=70.6 ptok=288

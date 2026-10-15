@@ -1,0 +1,40 @@
+{
+ "flagged_n": 25,
+ "flagged_first_yes": 7,
+ "flagged_adj_yes": 10,
+ "unflagged": {
+  "yes": 3,
+  "n": 24,
+  "rate": 0.125,
+  "ci": [
+   0.04344255039315584,
+   0.3100428814785757
+  ]
+ },
+ "unflagged_raw_second": {
+  "yes": 8,
+  "n": 24,
+  "rate": 0.3333333333333333,
+  "ci": [
+   0.17971978688379642,
+   0.5329404050591954
+  ]
+ },
+ "changed_flagged": [
+  "pc1c06d9df3",
+  "pfa2daed1d9",
+  "p7a429730ec",
+  "p90bcd323e6",
+  "p03888ed365"
+ ],
+ "unflagged_dropped_unsure": [
+  "pa5ee418bf8"
+ ],
+ "unflagged_adj_yes": 3,
+ "unflagged_n": 24,
+ "unflagged_rate": 0.125,
+ "unflagged_rate_ci": [
+  0.04344255039315584,
+  0.3100428814785757
+ ]
+}

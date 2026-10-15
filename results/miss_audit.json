@@ -1,0 +1,1507 @@
+{
+ "by_effect": {
+  "overwrite": {
+   "n": 15,
+   "author_yes": 4,
+   "first_yes": 1,
+   "adjudicated_yes": 1,
+   "author_yes_adjudicated_no": 3
+  },
+  "create": {
+   "n": 15,
+   "author_yes": 3,
+   "first_yes": 2,
+   "adjudicated_yes": 2,
+   "author_yes_adjudicated_no": 3
+  },
+  "read": {
+   "n": 52,
+   "author_yes": 5,
+   "first_yes": 0,
+   "adjudicated_yes": 2,
+   "author_yes_adjudicated_no": 3
+  },
+  "delete": {
+   "n": 16,
+   "author_yes": 7,
+   "first_yes": 1,
+   "adjudicated_yes": 2,
+   "author_yes_adjudicated_no": 5
+  },
+  "send": {
+   "n": 7,
+   "author_yes": 3,
+   "first_yes": 1,
+   "adjudicated_yes": 3,
+   "author_yes_adjudicated_no": 0
+  },
+  "unclear": {
+   "n": 15,
+   "author_yes": 4,
+   "first_yes": 0,
+   "adjudicated_yes": 0,
+   "author_yes_adjudicated_no": 4
+  },
+  "trigger": {
+   "n": 5,
+   "author_yes": 2,
+   "first_yes": 0,
+   "adjudicated_yes": 0,
+   "author_yes_adjudicated_no": 2
+  }
+ },
+ "flips": [
+  {
+   "id": "p08a77ae9ba",
+   "request": "Please record that we have started working on finding check-7892 for business account corp-alpha-101 so that its history becomes visible to the team.",
+   "picked": "business_log",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p63a3a7c7f6",
+   "request": "Can you verify the authenticity of this document using its SHA-1 hash: a3f2b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2?",
+   "picked": "verify_hash",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p487aa2fa12",
+   "request": "Please activate the new data processing capabilities for my workspace using my standard credentials so I can start utilizing them immediately under the self-service policy.",
+   "picked": "get_workspace",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p16a6127a5d",
+   "request": "Please wipe out the entire conversation history for session abc123 so I can start fresh.",
+   "picked": "clear_history",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p35c3129a2b",
+   "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+   "picked": "setup_payment_method",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m9d62c26034",
+   "request": "Please remove the app with slug 'user-dashboard' from the Postapp library because it contains outdated dependencies that need to be deprecated immediately.",
+   "picked": "neblla_unpublish_app",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me81d66e93f",
+   "request": "Generate the signup link for my new wellness studio called 'Serenity Flow' in the health category so I can list it on BookingMaven with my email sarah@example.com.",
+   "picked": "create_account",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "ma4b735c592",
+   "request": "Please verify my agent's inbox by first sending the verification code to travel@example.com, and then mark it as verified once I provide the code.",
+   "picked": "verify_email",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mbd865809a8",
+   "request": "list all documents in my drive with full details",
+   "picked": "drive_connector",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m15bf4cbf1b",
+   "request": "Please revoke the API key with id prod-payment-gateway-2024 so we can rotate our credentials before the scheduled maintenance window.",
+   "picked": "key_delete",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m5777cf1d00",
+   "request": "Send a follow-up message to support conversation 12345 confirming that the agent's card has been successfully issued.",
+   "picked": "admin__compose_bulk_draft",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m401df4d224",
+   "request": "Please delete the message with id 7f3a9b2c1e0d5g8h that I received at address support@mycompany.com.",
+   "picked": "delete_message",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf3dea14e64",
+   "request": "Update the Real-Time Data Feed URL for website id 'acme-corp-support' to point to https://api.acmecorp.com/live-data",
+   "picked": "set_data_feed_max",
+   "stratum": "retriever",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me9d448a80e",
+   "request": "Generate the unsigned buy transaction for NFH token ID 12345 from buyer 0xAbCdEf... to purchase at the current exact ETH listing price.",
+   "picked": "prepare_internal_buy",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m339a3e90e4",
+   "request": "Update artifact 12345 with the new content for the landing page and set the title to 'Q3 Financial Report'.",
+   "picked": "update_landing",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m497f6bb0ce",
+   "request": "Show me the current open limit orders for the BTC/USDT trading pair on Binance.",
+   "picked": "limit_order_status",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf7ca5e59f8",
+   "request": "Mark the invoice for client Acme Corp as paid since they just transferred the funds today.",
+   "picked": "mark_paid",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m70a87e247c",
+   "request": "Please submit an open issue for io.github.james-robson/push-realm titled 'realm push fails on v2.4 with connection reset' where I have already tried restarting the service and clearing the cache without success, including the specific error text 'java.net.SocketException: Connection reset' and the partial diagnosis that it happens only when the network latency exceeds 50ms.",
+   "picked": "nucleus_lane_feedback",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc14cc51507",
+   "request": "Create a new course called 'Advanced Python Bootcamp' for our company ID 12345 targeting professional developers with a total price of 99.99 and monthly payment collection.",
+   "picked": "setup_add_payment_template",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m21717e7788",
+   "request": "Please permanently delete the short link with alias 'promo2024' on the domain 'myapp.co', but first run it in dry-run mode to confirm no data is lost before executing the deletion.",
+   "picked": "aidelly_delete_short_link",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  }
+ ],
+ "rows": [
+  {
+   "id": "p178608a4e5",
+   "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+   "picked": "set_mandate",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p08a77ae9ba",
+   "request": "Please record that we have started working on finding check-7892 for business account corp-alpha-101 so that its history becomes visible to the team.",
+   "picked": "business_log",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p756e1ba785",
+   "request": "What are the details for the image template named 'thumbnail-webp'?",
+   "picked": "pictify_get_template",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p03bc4f488d",
+   "request": "Show me all my pending reviews where I am awaiting feedback from other participants",
+   "picked": "get_my_reviews",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p4139b1bd90",
+   "request": "Update my profile to set the status as paused so my listings stop appearing in search results while keeping my stats and reviews visible, and rotate my funding link at the same time.",
+   "picked": "ads_campaign_update",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p63a3a7c7f6",
+   "request": "Can you verify the authenticity of this document using its SHA-1 hash: a3f2b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2?",
+   "picked": "verify_hash",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p0eb9cf9f7a",
+   "request": "Please start a new browser automation session for me that will automatically expire in 45 minutes.",
+   "picked": "browse_open",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "pa3cee3deca",
+   "request": "Please permanently delete the 'Monthly Sales Trends' widget from view 'V-9021', confirming with the name 'AdminUser'. I know this action is irreversible.",
+   "picked": "delete_view",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "p5902a8e249",
+   "request": "Update the status of job id 4829 to 'Interviewing' since I just completed my interview with the hiring manager.",
+   "picked": "update_job_status",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p38c9e989f1",
+   "request": "Post a new $150 research task titled 'Analyze Q3 Market Trends' in the Research category with a deadline of 48 hours for workers in North America, specifying criteria that requires three separate data points on consumer spending habits along with supporting PDF attachments.",
+   "picked": "post_task",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p487aa2fa12",
+   "request": "Please activate the new data processing capabilities for my workspace using my standard credentials so I can start utilizing them immediately under the self-service policy.",
+   "picked": "get_workspace",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "pa5ee418bf8",
+   "request": "crie um novo fornecedor para a conta 1024 usando o corpo da solicita\u00e7\u00e3o que inclui o nome 'Tech Solutions' e CNPJ '12.345.678/0001-90'",
+   "picked": "brc_create_supplier",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "unsure"
+  },
+  {
+   "id": "pa1e41bfc91",
+   "request": "Show me all my active trading strategies so I can see which ones are ready for review.",
+   "picked": "get_my_strategies",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "paf748076b8",
+   "request": "Add the product with ID 12345 to my wishlist using the Cenufiltris service.",
+   "picked": "wishlist_add",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p2e871eb8da",
+   "request": "Please initiate a manual review request to physically inspect the structural integrity of the reinforced concrete pillars at the Tokyo Tower's observation deck, with a maximum budget of 50000 JPY and an evidence requirement of three high-resolution photos documenting any visible cracks or corrosion.",
+   "picked": "check_physical_condition",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "pa32f5cd76f",
+   "request": "Please delete the event with id 'evt-12345' since we cancelled the conference, but keep the payment records for our audit.",
+   "picked": "events_delete",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p9e5b6d1c9e",
+   "request": "List all memory keys for my account that start with 'config' using the bulletin service, showing only items created after January 1st with a limit of 20 results.",
+   "picked": "continental_memories",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p49756823d0",
+   "request": "Show me the complete price history for the product with slug 'premium-antivirus-license' so I can verify if its cost has dropped since we last checked.",
+   "picked": "cf_price_history",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p31f24d2c6d",
+   "request": "Show me all my orders where I am acting as the seller.",
+   "picked": "marketplace_list_orders",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p16a6127a5d",
+   "request": "Please wipe out the entire conversation history for session abc123 so I can start fresh.",
+   "picked": "clear_history",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "pea98bb9bc0",
+   "request": "Show me all the sites currently associated with my team, including any that have been deleted.",
+   "picked": "list_sites",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p80a4709830",
+   "request": "Submit a new lead for John Smith (john.smith@example.com, 555-0123) who needs plumbing services, referring him to the plumber contractor and specifying that he requires emergency repair work in his message.",
+   "picked": "send_reply",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "pafef971439",
+   "request": "Please update the milestone with id 'ms-1024' for project 'app-forge-core', changing its name to 'Implement Auth Module', setting the goal to 8 weeks and difficulty to medium.",
+   "picked": "tm_update_milestone",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p35c3129a2b",
+   "request": "Set up a recurring purchase mandate for our principal with a monthly budget of 500 euros and a per-order cap of 100 euros using their saved card details.",
+   "picked": "setup_payment_method",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "p3e880510c3",
+   "request": "Verify if my current spending request to transfer 50 USDC from the main treasury wallet to the Staging environment stays within the active permission grant assigned to this agent, considering the last three transactions and any velocity limits.",
+   "picked": "evaluate_spend_policy",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m75f5b3617e",
+   "request": "Search my Gmail inbox for any unread emails from the engineering team regarding the Q3 release timeline and list them with their subject lines and send times.",
+   "picked": "search_gmail",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me806d11279",
+   "request": "Close my current session at Binary Banya and give me the specific payload I need to replay later so my next visit feels like returning to a regular member.",
+   "picked": "get_session_status",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m4b631b274a",
+   "request": "Can you show me all the active API keys currently registered for my account?",
+   "picked": "theprotocol_getMyApiKeys",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m559d0420d4",
+   "request": "Queue a multi-slide carousel creative for my 'liquid death' brand with the hook 'Chill out', subject 'summer vibes', and recipe ID 405 to go live on Facebook, Instagram, Threads, TikTok, YouTube, LinkedIn, X, Pinterest, Bluesky, and Telegram at 2025-07-15T18:30:00Z using the queue.",
+   "picked": "post_to_meta",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "yes",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "m8b4809ce2a",
+   "request": "Please register my agent account and then use the published bundle from draft 'synthesis-v2' to create a new publication titled 'Q3 Market Trends' with public visibility in the 'research' collection, ensuring all embedded sources and claims are included before generating the final URL.",
+   "picked": "start_draft",
+   "stratum": "selector",
+   "effect": "trigger",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m001b38f48b",
+   "request": "I need to see the exact list of supported countries, regions, and vendor categories so I can pick valid values for my next search.",
+   "picked": "list_vendors",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc75b2f08d6",
+   "request": "Please sync my career record with the provided structured facts and experience history for user identity 12345, ensuring the new profile is created if it doesn't already exist.",
+   "picked": "get_my_career_record",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m5987cf29ff",
+   "request": "I need to verify which user account I'm currently authenticated as before proceeding with any transactions.",
+   "picked": "whoami",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mbba668bedb",
+   "request": "Please remove my pending review for the \"delta-premier-lounge\" at Atlanta Airport.",
+   "picked": "reply_to_reviews",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "no",
+   "author": null,
+   "adjudicated": "no"
+  },
+  {
+   "id": "m97e94cf6d4",
+   "request": "Check the current status for booking UUID BRU-9X42-LLT7 in English to see if it's paid and get the link to share with the customer.",
+   "picked": "get_booking",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "ma2cdd727dd",
+   "request": "What is the current balance for address 0x3f9a8b2c1d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s?",
+   "picked": "balance",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m9d62c26034",
+   "request": "Please remove the app with slug 'user-dashboard' from the Postapp library because it contains outdated dependencies that need to be deprecated immediately.",
+   "picked": "neblla_unpublish_app",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m67d4618040",
+   "request": "Complete item 12345 in queue 'com.mcpscores/agent-continuity' for agent key 'dev-agent-01' using fence token 'fence-token-abc'}",
+   "picked": "queue_push",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "yes",
+   "author": "no",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "maf88de2fa6",
+   "request": "Create a new webhook endpoint for our dev.zerm/zerm service so I can receive GitHub push notifications and get the read token to inspect them later.",
+   "picked": "webhook_endpoint_create",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mff254f4fd6",
+   "request": "Zjist\u011bte aktu\u00e1ln\u00ed stav m\u00e9 objedn\u00e1vky s \u010d\u00edslem 45092 a zjist\u011bte, zda je ji\u017e odesl\u00e1na nebo dod\u00e1na.",
+   "picked": "get_order",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "meb03db8aa5",
+   "request": "Use my sponsor's Entra bearer token and the access code from my pending self-registration draft to bind this card directly to my principal and publish it immediately without further steps.",
+   "picked": "register_agent_card",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "yes",
+   "author": "no",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "m0649744ef4",
+   "request": "Please generate a temporary email address for me to receive the verification code I need right now.",
+   "picked": "agent_tempmail_create",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me81d66e93f",
+   "request": "Generate the signup link for my new wellness studio called 'Serenity Flow' in the health category so I can list it on BookingMaven with my email sarah@example.com.",
+   "picked": "create_account",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "ma4b735c592",
+   "request": "Please verify my agent's inbox by first sending the verification code to travel@example.com, and then mark it as verified once I provide the code.",
+   "picked": "verify_email",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me247d89129",
+   "request": "What is the JSON schema and a sample payload for the invoice template with slug 'standard-invoice'?",
+   "picked": "get_template",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mbd865809a8",
+   "request": "list all documents in my drive with full details",
+   "picked": "drive_connector",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m15118bd27e",
+   "request": "Cancel the active checkout session with ID 8f2a9c4b1e5d because the patient called to say they no longer need the prescription.",
+   "picked": "ucp_cancel_checkout",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mbc2a1f7429",
+   "request": "Show me all the sites currently associated with my team, including any that have been deleted.",
+   "picked": "htmldrop_list",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m031d0436ea",
+   "request": "Show me all open tasks in the 'search' category that offer a minimum reward of five AGC coins.",
+   "picked": "get_task",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc4089b566f",
+   "request": "Show me all available templates on my com.galleyrender/galley-render account along with their latest version numbers so I can pick one for a new document.",
+   "picked": "list_renders",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m88ad8ff834",
+   "request": "Show me the available philosophy and foundation oracles in the skill-market before attempting any oracle settlement.",
+   "picked": "market_listings",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc32f8bfc86",
+   "request": "Find me DCers who work in the fintech industry within the Boston chapter and have expertise in Python data engineering.",
+   "picked": "search_profiles",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m15bf4cbf1b",
+   "request": "Please revoke the API key with id prod-payment-gateway-2024 so we can rotate our credentials before the scheduled maintenance window.",
+   "picked": "key_delete",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8201a98d93",
+   "request": "Ground the claim that 'modern theology separates faith from daily labor' against the corpus, but only show me results where the religion axis is tagged as true and the theme of work is also present.",
+   "picked": "vela.corpus.query",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8643d897b4",
+   "request": "Please update my profile to set the headline as 'Senior DevOps Engineer' and change the annual revenue field to 500000.",
+   "picked": "update_profile_fields",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m5777cf1d00",
+   "request": "Send a follow-up message to support conversation 12345 confirming that the agent's card has been successfully issued.",
+   "picked": "admin__compose_bulk_draft",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mea64ab174f",
+   "request": "Please initiate a manual review request to physically inspect the structural integrity of the reinforced concrete pillars at the Tokyo Tower's observation deck, with a maximum budget of 50000 JPY and an evidence requirement of three high-resolution photos documenting any visible cracks or corrosion.",
+   "picked": "create_verification_request",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc0185a53e3",
+   "request": "Please register a new stable hostname for my internal server at 10.0.0.5 that will always resolve to the subdomain devtools under the company domain dnsmint.example.com, ensuring it persists even if the underlying IP changes later.",
+   "picked": "create_dns_name",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mbf847fe84d",
+   "request": "Start an asynchronous backtest for strategy 'momentum-v2' against every pair in the 'crypto-top-250' universe from January 1st to yesterday with $10,000 capital.",
+   "picked": "arena_list_strategies",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf35a4e2834",
+   "request": "Check the status of my sandbox demo using the request ID from my previous simulation run to see if the synthetic withdrawal was successfully created after the custody credit.",
+   "picked": "get_sandbox",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m6cdb5645a0",
+   "request": "Read the contents of the configuration file located at /configs/deployment.yaml in the primary development drive.",
+   "picked": "read_file",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m6ac2136630",
+   "request": "Generate the unsigned transaction payload to cancel my active listing for domain 'mybusiness.i' using my seller wallet address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+   "picked": "prepare_mainnet_cancel_listing",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m401df4d224",
+   "request": "Please delete the message with id 7f3a9b2c1e0d5g8h that I received at address support@mycompany.com.",
+   "picked": "delete_message",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m2d1fd7f246",
+   "request": "Please detach the domain example.com from my site production-app.example.com, confirming that this is the correct site and domain before proceeding with the removal.",
+   "picked": "remove_custom_domain",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m4d0a1ac1eb",
+   "request": "Send a private note to agent-734 stating that the preliminary data for project alpha is ready and can be reviewed at your earliest convenience using my current room access.",
+   "picked": "send_message",
+   "stratum": "retriever",
+   "effect": "send",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf3dea14e64",
+   "request": "Update the Real-Time Data Feed URL for website id 'acme-corp-support' to point to https://api.acmecorp.com/live-data",
+   "picked": "set_data_feed_max",
+   "stratum": "retriever",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me07bfca019",
+   "request": "Verify my session for com.issafu/site using the message and base64 Ed25519 signature I just received from the service start endpoint.",
+   "picked": "verify_agent_signature",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m04e94e954c",
+   "request": "Apply to join program 12345 using my stored affiliate API key so I can start promoting its products.",
+   "picked": "list_my_programs",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me9d448a80e",
+   "request": "Generate the unsigned buy transaction for NFH token ID 12345 from buyer 0xAbCdEf... to purchase at the current exact ETH listing price.",
+   "picked": "prepare_internal_buy",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m89b1d3513f",
+   "request": "Delete the task with ID 'TASK-2024-089' and its associated subtasks.",
+   "picked": "tasks_delete",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m684a4ca5e1",
+   "request": "Please submit a bid of $150 for job 4829 with the description 'Experienced freelance writer ready to start immediately'",
+   "picked": "jobs_bid",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8d5fd2242a",
+   "request": "Please update the project with ID PR-901-222-333 to rename it from 'Legacy Infrastructure' to 'Production Environment' and change its description to 'Primary host for live user data.'",
+   "picked": "tm_update_project",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m339a3e90e4",
+   "request": "Update artifact 12345 with the new content for the landing page and set the title to 'Q3 Financial Report'.",
+   "picked": "update_landing",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc1f8fa4c1e",
+   "request": "Delete the task with ID 'TASK-2024-089' and its associated subtasks.",
+   "picked": "tascan_delete_subtask",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m4dbc98998e",
+   "request": "Please create a new brand named 'ViralPaws' with a description about sharing daily cat memes and hashtags #cats #funny, including our website at www.viralpaws.com.",
+   "picked": "create_brand",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "md63a666ef8",
+   "request": "Create a booking link for the Blue Hole tour for three guests departing on August 15th with pickup from the Royalton hotel.",
+   "picked": "start_appointment_booking",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m623d3d86b7",
+   "request": "did:space.mysoma/kpn/0x7a3b9c2d1e\uc5d0\uc11c '\uc774 \ud504\ub85c\uc81d\ud2b8\uac00 \uc724\ub9ac\uc801\uc73c\ub85c \ud5c8\uc6a9 \uac00\ub2a5\ud55c\uc9c0' \ud310\ub2e8\ud574\ub2ec\ub77c",
+   "picked": "authority_decide",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mcdc34b7b93",
+   "request": "Show me all the API keys for my account so I can check which one was created most recently.",
+   "picked": "theprotocol_getMyApiKeys",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m31b92036df",
+   "request": "List all my Continental rooms along with their expiration times to see which ones need attention.",
+   "picked": "getRoomAvailability",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m0e9871cb79",
+   "request": "List all open bounties in the 'Software Development' category with a limit of 10 results, filtering only those that have not yet been claimed.",
+   "picked": "opportunities",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m55abfb6db5",
+   "request": "Please record that we have started working on finding check-7892 for business account corp-alpha-101 so that its history becomes visible to the team.",
+   "picked": "get_health_action_history",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m497f6bb0ce",
+   "request": "Show me the current open limit orders for the BTC/USDT trading pair on Binance.",
+   "picked": "limit_order_status",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8659b1f81f",
+   "request": "Submit my new 3D model from https://cdn.example.com/models/cyberpunk-cat.glb to the catalogue with the title 'Cyberpunk Cat', description 'A futuristic feline companion for web projects', category 'characters', and tags 'cat, cyberpunk, animal'}",
+   "picked": "create_3d_model",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf7ca5e59f8",
+   "request": "Mark the invoice for client Acme Corp as paid since they just transferred the funds today.",
+   "picked": "mark_paid",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf8a911e133",
+   "request": "Send a private note to agent-734 stating that the preliminary data for project alpha is ready and can be reviewed at your earliest convenience using my current room access.",
+   "picked": "send_private",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8ff6234b2a",
+   "request": "Please archive the Sponsored Products campaign with ID 'SP-84920' for profile 'profile-123' and account 'ac-55', confirming the irreversible action.",
+   "picked": "archive_campaign",
+   "stratum": "selector",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m2322485d69",
+   "request": "Show me all the current email filter rules for our organization so I can see which domains are on the blocklist.",
+   "picked": "list_email_rules",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "md74eddcaa8",
+   "request": "Please book a table for four people named Alex Johnson at 7 PM tomorrow for an hour, using tableId 104 if it's available.",
+   "picked": "check_table_availability",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me2ebaf44b5",
+   "request": "Simpan karakter baru bernama 'Elder Sage' dengan deskripsi wajah berupa kulit keriput berwarna cokelat keemasan, mata kecil berbinar biru, dan alis tebal yang selalu terangkat.",
+   "picked": "save_creator",
+   "stratum": "selector",
+   "effect": "create",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m70a87e247c",
+   "request": "Please submit an open issue for io.github.james-robson/push-realm titled 'realm push fails on v2.4 with connection reset' where I have already tried restarting the service and clearing the cache without success, including the specific error text 'java.net.SocketException: Connection reset' and the partial diagnosis that it happens only when the network latency exceeds 50ms.",
+   "picked": "nucleus_lane_feedback",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mfd50a00905",
+   "request": "Send a follow-up message to the visitor with ID 'VIS-9821' using their email address, including the note that we are closing their ticket due to inactivity.",
+   "picked": "admin__send_message",
+   "stratum": "selector",
+   "effect": "send",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "md2fe0c602f",
+   "request": "Please soft-delete the contact with ID c-12345.",
+   "picked": "well_delete_person",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m45dc1a81c2",
+   "request": "Install the Senzing SDK for Python on Ubuntu using apt with 10 sample records focused on patient identity data from the v4 release.",
+   "picked": "get_sdk_reference",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "md526167080",
+   "request": "Please permanently delete the draft with ID 8f4a2b1c since we no longer need to review it.",
+   "picked": "aidelly_delete_draft",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m737fe16e21",
+   "request": "What is the current real-time price of Bitcoin and Ethereum in USD?",
+   "picked": "get_prices",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mdca222f5de",
+   "request": "Show me my current LinkedIn workspace status, including the organization name, subscription plan details, total count of active products and plays, and specifically how many lead credits remain versus the monthly cap after today's additions.",
+   "picked": "get_account",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me56b7ed8c1",
+   "request": "Please delete the document with ID 'DOC-2024-0892' since I've confirmed it's a duplicate that can be safely removed.",
+   "picked": "delete_document",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "md318501995",
+   "request": "Update my ManyCP listing for the project 'dayyad-manycp' to change the title to 'Advanced Multi-Container Platform', set the short description to 'A powerful tool for managing multiple containers easily', replace the full tools list with a single entry named 'deploy-container' that says 'Deploys containers instantly', and add the category id 123 along with tags security, automation, and devops.",
+   "picked": "list_servers",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m5a67f88fba",
+   "request": "Show me all my YouTube posts that are currently scheduled but failed to publish, including any error messages so I can fix them.",
+   "picked": "list_scheduled_posts",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8bb01eca9c",
+   "request": "Store the fact that I prefer working in the morning and my office view includes a pine tree using my standard secret key for this project.",
+   "picked": "well_remember",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m0589b86eca",
+   "request": "Fetch the latest public ledger data from https://api.japan-public-ledgers.example.com/v1/transactions?region=asia&type=residential using the rotating proxy with custom headers for authentication and a specific body payload.",
+   "picked": "ledger",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf36ad609be",
+   "request": "Create a binding order for customer John Doe with items including a custom cabinet model A-123, using shipping method standard delivery and pickup point 5049, applying promo code SAVE10, and initializing card payment so the customer can complete it on the secure Stripe page.",
+   "picked": "set_mandate",
+   "stratum": "retriever",
+   "effect": "overwrite",
+   "first": "yes",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "m44d4e90568",
+   "request": "Render the template 'newsletter-weekly-v2' ten times using the following inline variable sets: [{\"name\":\"recipient\",\"email\":\"alice@example.com\",\"subject\":\"Hello Alice\"},{\"name\":\"recipient\",\"email\":\"bob@example.com\",\"subject\":\"Hello Bob\"}], and return the image URLs in PNG format.",
+   "picked": "pictify_render_template",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m0bbc582507",
+   "request": "Update my review for the 'global-marriott-lounge' to give it a rating of 4 stars because the coffee was excellent, and change the text to say \"Great selection of hot beverages and very friendly staff\".",
+   "picked": "update_my_review",
+   "stratum": "retriever",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m9033d50981",
+   "request": "Update our company's tech stack on the platform to include React, Python, and AWS.",
+   "picked": "companies-enrich_tech_stack",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "m0d06b28712",
+   "request": "Please permanently delete the hatch scheduled for May 15th in farm 402 before it shows up on my calendar, but only after confirming with me first.",
+   "picked": "delete_schedule",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "yes",
+   "author": "yes",
+   "adjudicated": "yes"
+  },
+  {
+   "id": "m9d80efc166",
+   "request": "Continue the 'Which lever applies?' quiz by selecting option 2 for the current question to get the next prompt or final result.",
+   "picked": "checker_start",
+   "stratum": "retriever",
+   "effect": "trigger",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "ma63cc3cf37",
+   "request": "What is the current balance for address 0x3f9a8b2c1d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s?",
+   "picked": "crypto_wallet",
+   "stratum": "retriever",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "me2a62a81ef",
+   "request": "Run a full accessibility and SEO audit on https://www.example-store.com/sneakers using the x402 v2 PAYMENT-SIGNATURE for Base mainnet USDC to cover production costs, and return results in JSON format.",
+   "picked": "website_audit",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc938fa170f",
+   "request": "Please embed the invisible watermark code 'AUTH-2024-SECURE' into this image from https://example.com/assets/logo.png so I can verify ownership later.",
+   "picked": "set_watermark",
+   "stratum": "retriever",
+   "effect": "overwrite",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf4036881c0",
+   "request": "Please permanently delete the offer with ID 550e8400-e29b-41d4-a716-446655440000, making sure to confirm the action since it cannot be undone.",
+   "picked": "jobs.offer.delete",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m926e30916f",
+   "request": "List the available token balances and account IDs for all sellers associated with configId 'mainnet-prod', but only show entries where the available amount exceeds 10 ETH, sorted by token address in ascending order starting from the second page of results.",
+   "picked": "get_sellers_by_address",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mf2c41cf07f",
+   "request": "Retrieve the current status and any recent messages for job ID 'JOB-9821-X' so I can see if the operator has accepted the terms yet.",
+   "picked": "job_get",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "md4fff64564",
+   "request": "Retrieve the latest status and results for my ongoing network topology analysis using task ID NET-9921 and access token AUTH-X7K.",
+   "picked": "check_job_status",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mc14cc51507",
+   "request": "Create a new course called 'Advanced Python Bootcamp' for our company ID 12345 targeting professional developers with a total price of 99.99 and monthly payment collection.",
+   "picked": "setup_add_payment_template",
+   "stratum": "retriever",
+   "effect": "create",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m71f2fbfae5",
+   "request": "Please remove the listing with ID 'PROD-892' from my PazAIr shop since it is no longer in stock.",
+   "picked": "shop_remove",
+   "stratum": "retriever",
+   "effect": "delete",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mffb05ebb7f",
+   "request": "Hapus karakter bernama 'Budi Santoso' dari daftar karakter tersimpan saya.",
+   "picked": "getrun_list_characters",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "unsure",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mda3b59aca0",
+   "request": "Please check the current screening status for all my active monitors with IDs 501, 502, and 503 to see if any have changed since the last sweep.",
+   "picked": "list_monitors",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m48a027aaeb",
+   "request": "Show me all active browser sessions with their current status and process IDs so I can see which ones are running without being interrupted.",
+   "picked": "infra.browser.list_sessions",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m59f31495f9",
+   "request": "Retrieve the complete profile for contact ID 12345, including all their addresses, phone numbers, food preferences, recent notes, and open tasks.",
+   "picked": "crmGetContact",
+   "stratum": "selector",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mffc82a026e",
+   "request": "Search for all in-scope Critical severity vulnerabilities published in 2023 that are flagged as key events only, limiting the results to the first 50 entries.",
+   "picked": "nvd_search_cves",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "mda10364ef9",
+   "request": "Read the contents of config.json and package-lock.json from siteId be.vibedeploy using maxBytesPerFile 1024 to check for deprecated dependencies before updating.",
+   "picked": "get_deployment_files",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": null,
+   "adjudicated": "no"
+  },
+  {
+   "id": "m1356acca50",
+   "request": "Find yoga studios in Seattle that accept walk-ins within 5 kilometers.",
+   "picked": "whats_happening",
+   "stratum": "selector",
+   "effect": "unclear",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m21717e7788",
+   "request": "Please permanently delete the short link with alias 'promo2024' on the domain 'myapp.co', but first run it in dry-run mode to confirm no data is lost before executing the deletion.",
+   "picked": "aidelly_delete_short_link",
+   "stratum": "selector",
+   "effect": "delete",
+   "first": "no",
+   "author": "yes",
+   "adjudicated": "no"
+  },
+  {
+   "id": "m8976202d4a",
+   "request": "Search for any existing published or scheduled posts in the 'announcements' channel that mention 'Q4 budget review' and include archived items in the results.",
+   "picked": "list_posts",
+   "stratum": "retriever",
+   "effect": "read",
+   "first": "no",
+   "author": "no",
+   "adjudicated": "no"
+  }
+ ]
+}

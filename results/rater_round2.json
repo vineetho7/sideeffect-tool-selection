@@ -1,0 +1,11 @@
+{
+ "n": 92,
+ "agreement": 0.7934782608695652,
+ "kappa": 0.16761904761904745,
+ "first_yes": 5,
+ "first_n": 100,
+ "second_yes": 20,
+ "second_answered": 98,
+ "second_unsure": 6,
+ "disagreements": 27
+}

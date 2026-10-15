@@ -1,0 +1,129 @@
+\subsection{Tool corpus}
+We snapshot the official MCP registry~\cite{mcpregistry} on 5~October~2026
+(\NumRegistry{} latest-version server entries). \NumCandidates{} entries advertise a
+streamable-HTTP endpoint that requires no API-key header. For each we send only the
+protocol handshake and \texttt{tools/list}; no tool is invoked. \NumRespondingServers{} servers
+answer, returning \NumRawTools{} tool definitions (of the rest, \NumFailAuth{} refuse with HTTP 401
+and \NumFailRate{} are rate-limited). We drop servers whose tool set is identical to one already kept, and
+cap every publisher namespace at 25 servers: two publishers alone had generated thousands of
+near-identical wrapper servers. The resulting catalog has \NumCatTools{} tools from
+\NumCatServers{} servers and \NumPublishers{} publishers.
+
+\subsection{Operation profiles and sibling groups}
+We assign each tool a side-effect severity on a four-level, study-specific scale:
+\emph{read}~(0) returns information only; \emph{create}~(1) adds state or sends something;
+\emph{update}~(2) mutates existing state, executes, pays or starts/stops; \emph{destructive}~(3)
+deletes, revokes or overwrites irreversibly. The scale orders consequences for a typical request;
+we do not claim every create is safer than every update.
+
+\emph{Rule profile.} The tool name is split into tokens; the first unambiguous verb from a lexicon
+of about 400 verbs sets the class, with noun-like verbs (\texttt{issue}, \texttt{post},
+\texttt{order}) accepted only in leading position and the description's first verb as fallback.
+The resource is the first noun after the verb, singularised and alias-normalised
+(\texttt{repo}$\rightarrow$\texttt{repository}).
+\emph{System profile.} A decisive annotation (\texttt{readOnlyHint=true} or
+\texttt{destructiveHint=true}) overrides the rule; otherwise the rule stands. It costs no model
+call.
+A \emph{sibling group} is a set of at least two tools on one server sharing a resource and
+covering at least two severities; it is \emph{escalation-capable} if it contains a read tool and
+an update or destructive tool. Such groups often also hold create tools, and read-to-write counts a
+create as a write.
+
+\emph{Validation.} An AI assistant working under the first author's direction, not one of the evaluated
+models, labeled the true operation of a seeded sample of \NumAuditTools{} tools stratified by rule
+class, and we compare profiles against those labels (Table~\ref{tab:profiles}). On \RaterToolN{} of
+these tools the first author's blind labels agree with the assistant's on \RaterToolAgree\,\%
+($\kappa=\RaterToolKappa$), so Table~\ref{tab:profiles} compares profilers with one another more
+reliably than it measures their absolute accuracy.
+
+\subsection{Requests}
+From the escalation-capable groups we draw 700 with at most three per server and six per
+publisher. For each group we target its read tool and up to two of its stronger tools. A
+generator (Qwen3.5-9B) sees the target and its siblings and writes one request that only the
+target fulfils, without naming it; requests containing a tool name or identifier are discarded.
+A validator from a different model family (Gemma3-12B) then routes each request among the shuffled
+siblings; we keep a request only if it picks the target. This yields \NumQueries{} requests
+(\NumQueriesRead{} generated for a read target, \NumQueriesWrite{} for create, update or destructive
+targets) over \NumQueryServers{} servers. By the reference severity of the target, \ReadReqs{} are
+reads; read-to-write uses this count. Validating within the sibling group makes each request unambiguous
+\emph{among the tools that matter}, so measured escalations are not artefacts of vague requests.
+
+\subsection{Reference severities}
+Escalation is scored with a reference severity independent of the system profile: Gemma3-12B
+classifies the tool from its name and description, and a decisive annotation overrides it.
+Against these LLM-assisted labels the reference reaches \RefExact{}\,\% exact agreement
+($\kappa=\RefKappa$).
+
+\subsection{Catalogs, retrievers and selectors}
+Experiments run on a \NumPoolTools{}-tool study pool: every tool of the
+\NumQueryServers{} servers behind the requests, plus seeded random servers. A per-request catalog
+of size $N$ always installs the target's whole server, as a user who connected that server would,
+then adds other pool servers in seeded random order. We vary $N$ over 200, 1,000, 5,000 and \NumPoolTools{} tools; for the 20 requests whose server alone exceeds 200 tools (4 above 1,000), the
+catalog is that server.
+Each tool is indexed as its name, description and parameter names. We compare four retrievers,
+BM25, MiniLM-L6~\cite{sbert}, BGE-base~\cite{bge} and Qwen3-Embedding-0.6B~\cite{qwen3emb}, with
+exact cosine search for the dense ones; the top $k{=}5$ go to the selector. Selectors are Qwen3.5-9B, Gemma3-12B, Phi-4-14B and Qwen3-1.7B, four open models from three
+families (Q4, Ollama, temperature 0), prompted to return one tool name or \texttt{NONE}.
+
+\subsection{Selection variants}
+\begin{itemize}
+\item \textbf{plain}: top-$k$ names and descriptions.
+\item \textbf{native}: plain plus each server's own annotation, when present
+(\texttt{[READ-ONLY]}, \texttt{[DESTRUCTIVE]}, \texttt{[WRITE]}).
+\item \textbf{tags}: plain plus the system profile's tag on every candidate, and an instruction
+not to exceed the requested side effect.
+\item \textbf{sibling}: tags, plus \emph{sibling expansion} (each candidate's sibling group is
+added, up to $k{+}10$ tools) and \emph{intent ordering}: an intent profiler, the same LLM asked
+for \texttt{read|create|update|delete}, puts candidates whose severity matches first.
+\item \textbf{expand} and \textbf{expand+tags} (ablations, Qwen3.5 only): sibling expansion in plain
+similarity order, without and with tags, and without intent ordering.
+\end{itemize}
+\textbf{Escalation guard.} After any variant, if the chosen tool's system severity exceeds the
+intent's severity by at least $\tau$, the selection is held for user confirmation.
+We compare five policies: any increase, an increase of two or more levels, a read-guard (read
+requests may not run update or destructive tools), a destructive-guard, and the union of the last
+two. The intent is inferred by the selector's own LLM (Qwen3.5 for retriever-only routing), asked
+for \texttt{read|create|update|delete}; requests whose intent cannot be parsed (under 2.5\,\%) are
+never held.
+
+\subsection{Metrics}
+Let $s(\cdot)$ be the reference severity, $g$ the target and $p$ the selected tool. All metrics are
+\emph{end to end}: a request whose target the retriever never shortlists counts as wrong even though
+the selector never saw the target (Section~\ref{sec:split} separates the stages). We measure
+\emph{selection-time potential} escalation: the tool chosen, not executed.
+\textbf{Read-to-write rate}, the primary safety outcome: the share of read requests whose selected
+tool is a verified escalation, that is, would create, send, overwrite, start or delete something;
+the \textbf{side-effect escalation rate} \seer $=\Pr[p\neq g \wedge s(p)>s(g)]$, the broader secondary
+metric, computed automatically with the reference or over verified escalations only;
+\textbf{exact accuracy} $=\Pr[p=g]$, and \textbf{coarse operation-equivalence accuracy}, which also
+accepts a tool on another server with the same operation, resource and severity (diagnostic only:
+tenant, scope and parameters can still differ);
+\textbf{unblocked \seer} counts selected escalations the guard would let through;
+\textbf{hold rate} and \textbf{needless holds} ($p=g$ but held) measure the guard's cost;
+\textbf{Exposure@k} is, for read requests, the share whose top-$k$ shortlist contains an update or
+destructive tool.
+
+\textbf{Human labels.} The reference and the system profile both err, so a flag counts only when a
+human confirms that the selected tool would create, send, overwrite, start or delete more than the
+request asked for; we call such escalations \emph{verified}. The first author labeled every flagged (request, tool) pair in the runs we report (all top-5 and
+candidate-budget selection runs at 1,000 and \NumPoolTools{} tools, and Qwen3-Embedding top-1 at
+all four catalog sizes),
+blind to model and variant. The second author, who took no part in building the benchmark or the
+first labeling pass, served as independent rater: blind to source, model, variant and the first
+author's labels, this rater labeled a seeded sample of 55 items: 25 flagged pairs and 30 unflagged wrong picks,
+15 from LLM selection and 15 from retriever-only routing, at most one per request. Both followed
+the same written rubric: a pick escalates if, beyond what was asked, it would create a record;
+send, submit or post something; overwrite or change a value; start a workflow, job, payment or
+purchase; or delete or cancel something, judged from the tool's description, not from a
+server's \texttt{destructiveHint} alone. After agreement was computed, the two reviewed every disagreement together
+against the full tool descriptions; a label changed only if both agreed, otherwise the case is
+\emph{ambiguous}. The consensus is the final label on the double-rated items.
+
+\textbf{Sensitivity estimate.} The reference can also \emph{miss} escalations (a wrong pick whose
+reference severity is not higher). We estimate the total rate as verified \seer plus the missed share
+times the number of unflagged wrong picks, separately for LLM selection and retriever-only routing,
+with the missed share from the consensus sample (Jeffreys estimate, so a zero count still yields a
+range). Its 95\,\% range comes from a two-stage bootstrap: servers are resampled as clusters, and the
+missed share is redrawn from its posterior. Selector estimates use plain-prompt runs and the retriever estimate its top-1, where the
+samples were drawn. Other intervals are 95\,\% Wilson; accuracy differences between variants use paired exact
+McNemar tests.

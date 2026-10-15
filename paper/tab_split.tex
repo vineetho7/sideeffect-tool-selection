@@ -1,0 +1,9 @@
+\begin{table}[t]\centering\caption{Retrieval versus selection at 30,000 tools (plain prompt). In list: target in the top five. Acc.\,|\,in: selector accuracy when it is. Escalations are verified counts with the target in or out of the list (terse: not human-labeled); NONE: share of missing-target requests the selector declined.}\label{tab:split}
+\footnotesize\setlength{\tabcolsep}{2.5pt}\begin{tabular}{lrrrrrr}\toprule
+selector & in list & acc.\,|\,in & acc. & esc.\,in & esc.\,out & NONE\\\midrule
+Qwen3.5 & 90.0 & 86.4 & 77.8 & 2 & 2 & 22 \\
+Gemma3 & 90.0 & 82.2 & 74.0 & 2 & 3 & 19 \\
+Qwen3-1.7B & 90.0 & 82.5 & 74.2 & 1 & 5 & 22 \\
+Qwen3.5, terse & 70.6 & 83.4 & 58.9 & -- & -- & 22 \\
+Qwen3-1.7B, terse & 70.6 & 77.0 & 54.4 & -- & -- & 35 \\
+\bottomrule\end{tabular}\end{table}

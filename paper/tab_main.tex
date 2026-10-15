@@ -1,0 +1,29 @@
+\begin{table}[t]\centering\caption{End-to-end selection at \NumPoolTools{} tools over the Qwen3-Emb shortlist (top five unless stated; \NumQueries{} requests). Acc.\ any: correct, or an equivalent tool (same operation, resource and severity) on another server; diagnostic only. Esc.\ auto: escalation by the automatic reference; verified: human-confirmed escalations; guard: verified escalations the any-increase guard would let through (it holds the share in \emph{held}). Tok.: mean selector-prompt tokens (intent call excluded). exp.+tags: expand+tags; matched: count-matched plain shortlist.}\label{tab:main}
+\setlength{\tabcolsep}{1.6pt}\footnotesize
+\begin{tabular}{llrrrrrrr}\toprule
+ & & \multicolumn{2}{c}{accuracy} & \multicolumn{3}{c}{escalation (\%)} & & \\
+selector & variant & exact & any & auto & verified & guard & held & tok.\\\midrule
+Qwen3.5-9B & plain & 77.8 & 82.0 & 1.88 & 0.29 & 0.07 & 16.8 & 309 \\
+Qwen3.5-9B & matched & 79.7 & 83.9 & 1.59 & 0.29 & 0.07 & 17.0 & 583 \\
+Qwen3.5-9B & native & 78.8 & 82.8 & 2.09 & 0.36 & 0.07 & 17.0 & 350 \\
+Qwen3.5-9B & tags & 78.5 & 82.5 & 2.38 & 0.36 & 0.07 & 17.2 & 350 \\
+Qwen3.5-9B & expand & 80.7 & 85.1 & 1.52 & 0.22 & 0.14 & 17.2 & 575 \\
+Qwen3.5-9B & exp.+tags & 81.1 & 85.4 & 1.44 & 0.22 & 0.14 & 16.6 & 632 \\
+Qwen3.5-9B & sibling & 81.0 & 85.6 & 1.73 & 0.29 & 0.14 & 16.7 & 632 \\
+Qwen3.5-9B & top-10 & 78.7 & 82.8 & 1.88 & 0.29 & 0.00 & 17.3 & 517 \\
+Qwen3.5-9B & top-15 & 79.4 & 83.7 & 1.73 & 0.29 & 0.07 & 17.2 & 727 \\
+\midrule
+Gemma3-12B & plain & 74.0 & 78.8 & 2.53 & 0.36 & 0.07 & 14.9 & 319 \\
+Gemma3-12B & matched & 73.2 & 78.6 & 2.45 & 0.72 & 0.29 & 14.4 & 608 \\
+Gemma3-12B & tags & 74.5 & 79.1 & 1.95 & 0.22 & 0.07 & 14.6 & 360 \\
+Gemma3-12B & sibling & 78.5 & 83.0 & 1.95 & 0.22 & 0.07 & 15.2 & 658 \\
+\midrule
+Phi-4 & plain & 75.6 & 79.6 & 2.02 & 0.43 & 0.07 & 15.5 & 302 \\
+Phi-4 & matched & 73.9 & 77.6 & 1.66 & 0.14 & 0.07 & 14.9 & 574 \\
+Phi-4 & sibling & 78.2 & 83.0 & 1.59 & 0.29 & 0.00 & 15.0 & 623 \\
+\midrule
+Qwen3-1.7B & plain & 74.2 & 78.9 & 2.67 & 0.43 & 0.07 & 19.6 & 310 \\
+Qwen3-1.7B & matched & 74.0 & 78.4 & 1.73 & 0.14 & 0.07 & 19.6 & 583 \\
+Qwen3-1.7B & tags & 74.4 & 79.0 & 1.80 & 0.14 & 0.00 & 18.8 & 352 \\
+Qwen3-1.7B & sibling & 73.4 & 78.2 & 2.89 & 0.36 & 0.14 & 19.1 & 631 \\
+\bottomrule\end{tabular}\end{table}

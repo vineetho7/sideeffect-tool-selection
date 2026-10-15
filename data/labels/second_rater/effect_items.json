@@ -1,0 +1,282 @@
+[
+ {
+  "id": "e026f93419f",
+  "request": "Check if artist 12345 qualifies for Dynamoi distribution or tell me their current application status",
+  "picked": "dynamoi_apply_for_distribution"
+ },
+ {
+  "id": "e755e20d8c5",
+  "request": "Show me the replies to post 12345 sorted by oldest first so I can read the thread context before responding.",
+  "picked": "accept_reply"
+ },
+ {
+  "id": "e781d27dd3a",
+  "request": "Show me the current status of my notifications, including which channels are active, any pending email changes that need confirmation, required proofs, and when updates will expire.",
+  "picked": "notifications_update"
+ },
+ {
+  "id": "ebd68019e77",
+  "request": "Please write the updated configuration for the main application settings to the path /etc/app/config.yaml in the production drive, overwriting any existing version with these new values.",
+  "picked": "edit_app"
+ },
+ {
+  "id": "e994e4818a1",
+  "request": "Show me the latest 10 questions I've asked that are currently in the pending state.",
+  "picked": "cancel_question"
+ },
+ {
+  "id": "eec501b7c83",
+  "request": "Please pause the current application run so that no new jobs are applied while keeping any already sent applications active.",
+  "picked": "pause_stream"
+ },
+ {
+  "id": "ef8a6f8652d",
+  "request": "Publish my new landing page as an HTML file with the slug 'company-new-product' and title 'Next Gen Analytics Dashboard' so I can share the link with the client.",
+  "picked": "update_landing"
+ },
+ {
+  "id": "e91a208ad8c",
+  "request": "Find the schedule ID for the 'Advanced Python' class led by trainer Ivan Novak at location 123 on Tuesdays.",
+  "picked": "sessions_update"
+ },
+ {
+  "id": "ebb9902b189",
+  "request": "Continue the prescription price check flow for my query with id 12345 by selecting option 'c' as my answer.",
+  "picked": "submit_enquiry"
+ },
+ {
+  "id": "e95f8061257",
+  "request": "Register a new agent named 'data-ingestion-worker-01' that handles CSV parsing, supports the 'langchain' framework, runs on 'llama3', and points to 'https://ingest.example.com/a2a'.",
+  "picked": "llm_set_model"
+ },
+ {
+  "id": "e70ab1016af",
+  "request": "List all unpaid invoices for the merchant in USD with the newest ones first, showing the last 10 results.",
+  "picked": "deleteInvoice"
+ },
+ {
+  "id": "ef797db0b37",
+  "request": "Show me all the current email filter rules for our organization so I can see which domains are on the blocklist.",
+  "picked": "createFilter"
+ },
+ {
+  "id": "ecfdf07f19e",
+  "request": "Show me the current list of stock symbols on my DalalOS watchlist.",
+  "picked": "remove_from_watchlist"
+ },
+ {
+  "id": "eb39d32c01d",
+  "request": "Show me all my current viral alerts for the viral-outliers service so I can audit which TikTok and Instagram profiles are being watched and check their confirmation status.",
+  "picked": "create_viral_alert"
+ },
+ {
+  "id": "e11b491daac",
+  "request": "Compare our current scan at https://myapp.example.com against the competitor site at https://competitor.example.net and show me a side-by-side breakdown of up to ten pages.",
+  "picked": "start_comparison"
+ },
+ {
+  "id": "e570b506b98",
+  "request": "Show me the current status of my inbox webhook, including its URL, whether it's verified, the secret key for verifying signatures, and how many times it has failed in a row.",
+  "picked": "inbox_create"
+ },
+ {
+  "id": "ef040bc0a37",
+  "request": "Please schedule a new TikTok post for my viral-cat brand with the caption 'Just dropped! \ud83d\udc31' to go live on December 12th at 6:00 PM, and make sure to exclude all hashtags from this one.",
+  "picked": "plan_week"
+ },
+ {
+  "id": "ea67ddca64b",
+  "request": "Show me the current channel style details for project 'framesail-demo' and channel ID 'cha-9021', including whether the script prompt is available, and let me know if any reference images have changed since the last analysis.",
+  "picked": "style_edit"
+ },
+ {
+  "id": "e3dfe7a292c",
+  "request": "Reject the pending bid with ID 7f3a9c2b1e0d using my api key.",
+  "picked": "adspace_bid_cancel"
+ },
+ {
+  "id": "ec92078feaa",
+  "request": "Submit a new lead for John Smith (john.smith@example.com, 555-0123) who needs plumbing services, referring him to the plumber contractor and specifying that he requires emergency repair work in his message.",
+  "picked": "tradepilot_service_outreach_email_draft"
+ },
+ {
+  "id": "edd3fc8bba5",
+  "request": "Set up a webhook subscription on the Base network for agent 101 to receive live pot snapshots every five minutes at https://myapp.io/webhooks/flipr",
+  "picked": "delete_webhook"
+ },
+ {
+  "id": "e0eeba6f529",
+  "request": "Show me all the rooms I have currently saved as favorites.",
+  "picked": "add_favorite"
+ },
+ {
+  "id": "e63092454b9",
+  "request": "Show me all available skills on the Harbor Market for the com.rustyonmars/harbor service.",
+  "picked": "market_post"
+ },
+ {
+  "id": "e836c21dedb",
+  "request": "Save the job opening with ID 'senior-backend-engineer-12345' that I just saw in my notifications to my job journey.",
+  "picked": "boost_job"
+ },
+ {
+  "id": "ef75bb62d2a",
+  "request": "What is the status of my library purchase for the 'openwakeword' engine using token 'x7k9m2p5'? Once paid, I need the download URL templates for every available format.",
+  "picked": "buy_library_model"
+ },
+ {
+  "id": "eca9537f26e",
+  "request": "Fetch the latest public ledger data from https://api.japan-public-ledgers.example.com/v1/transactions?region=asia&type=residential using the rotating proxy with custom headers for authentication and a specific body payload.",
+  "picked": "x402_proxy"
+ },
+ {
+  "id": "e12da09fc19",
+  "request": "Find the schedule ID for the 'Advanced Python' class led by trainer Ivan Novak at location 123 on Tuesdays.",
+  "picked": "create_schedule"
+ },
+ {
+  "id": "e0425e71ede",
+  "request": "What are the current public coordination notes for the org.ainglish/ainglish service?",
+  "picked": "publish_skill"
+ },
+ {
+  "id": "e45e03ad3e7",
+  "request": "Create a new Telegram draft for the topic 'weekly tech roundup' in English using the modern style preset and channel ID 12345, then show me the generated image preview.",
+  "picked": "preview_post"
+ },
+ {
+  "id": "e0829a4774a",
+  "request": "Mark event 12345 as going",
+  "picked": "unmark_going"
+ },
+ {
+  "id": "efdc891fef2",
+  "request": "How many credits would I spend if I quote a generation for a 10-second clip using the Seedance model in text-to-video mode without any enhancement, but first I need to upload my external reference video?",
+  "picked": "seedance_jobs_create"
+ },
+ {
+  "id": "e028455de5a",
+  "request": "Read the oldest message in the thread with ID thread-9012 that was started on artifact proj-alpha-v3.",
+  "picked": "unarchive_thread"
+ },
+ {
+  "id": "e5416402c9e",
+  "request": "Show me the replies to post 12345 sorted by oldest first so I can read the thread context before responding.",
+  "picked": "reply_to_post"
+ },
+ {
+  "id": "e41d229270f",
+  "request": "Show me how the invoice template with id INV-2024-001 will look when populated with customer John Doe and amount 500 dollars",
+  "picked": "send_invoice"
+ },
+ {
+  "id": "e02b757de69",
+  "request": "Show me the full daily report from overwing.ai so I can see all the details included in a complete site analysis before I run any checks.",
+  "picked": "beacon_start"
+ },
+ {
+  "id": "e7d6889b039",
+  "request": "Show me all my saved search alerts with their IDs, names, and creation times so I can review which ones are still relevant.",
+  "picked": "delete_alert"
+ },
+ {
+  "id": "e379efb966a",
+  "request": "Can you show me all the webhooks currently registered for my io.github.FrankShen18/agentspub service?",
+  "picked": "manage_webhooks"
+ },
+ {
+  "id": "eedbb2ae018",
+  "request": "Show me all the sites currently associated with my team, including any that have been deleted.",
+  "picked": "delete_site"
+ },
+ {
+  "id": "ebcf40644f6",
+  "request": "What is the current status of application abc123xyz?",
+  "picked": "neblla_archive_app"
+ },
+ {
+  "id": "e461d7ddc68",
+  "request": "Check the status of my pending route optimization job using my API key and provide the optimized route details if it is complete.",
+  "picked": "startOptimization"
+ },
+ {
+  "id": "eebccd6fdc3",
+  "request": "Please join the room with id 'io.github.SecondStageTurbine/exmachina-ai' so I can start posting my findings there.",
+  "picked": "room_create"
+ },
+ {
+  "id": "e0b560cda60",
+  "request": "Continue the quiz for question id 12345 by selecting option B and tell me if I am correct or what the next step is.",
+  "picked": "submit_practice_answer"
+ },
+ {
+  "id": "e386d4bd866",
+  "request": "Create a limit buy order for 10 units of BTC/USDT on Coinbase at the price of $65,000.",
+  "picked": "place_cc_order"
+ },
+ {
+  "id": "ea02d3882c9",
+  "request": "Show me the current status of my inbox webhook, including its URL, whether it's verified, the secret key for verifying signatures, and how many times it has failed in a row.",
+  "picked": "delete_webhook"
+ },
+ {
+  "id": "e37f35753df",
+  "request": "Set up a webhook subscription on the Base network for agent 101 to receive live pot snapshots every five minutes at https://myapp.io/webhooks/flipr",
+  "picked": "flipr_withdraw"
+ },
+ {
+  "id": "e41fa88d7b4",
+  "request": "Close the Salesforce CRM connector now since we are shutting down our sales reporting dashboard for today.",
+  "picked": "logout_all"
+ },
+ {
+  "id": "ebe299d526f",
+  "request": "Purchase a new storage plan for 2048 bytes containing the base64 string 'SGVsbG8gV29ybGQ=' with the label 'temporary-note'",
+  "picked": "storage_replace"
+ },
+ {
+  "id": "ecfdd9ed8ac",
+  "request": "Generate the voiceover audio for project com.framesail/framesail using block IDs 'blk-001', 'blk-002' and the TTS model 'neural-v4' with dry run enabled to preview the changes before committing.",
+  "picked": "voiceover_edit"
+ },
+ {
+  "id": "e1f9af36086",
+  "request": "Read the contents of config.json and package-lock.json from siteId be.vibedeploy using maxBytesPerFile 1024 to check for deprecated dependencies before updating.",
+  "picked": "update_site"
+ },
+ {
+  "id": "eafae7d13bd",
+  "request": "Send a private note to agent-734 stating that the preliminary data for project alpha is ready and can be reviewed at your earliest convenience using my current room access.",
+  "picked": "city_room_post"
+ },
+ {
+  "id": "e54d977d527",
+  "request": "Please upload the initial interview guide for project com.zernote/zernote-project-123 with an intro explaining the study, a notes template, and a single required block titled 'Background' containing opening questions.",
+  "picked": "guides_edit"
+ },
+ {
+  "id": "e8ffdf78cef",
+  "request": "Lock a 15-minute USDC price for documentId 'DOC-2024-X9' by verifying the sender address at '123 Tech Park Blvd, San Francisco, CA' and the recipient address at '456 Innovation Way, Austin, TX', then provide the resulting payment URL so my wallet can execute an in-band x402 payment.",
+  "picked": "settlement.nl"
+ },
+ {
+  "id": "e2869d3468d",
+  "request": "Show me all the shortlists I currently own so I can review what providers are saved for my infrastructure needs.",
+  "picked": "create_list"
+ },
+ {
+  "id": "edfdc6fa371",
+  "request": "What is the JSON schema and a sample payload for the invoice template with slug 'standard-invoice'?",
+  "picked": "create_template"
+ },
+ {
+  "id": "e7ae5dfb1b0",
+  "request": "Add these tickers to my DalalOS watchlist: RELIANCE, TCS, INFY",
+  "picked": "remove_from_watchlist"
+ },
+ {
+  "id": "eac95d92e9e",
+  "request": "Create a new chess arena match for agent x402 that requires a $0.10 USDC entry fee payment on-chain to activate ownership.",
+  "picked": "submit_move"
+ }
+]

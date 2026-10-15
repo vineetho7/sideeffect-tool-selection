@@ -1,0 +1,9 @@
+{
+ "ref_exact": 0.8233333333333334,
+ "ref_kappa": 0.7482743334810968,
+ "ref_read_vs_write": 0.93,
+ "ref_under": 0.03,
+ "ref_over": 0.14666666666666667,
+ "gemma_only_exact": 0.81,
+ "gemma_only_kappa": 0.7336614541150085
+}

@@ -1,0 +1,10 @@
+[2026-10-13 23:28:06] select matched-k gemma3:12b
+[23:29:07] paused at 0% free
+[2026-10-13 23:38:09] select matched-k qwen3:1.7b
+[2026-10-13 23:45:49] skip gemma3:12b: 46% free < 50%
+[2026-10-13 23:45:49] select matched-k phi4:14b
+[2026-10-14 00:46:23] references
+[2026-10-14 00:46:40] done
+[2026-10-14 23:26:18] select matched-k gemma3:12b
+[2026-10-15 00:23:21] references
+[2026-10-15 00:23:35] done

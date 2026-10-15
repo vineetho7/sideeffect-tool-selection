@@ -1,0 +1,12 @@
+Tool selection research asks whether the right tool was found; operators also need to know how
+bad the wrong one is. On \NumCatTools{} tools from the public MCP registry, a tool's nearest neighbour on its own server is usually a sibling
+that differs only in its side effect, and the top
+retrieved tool (Qwen3-Embedding) is an escalation for 1.5 to 1.9\,\% of requests by verified count at every catalog
+size from 200 to \NumPoolTools{} tools, and for \RWRetRate\,\% of read requests is a tool that writes. LLM selection lowers escalation but does not remove it, prompt-level side-effect metadata barely
+changes the choice, a sibling-aware shortlist improves accuracy, for two of three larger selectors well beyond a plain shortlist of the same length, and a guard bounds the remainder at a
+confirmation cost set by its policy. Automatic severity labels, inherited from the ecosystem's
+annotations, are mostly false alarms, and two raters
+agree only slightly on what counts as an escalation before a joint review, so escalation must be measured with
+human labels, double-rated at least on a sample, and reported with its dependence on the rater. We release the corpus, the benchmark, the labels and
+the profilers so that tool-search systems can report the escalation they introduce, verified,
+alongside the recall they achieve.

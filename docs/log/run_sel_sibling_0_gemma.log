@@ -1,0 +1,14 @@
+sibling_n0_qwen3emb_gemma3-12b_k5 100/1386 acc=69.0 eta=8165s
+sibling_n0_qwen3emb_gemma3-12b_k5 200/1386 acc=73.0 eta=71679s
+sibling_n0_qwen3emb_gemma3-12b_k5 300/1386 acc=75.3 eta=44939s
+sibling_n0_qwen3emb_gemma3-12b_k5 400/1386 acc=73.5 eta=31361s
+sibling_n0_qwen3emb_gemma3-12b_k5 500/1386 acc=73.0 eta=23111s
+sibling_n0_qwen3emb_gemma3-12b_k5 600/1386 acc=72.0 eta=17496s
+sibling_n0_qwen3emb_gemma3-12b_k5 700/1386 acc=73.4 eta=13371s
+sibling_n0_qwen3emb_gemma3-12b_k5 800/1386 acc=73.9 eta=11280s
+sibling_n0_qwen3emb_gemma3-12b_k5 900/1386 acc=73.6 eta=10590s
+sibling_n0_qwen3emb_gemma3-12b_k5 1000/1386 acc=72.4 eta=8754s
+sibling_n0_qwen3emb_gemma3-12b_k5 1100/1386 acc=72.8 eta=6211s
+sibling_n0_qwen3emb_gemma3-12b_k5 1200/1386 acc=73.8 eta=3758s
+sibling_n0_qwen3emb_gemma3-12b_k5 1300/1386 acc=73.8 eta=1626s
+DONE sibling_n0_qwen3emb_gemma3-12b_k5: acc=73.2 incand=92.5 ptok=658

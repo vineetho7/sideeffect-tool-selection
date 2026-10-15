@@ -1,0 +1,17 @@
+expand_n0_qwen3emb_qwen3.5-latest_k5          acc 80.7 -> 85.1  wrong 230 other-server 200 equivalent 61
+expandtags_n0_qwen3emb_qwen3.5-latest_k5      acc 81.1 -> 85.4  wrong 234 other-server 206 equivalent 59
+matched_n0_qwen3emb_qwen3.5-latest_k5         acc 79.7 -> 83.9  wrong 251 other-server 201 equivalent 59
+native_n0_qwen3emb_qwen3.5-latest_k5          acc 78.8 -> 82.8  wrong 260 other-server 217 equivalent 56
+plain_n0_qwen3emb_gemma3-12b_k5               acc 74.0 -> 78.8  wrong 316 other-server 266 equivalent 67
+plain_n0_qwen3emb_phi4-14b_k5                 acc 75.6 -> 79.6  wrong 250 other-server 201 equivalent 55
+plain_n0_qwen3emb_qwen3-1.7b_k5               acc 74.2 -> 78.9  wrong 295 other-server 236 equivalent 64
+plain_n0_qwen3emb_qwen3.5-latest_k10          acc 78.7 -> 82.8  wrong 264 other-server 217 equivalent 56
+plain_n0_qwen3emb_qwen3.5-latest_k15          acc 79.4 -> 83.7  wrong 263 other-server 208 equivalent 59
+plain_n0_qwen3emb_qwen3.5-latest_k5           acc 77.8 -> 82.0  wrong 266 other-server 216 equivalent 59
+sibling_n0_qwen3emb_gemma3-12b_k5             acc 78.5 -> 83.0  wrong 272 other-server 239 equivalent 63
+sibling_n0_qwen3emb_phi4-14b_k5               acc 78.2 -> 83.0  wrong 260 other-server 222 equivalent 66
+sibling_n0_qwen3emb_qwen3-1.7b_k5             acc 73.4 -> 78.2  wrong 297 other-server 244 equivalent 67
+sibling_n0_qwen3emb_qwen3.5-latest_k5         acc 81.0 -> 85.6  wrong 240 other-server 212 equivalent 63
+tags_n0_qwen3emb_gemma3-12b_k5                acc 74.5 -> 79.1  wrong 318 other-server 266 equivalent 64
+tags_n0_qwen3emb_qwen3-1.7b_k5                acc 74.4 -> 79.0  wrong 280 other-server 217 equivalent 64
+tags_n0_qwen3emb_qwen3.5-latest_k5            acc 78.5 -> 82.5  wrong 268 other-server 221 equivalent 55

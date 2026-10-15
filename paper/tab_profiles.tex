@@ -1,0 +1,8 @@
+\begin{table}[t]\centering\caption{Operation profilers against 300 tools labeled by an AI assistant, not human ground truth (\%). Under = severity underestimated, the unsafe direction.}\label{tab:profiles}
+\footnotesize\setlength{\tabcolsep}{3pt}\begin{tabular}{lrrrr}\toprule
+profiler & exact & $\kappa$ & read/write & under\\\midrule
+name rules & 80.3 & 0.73 & 85.3 & 4.0\\
+annot.\,+\,rules (system) & 83.7 & 0.77 & 92.0 & 3.3\\
+Qwen3.5 LLM & 84.0 & 0.77 & 94.3 & 6.7\\
+Gemma3\,+\,annot. (reference) & 82.3 & 0.75 & 93.0 & 3.0\\
+\bottomrule\end{tabular}\end{table}

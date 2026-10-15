@@ -1,0 +1,218 @@
+{
+ "expand_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 267,
+  "none_or_unparsed": 0.04868913857677903,
+  "target_not_shortlisted": 0.3895131086142322,
+  "same_operation_other_server": 0.41947565543071164,
+  "other": 0.12359550561797752,
+  "sibling": 0.018726591760299626
+ },
+ "expandtags_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 262,
+  "target_not_shortlisted": 0.3969465648854962,
+  "same_operation_other_server": 0.4312977099236641,
+  "other": 0.1297709923664122,
+  "none_or_unparsed": 0.022900763358778626,
+  "sibling": 0.019083969465648856
+ },
+ "matched_n0_qwen3emb_phi4-14b_k5": {
+  "errors": 362,
+  "none_or_unparsed": 0.1685082872928177,
+  "target_not_shortlisted": 0.24861878453038674,
+  "other": 0.16022099447513813,
+  "same_operation_other_server": 0.39226519337016574,
+  "sibling": 0.03038674033149171
+ },
+ "matched_n0_qwen3emb_qwen3-1.7b_k5": {
+  "errors": 361,
+  "none_or_unparsed": 0.08310249307479224,
+  "target_not_shortlisted": 0.24930747922437674,
+  "sibling": 0.04709141274238227,
+  "same_operation_other_server": 0.47645429362880887,
+  "other": 0.1440443213296399
+ },
+ "matched_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 282,
+  "none_or_unparsed": 0.05673758865248227,
+  "target_not_shortlisted": 0.3191489361702128,
+  "same_operation_other_server": 0.4432624113475177,
+  "other": 0.15602836879432624,
+  "sibling": 0.024822695035460994
+ },
+ "native_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 294,
+  "target_not_shortlisted": 0.47278911564625853,
+  "same_operation_other_server": 0.3741496598639456,
+  "other": 0.11564625850340136,
+  "sibling": 0.01020408163265306,
+  "none_or_unparsed": 0.027210884353741496
+ },
+ "native_n1000_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 116,
+  "target_not_shortlisted": 0.3879310344827586,
+  "other": 0.29310344827586204,
+  "same_operation_other_server": 0.1724137931034483,
+  "none_or_unparsed": 0.11206896551724138,
+  "sibling": 0.034482758620689655
+ },
+ "plain_n0_qwen3emb_gemma3-12b_k5": {
+  "errors": 361,
+  "none_or_unparsed": 0.05263157894736842,
+  "target_not_shortlisted": 0.3850415512465374,
+  "same_operation_other_server": 0.4155124653739612,
+  "sibling": 0.01662049861495845,
+  "other": 0.13019390581717452
+ },
+ "plain_n0_qwen3emb_phi4-14b_k5": {
+  "errors": 338,
+  "none_or_unparsed": 0.13609467455621302,
+  "target_not_shortlisted": 0.41124260355029585,
+  "same_operation_other_server": 0.3224852071005917,
+  "other": 0.11538461538461539,
+  "sibling": 0.014792899408284023
+ },
+ "plain_n0_qwen3emb_qwen3-1.7b_k5": {
+  "errors": 357,
+  "none_or_unparsed": 0.0896358543417367,
+  "target_not_shortlisted": 0.38935574229691877,
+  "same_operation_other_server": 0.36694677871148457,
+  "other": 0.13725490196078433,
+  "sibling": 0.01680672268907563
+ },
+ "plain_n0_qwen3emb_qwen3-1.7b_k5_terse": {
+  "errors": 616,
+  "none_or_unparsed": 0.08928571428571429,
+  "target_not_shortlisted": 0.6444805194805194,
+  "same_operation_other_server": 0.1590909090909091,
+  "other": 0.09902597402597403,
+  "sibling": 0.008116883116883116
+ },
+ "plain_n0_qwen3emb_qwen3.5-latest_k10": {
+  "errors": 295,
+  "same_operation_other_server": 0.4542372881355932,
+  "target_not_shortlisted": 0.3288135593220339,
+  "other": 0.1423728813559322,
+  "sibling": 0.023728813559322035,
+  "none_or_unparsed": 0.05084745762711865
+ },
+ "plain_n0_qwen3emb_qwen3.5-latest_k15": {
+  "errors": 285,
+  "same_operation_other_server": 0.4842105263157895,
+  "target_not_shortlisted": 0.2596491228070175,
+  "other": 0.17894736842105263,
+  "sibling": 0.03508771929824561,
+  "none_or_unparsed": 0.042105263157894736
+ },
+ "plain_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 308,
+  "none_or_unparsed": 0.03896103896103896,
+  "target_not_shortlisted": 0.4512987012987013,
+  "same_operation_other_server": 0.37012987012987014,
+  "other": 0.12012987012987013,
+  "sibling": 0.01948051948051948
+ },
+ "plain_n0_qwen3emb_qwen3.5-latest_k5_terse": {
+  "errors": 555,
+  "same_operation_other_server": 0.1837837837837838,
+  "target_not_shortlisted": 0.7153153153153153,
+  "other": 0.07207207207207207,
+  "sibling": 0.0036036036036036037,
+  "none_or_unparsed": 0.025225225225225224
+ },
+ "plain_n1000_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 123,
+  "target_not_shortlisted": 0.36585365853658536,
+  "other": 0.2926829268292683,
+  "same_operation_other_server": 0.14634146341463414,
+  "sibling": 0.04065040650406504,
+  "none_or_unparsed": 0.15447154471544716
+ },
+ "sibling_n0_qwen3emb_gemma3-12b_k5": {
+  "errors": 298,
+  "none_or_unparsed": 0.03355704697986577,
+  "target_not_shortlisted": 0.348993288590604,
+  "same_operation_other_server": 0.46308724832214765,
+  "other": 0.12751677852348994,
+  "sibling": 0.026845637583892617
+ },
+ "sibling_n0_qwen3emb_phi4-14b_k5": {
+  "errors": 302,
+  "none_or_unparsed": 0.06622516556291391,
+  "target_not_shortlisted": 0.3443708609271523,
+  "same_operation_other_server": 0.423841059602649,
+  "other": 0.12582781456953643,
+  "sibling": 0.039735099337748346
+ },
+ "sibling_n0_qwen3emb_qwen3-1.7b_k5": {
+  "errors": 369,
+  "none_or_unparsed": 0.12466124661246612,
+  "target_not_shortlisted": 0.28184281842818426,
+  "same_operation_other_server": 0.39295392953929537,
+  "other": 0.13821138211382114,
+  "sibling": 0.06233062330623306
+ },
+ "sibling_n0_qwen3emb_qwen3-1.7b_k5_terse": {
+  "errors": 658,
+  "same_operation_other_server": 0.20212765957446807,
+  "target_not_shortlisted": 0.541033434650456,
+  "none_or_unparsed": 0.13677811550151975,
+  "other": 0.08966565349544073,
+  "sibling": 0.030395136778115502
+ },
+ "sibling_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 263,
+  "target_not_shortlisted": 0.39543726235741444,
+  "same_operation_other_server": 0.4524714828897338,
+  "other": 0.12167300380228137,
+  "none_or_unparsed": 0.019011406844106463,
+  "sibling": 0.011406844106463879
+ },
+ "sibling_n0_qwen3emb_qwen3.5-latest_k5_terse": {
+  "errors": 524,
+  "same_operation_other_server": 0.23091603053435114,
+  "target_not_shortlisted": 0.6793893129770993,
+  "other": 0.0648854961832061,
+  "sibling": 0.007633587786259542,
+  "none_or_unparsed": 0.01717557251908397
+ },
+ "sibling_n1000_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 81,
+  "target_not_shortlisted": 0.20987654320987653,
+  "other": 0.37037037037037035,
+  "same_operation_other_server": 0.32098765432098764,
+  "sibling": 0.04938271604938271,
+  "none_or_unparsed": 0.04938271604938271
+ },
+ "tags_n0_qwen3emb_gemma3-12b_k5": {
+  "errors": 354,
+  "none_or_unparsed": 0.05084745762711865,
+  "target_not_shortlisted": 0.3926553672316384,
+  "same_operation_other_server": 0.4180790960451977,
+  "other": 0.12429378531073447,
+  "sibling": 0.014124293785310734
+ },
+ "tags_n0_qwen3emb_qwen3-1.7b_k5": {
+  "errors": 355,
+  "none_or_unparsed": 0.11267605633802817,
+  "target_not_shortlisted": 0.39154929577464787,
+  "same_operation_other_server": 0.3380281690140845,
+  "other": 0.1267605633802817,
+  "sibling": 0.030985915492957747
+ },
+ "tags_n0_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 298,
+  "target_not_shortlisted": 0.4664429530201342,
+  "same_operation_other_server": 0.3859060402684564,
+  "other": 0.11409395973154363,
+  "sibling": 0.013422818791946308,
+  "none_or_unparsed": 0.020134228187919462
+ },
+ "tags_n1000_qwen3emb_qwen3.5-latest_k5": {
+  "errors": 108,
+  "target_not_shortlisted": 0.4166666666666667,
+  "other": 0.2777777777777778,
+  "same_operation_other_server": 0.2037037037037037,
+  "none_or_unparsed": 0.08333333333333333,
+  "sibling": 0.018518518518518517
+ }
+}

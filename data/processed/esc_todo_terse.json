@@ -1,0 +1,710 @@
+[
+ {
+  "query": "Update project theme with Ocean Blue palette and rounded buttons.",
+  "pred": "update_design_system"
+ },
+ {
+  "query": "Get challenge nonce for ed25519 key proof.",
+  "pred": "auth_wallet_challenge"
+ },
+ {
+  "query": "Edit screenshot to remove red banner and add green badge.",
+  "pred": "remove_object"
+ },
+ {
+  "query": "Check my inbox webhook status, URL, verification, secret, and failures.",
+  "pred": "inbox_pro_set"
+ },
+ {
+  "query": "Find failed scheduled YouTube posts with errors.",
+  "pred": "retry_failed_posts"
+ },
+ {
+  "query": "Register webhook for push events on agentspub service.",
+  "pred": "register_webhook"
+ },
+ {
+  "query": "Make outreach for AlpineLead at alpinelead.io in English professionally.",
+  "pred": "tradepilot_service_outreach_email_draft"
+ },
+ {
+  "query": "Encrypt and store project config in dev-configs with AES-GCM.",
+  "pred": "aes-encrypt"
+ },
+ {
+  "query": "Checkout wave-pay-subscription pro-monthly plan with Stripe.",
+  "pred": "upgrade_plan"
+ },
+ {
+  "query": "Start new browser session expiring in 45 minutes.",
+  "pred": "infra.browser.create_session"
+ },
+ {
+  "query": "Merge Q3 report and financial summary PDFs.",
+  "pred": "merge_pdfs"
+ },
+ {
+  "query": "Send draft email for wf-12345 to dev@example.com for review only.",
+  "pred": "email_compose"
+ },
+ {
+  "query": "Start site rules check guide for com.strrulescheck/site",
+  "pred": "beacon_start"
+ },
+ {
+  "query": "Set up limit buy for 10 BTC at $65k.",
+  "pred": "agent_buyer_wallet_configure"
+ },
+ {
+  "query": "Make booking link for Harbor House venue for 4 people.",
+  "pred": "get_booking_link"
+ },
+ {
+  "query": "Create monthly Saturday checkout link for cleaning at 123 Main St.",
+  "pred": "create_checkout"
+ },
+ {
+  "query": "Set narrator speed to 1.2 in com.framesail/framesail and rescan.",
+  "pred": "add_speed_keyframe"
+ },
+ {
+  "query": "Generate voiceover for framesail project blocks 001, 002 using neural-v4.",
+  "pred": "voiceover_batch"
+ },
+ {
+  "query": "Update doc 8d7f2a in CH-101 to LEGAL with will tag",
+  "pred": "update_doc"
+ },
+ {
+  "query": "Stake 50 credits on civ-9921 about ISO collab.",
+  "pred": "backed_bids_back"
+ },
+ {
+  "query": "Buy atlas-data-exchange datapack enterprise tier for project.",
+  "pred": "buy_dataset"
+ },
+ {
+  "query": "Run full stack audit and generate KEEP, SWAP, BUILD recs.",
+  "pred": "run_security_review"
+ },
+ {
+  "query": "Pause profile, hide listings, keep stats, rotate funding link.",
+  "pred": "speedbot_exchange_funded_task_admin_kill_switch"
+ },
+ {
+  "query": "Save Q4 Roadmap proposal about AI integration in vault.",
+  "pred": "tradepilot_service_proposal_draft"
+ },
+ {
+  "query": "Write updated app config to /etc/app/config.yaml on production.",
+  "pred": "write_file"
+ },
+ {
+  "query": "Merge new constraints and timeline into architect context.",
+  "pred": "merge_moments"
+ },
+ {
+  "query": "Create signup link for Serenity Flow wellness studio.",
+  "pred": "start_sulvo_signup"
+ },
+ {
+  "query": "Close Salesforce CRM connector now.",
+  "pred": "connector_remove"
+ },
+ {
+  "query": "Dry run buy 100 AAPL shares momentum thesis",
+  "pred": "strategy_momentum_create"
+ },
+ {
+  "query": "Confirm email to buy Barcelona city guide.",
+  "pred": "confirm_contact_email"
+ },
+ {
+  "query": "Send follow-up for ticket 12345 about card issued.",
+  "pred": "tradepilot_service_followup_email_draft"
+ },
+ {
+  "query": "Verify VeriTap Q3 revenue projection claim before board meeting.",
+  "pred": "calculate_roi"
+ },
+ {
+  "query": "Check sandwich risk for 500 USDC to WETH swap.",
+  "pred": "exec_sandwich"
+ },
+ {
+  "query": "Update my-first-app logo, description, and category.",
+  "pred": "update_app"
+ },
+ {
+  "query": "Register Sarah Chen's Base wallet for referral commission.",
+  "pred": "register_referrer"
+ },
+ {
+  "query": "Update checkout for order modmillennialdesigns-1001, remove gift, recalc total.",
+  "pred": "checkout_update"
+ },
+ {
+  "query": "Create checkout for modmillennialdesigns service, spring catalog preview.",
+  "pred": "pick_meta_catalog"
+ },
+ {
+  "query": "Finalize checkout session 7f3a9b2c1d with agreed mandate and confirm completion.",
+  "pred": "complete_checkout"
+ },
+ {
+  "query": "Cancel Tuesday conference room booking and get refund URL.",
+  "pred": "cancel_booking"
+ },
+ {
+  "query": "Pause Quarterly Review reminder until later this week.",
+  "pred": "pause_reminder"
+ },
+ {
+  "query": "Start venue capacity check process",
+  "pred": "submit_enquiry"
+ },
+ {
+  "query": "Update retro-robot metadata with new title, tags, and AI model.",
+  "pred": "update_agent_profile"
+ },
+ {
+  "query": "Create webhook for agent 101 on Base to get pot snapshots.",
+  "pred": "register_webhook"
+ },
+ {
+  "query": "Send draft email for wf-12345 to dev@example.com for review only.",
+  "pred": "send_draft"
+ },
+ {
+  "query": "Generate draft-07 JSON Schema from this API response.",
+  "pred": "json-schema"
+ },
+ {
+  "query": "Set base image for viewprinter media 42 to woman with blonde bun.",
+  "pred": "style_edit"
+ },
+ {
+  "query": "Set up limit buy for 10 BTC at $65k.",
+  "pred": "place_cc_order"
+ },
+ {
+  "query": "Create monthly Saturday checkout link for cleaning at 123 Main St.",
+  "pred": "create_schedule"
+ },
+ {
+  "query": "Set narrator speed to 1.2 in com.framesail/framesail and rescan.",
+  "pred": "set_clip_speed"
+ },
+ {
+  "query": "Run deploy-frontend.md plan for production build.",
+  "pred": "commit_deploy"
+ },
+ {
+  "query": "Find Q3 roadmap mentions in progress for team 42",
+  "pred": "list_roadmap"
+ },
+ {
+  "query": "Get dry-run results for req-9982 and imp-4471.",
+  "pred": "run_recipe"
+ },
+ {
+  "query": "Read my private inbox messages since last ack, limit 10.",
+  "pred": "agent_inbox"
+ },
+ {
+  "query": "Find my free slots for a client call.",
+  "pred": "schedule"
+ },
+ {
+  "query": "get pricing page title and description",
+  "pred": "tradepilot_service_metadata_rewrite"
+ },
+ {
+  "query": "Start cancellation for trip FL849201, send refund estimate and link to WhatsApp.",
+  "pred": "cancel_booking"
+ },
+ {
+  "query": "Update sales metrics config to new PostgreSQL instance.",
+  "pred": "update_instance"
+ },
+ {
+  "query": "Run risk chain for scorecompute service on sensor-stream-04.",
+  "pred": "scoring-compute"
+ },
+ {
+  "query": "Create agent data-ingestion-worker-01 for CSV with langchain llama3.",
+  "pred": "theprotocol_importAgent"
+ },
+ {
+  "query": "Scale beef stew recipe from 4 to 8 servings",
+  "pred": "scale_recipe"
+ },
+ {
+  "query": "Make a research task about network latency and app performance.",
+  "pred": "platform.batch.call"
+ },
+ {
+  "query": "Compare our scan with competitor site and show top 10 pages.",
+  "pred": "discover_pages"
+ },
+ {
+  "query": "Call Budi from my storage for consistent face.",
+  "pred": "restore_face"
+ },
+ {
+  "query": "Update TC-456 in Alpha to Blocked with DB running precondition",
+  "pred": "block"
+ },
+ {
+  "query": "Buy advanced-analytics from Delvorn with my key and save result.",
+  "pred": "save_sulvo_advanced_report"
+ },
+ {
+  "query": "Check lambda dev.genhttp/lambda code in ./src/handlers for errors.",
+  "pred": "post_lint_javascript"
+ },
+ {
+  "query": "Connect Facebook to post updates here.",
+  "pred": "connect_connector"
+ },
+ {
+  "query": "Update project theme with Ocean Blue palette and rounded buttons.",
+  "pred": "foliade_update_theme"
+ },
+ {
+  "query": "Schedule TikTok post for viral-cat brand Dec 12 6pm no hashtags",
+  "pred": "schedule_post"
+ },
+ {
+  "query": "Merge Q3 report and financial summary PDFs.",
+  "pred": "merge_pdf"
+ },
+ {
+  "query": "Pick option 2 on the quiz to continue.",
+  "pred": "quiz_video_create_quiz"
+ },
+ {
+  "query": "Post claim on Agentic Social Market about domain violation with high confidence.",
+  "pred": "stake_claim"
+ },
+ {
+  "query": "Read my private inbox messages since last ack, limit 10.",
+  "pred": "inbox_poll"
+ },
+ {
+  "query": "Get top 5 studio buyer jobs for my robotics workflow.",
+  "pred": "run_buyer_job"
+ },
+ {
+  "query": "Cost to generate 10s Seedance video with ref upload?",
+  "pred": "seedance_jobs_create"
+ },
+ {
+  "query": "Make 10s cyberpunk video with Switch model and Topaz upscale.",
+  "pred": "upscale_video"
+ },
+ {
+  "query": "How do I delete my Widely account using a one-time code?",
+  "pred": "theprotocol_requestAccountDeletion"
+ },
+ {
+  "query": "Make booking link for Blue Hole tour, 3 guests, Aug 15, Royalton pickup.",
+  "pred": "get_booking_link"
+ },
+ {
+  "query": "Update post 12345 title and body with new text.",
+  "pred": "update_article"
+ },
+ {
+  "query": "Make new Office Hours project for weekly client consultations",
+  "pred": "upsert_hours"
+ },
+ {
+  "query": "List custom domains for acme-corp project",
+  "pred": "add-domain"
+ },
+ {
+  "query": "Set up barter: my reporting for 1 hr, their invoicing for 30 min.",
+  "pred": "accept_barter"
+ },
+ {
+  "query": "Convert prospect 8842 to app, add HR note.",
+  "pred": "yardstick_prospects_convert_bind"
+ },
+ {
+  "query": "Add Database Migration work item to PROJ-2024-Q3-Sprint5.",
+  "pred": "updateDatabase"
+ },
+ {
+  "query": "Finish Malta VAT form for 12345, pick option A on permanent establishment.",
+  "pred": "submit_enquiry"
+ },
+ {
+  "query": "Submit John Doe's application for the 20-person spatial-computing beta.",
+  "pred": "submit_application"
+ },
+ {
+  "query": "Get viral-cat profile and posts for caption writing.",
+  "pred": "crawl_profile"
+ },
+ {
+  "query": "Create Q4-Promo purple tag for holiday campaign links",
+  "pred": "tag_link"
+ },
+ {
+  "query": "Get dry-run results for req-9982 and imp-4471.",
+  "pred": "tm_record_test_results"
+ },
+ {
+  "query": "Run capability shortage analysis for systems.phion/evidence-engine.",
+  "pred": "complete_stack_audit"
+ },
+ {
+  "query": "Get Google Calendar connection URL for Lyra authorization.",
+  "pred": "auth_connect"
+ },
+ {
+  "query": "Update acme-ops destination, name, description, and save.",
+  "pred": "update_agent_profile"
+ },
+ {
+  "query": "Make weekly tech roundup draft for channel 12345.",
+  "pred": "plan_week"
+ },
+ {
+  "query": "Update schedule sch-9281 to Mon-Fri 9am-5pm EST and keep private.",
+  "pred": "update_schedule"
+ },
+ {
+  "query": "Rename test-list favorites group to production-searches",
+  "pred": "rename_group"
+ },
+ {
+  "query": "Make SlopStore web app listing with business category.",
+  "pred": "publish_app"
+ },
+ {
+  "query": "Check lambda dev.genhttp/lambda code in ./src/handlers for errors.",
+  "pred": "post_lint_elixir"
+ },
+ {
+  "query": "Connect Facebook to post updates here.",
+  "pred": "post_to_meta"
+ },
+ {
+  "query": "Update enterprise-saas-q3, remove acme-corp, rename legacy-cohort.",
+  "pred": "rename_service"
+ },
+ {
+  "query": "Find Seamgrin paid alteration jobs for my tailoring skills.",
+  "pred": "register_experienced_tailor_interest"
+ },
+ {
+  "query": "Get Austin software engineer role duties and requirements.",
+  "pred": "tradepilot_service_staffing_requirements"
+ },
+ {
+  "query": "Find long-tail pay-per-call tools in Agent402 about sentiment analysis.",
+  "pred": "tradepilot_service_sentiment_analysis"
+ },
+ {
+  "query": "Set up barter: my reporting for 1 hr, their invoicing for 30 min.",
+  "pred": "confirm_barter_delivery"
+ },
+ {
+  "query": "Check status and evidence for spool SP-9021",
+  "pred": "verify_spool"
+ },
+ {
+  "query": "Post new part-time shift for London warehouse team.",
+  "pred": "upsert_hours"
+ },
+ {
+  "query": "Check my inbox webhook status, URL, verification, secret, and failures.",
+  "pred": "inbox_create"
+ },
+ {
+  "query": "Check translation status for com.datronis/mcp news article.",
+  "pred": "admin_translate_news"
+ },
+ {
+  "query": "Start market-watcher-01 now for SEC filings analysis.",
+  "pred": "tradepilot_service_market_report_from_sources"
+ },
+ {
+  "query": "Schedule TikTok post for viral-cat brand Dec 12 6pm no hashtags",
+  "pred": "post_to_tiktok"
+ },
+ {
+  "query": "Check readiness score and all 19 agent checks for mudko.example.com",
+  "pred": "heartbeat_run"
+ },
+ {
+  "query": "Run quality audit on example.com with key q-audit-001",
+  "pred": "run_audit"
+ },
+ {
+  "query": "Get top 10 qualified leads from my ContractorsNearMe profile.",
+  "pred": "submit_lead"
+ },
+ {
+  "query": "Find free start slots for alex-padels in 14 days",
+  "pred": "create_match"
+ },
+ {
+  "query": "Confirm USDC payment and claim token ID 4821.",
+  "pred": "x402_send"
+ },
+ {
+  "query": "Show latest design abc123 preview with outlines and reference pic.",
+  "pred": "export_design"
+ },
+ {
+  "query": "Make an API key for production-server-v2",
+  "pred": "theprotocol_createDeveloperApikeyMe"
+ },
+ {
+  "query": "Submit onboarding with updated details for draft 9821.",
+  "pred": "aidelly_update_draft"
+ },
+ {
+  "query": "Check session for com.issafu/site with new message and sig.",
+  "pred": "complete_siwe_login"
+ },
+ {
+  "query": "Make Advanced Python Bootcamp course for company 12345.",
+  "pred": "tradepilot_service_training_outline"
+ },
+ {
+  "query": "Find Q3 budget spreadsheet in Finance workspace",
+  "pred": "create_spreadsheet"
+ },
+ {
+  "query": "Show current email filter rules to see blocked domains.",
+  "pred": "createFilter"
+ },
+ {
+  "query": "Pause Quarterly Review reminder until later this week.",
+  "pred": "update_reminder"
+ },
+ {
+  "query": "Get tech stack, benefits, and open roles for Himalayas Corp.",
+  "pred": "update_company_tech_stack"
+ },
+ {
+  "query": "Run mcphost-echo async with Hello from my local session",
+  "pred": "echo-server.echo"
+ },
+ {
+  "query": "Check my autoposting refill settings and status.",
+  "pred": "set_post_refill"
+ },
+ {
+  "query": "Show me active and revoked API keys for cleanup.",
+  "pred": "revoke_api_key"
+ },
+ {
+  "query": "Show historical ROI and pot snapshots for current Flipr opportunity.",
+  "pred": "flipr_opportunity_subscribe"
+ },
+ {
+  "query": "Import TechCrunch article to server-side-updates project.",
+  "pred": "update_article"
+ },
+ {
+  "query": "Make server API key Production-Sandbox for my scripts.",
+  "pred": "theprotocol_createDeveloperApikeyMe"
+ },
+ {
+  "query": "Show my past and future reservations in me.cancun4/reservas.",
+  "pred": "superlogica_reservas_reserva"
+ },
+ {
+  "query": "List completed encrypted backups for my agent.",
+  "pred": "vault_how_to_backup"
+ },
+ {
+  "query": "Check if this project is ethically acceptable.",
+  "pred": "run_legal_exposure_review"
+ },
+ {
+  "query": "Show saved versions for morpha-video-42 to distinguish bookmarks from snapshots",
+  "pred": "delete_version"
+ },
+ {
+  "query": "Pick option 2 on the quiz to continue.",
+  "pred": "quiz_video_generate_quiz"
+ },
+ {
+  "query": "Post new $150 research task titled 'Analyze Q3 Market Trends'",
+  "pred": "continue_expert_task"
+ },
+ {
+  "query": "Make an empty .env.local file in dev.paperdock/paperdock.",
+  "pred": "set-env"
+ },
+ {
+  "query": "Create unsigned buy tx for NFH token 12345.",
+  "pred": "buy_token"
+ },
+ {
+  "query": "Comment on grade channel about quantum lecture.",
+  "pred": "vote_lesson"
+ },
+ {
+  "query": "Create binding order for John Doe with custom cabinet A-123.",
+  "pred": "yardstick_built_in_agents_enable_bind"
+ },
+ {
+  "query": "Add note about weekly reports on Fridays to work prefs",
+  "pred": "update_daily_entry"
+ },
+ {
+  "query": "Add RELIANCE, TCS, INFY to my DalalOS watchlist",
+  "pred": "remove_from_watchlist"
+ },
+ {
+  "query": "Generate voiceover for framesail project blocks 001, 002 using neural-v4.",
+  "pred": "voiceover_edit"
+ },
+ {
+  "query": "Get removal reason templates for colony Alpha-Prime.",
+  "pred": "colony_delete_removal_reason"
+ },
+ {
+  "query": "Check openwakeword purchase status and get download URLs.",
+  "pred": "buy_library_model"
+ },
+ {
+  "query": "Get details for thumbnail-webp image template",
+  "pred": "pictify_create_image"
+ },
+ {
+  "query": "List all Harbor Market skills for rustyonmars harbor service.",
+  "pred": "market_post"
+ },
+ {
+  "query": "Update LambdaTest session lt-sess-a1b2c3 name Smoke Test Run 4 pass",
+  "pred": "deleteSession"
+ },
+ {
+  "query": "Run deploy-frontend.md plan for production build.",
+  "pred": "retry_deploy"
+ },
+ {
+  "query": "Get public agent card for mixer4ai production",
+  "pred": "register_agent_card"
+ },
+ {
+  "query": "Show top 10 unpaid invoices for this merchant in USD.",
+  "pred": "deleteInvoice"
+ },
+ {
+  "query": "Get dry-run results for req-9982 and imp-4471.",
+  "pred": "bamboo_training_run"
+ },
+ {
+  "query": "Show me my current shortlists to review saved providers.",
+  "pred": "tradepilot_service_provider_shortlist"
+ },
+ {
+  "query": "Move knight from e2 to g3 and show new board.",
+  "pred": "chess_make_moves"
+ },
+ {
+  "query": "Save Q4 Roadmap proposal about AI integration in vault.",
+  "pred": "tradepilot_service_proposal_review_agent"
+ },
+ {
+  "query": "Get full details for goods receipt 8492 with units and damages.",
+  "pred": "grn_add"
+ },
+ {
+  "query": "Close Salesforce CRM connector now.",
+  "pred": "d365fo_clear_connection"
+ },
+ {
+  "query": "Run new audit on invoice-generator.ts with pricing-template-v2, premium tier.",
+  "pred": "audit_quantum_transformation"
+ },
+ {
+  "query": "Show my viral outliers alerts to audit TikTok and Instagram profiles.",
+  "pred": "create_viral_alert"
+ },
+ {
+  "query": "Send email from agent 7f3a9b2c to john.smith@logistics-partner.com about Q4 Freight Rate Review.",
+  "pred": "acme-mailer.send_email"
+ },
+ {
+  "query": "Restore deleted invoice-2024-10 row from orders collection.",
+  "pred": "restore_change"
+ },
+ {
+  "query": "Get JSON schema and sample payload for standard-invoice template",
+  "pred": "json-schema"
+ },
+ {
+  "query": "Get details for prod-postgres-01 in us-central1.",
+  "pred": "postgres_upgrade_precheck"
+ },
+ {
+  "query": "Check wake-up call status for prod-agent-mart-01.",
+  "pred": "agent.heartbeat"
+ },
+ {
+  "query": "Show me what Agent 12345 sells in PazAir.",
+  "pred": "want"
+ },
+ {
+  "query": "Run risk chain for scorecompute service on sensor-stream-04.",
+  "pred": "util_change_risk_score"
+ },
+ {
+  "query": "Comment on asset 12345 about bright background.",
+  "pred": "tascan_assess_condition"
+ },
+ {
+  "query": "Pick B for quiz question 12 and show next step.",
+  "pred": "quiz_video_generate_quiz"
+ },
+ {
+  "query": "Check nessgate discovery endpoints and summarize with links",
+  "pred": "agent_connect"
+ },
+ {
+  "query": "Get status, cost, and billing for eqvps-dev-prod-01",
+  "pred": "register_account"
+ },
+ {
+  "query": "Rank bids for mainstreet-pipe-repair using reputation times bond over price.",
+  "pred": "rate_counterparty"
+ },
+ {
+  "query": "List my Serpzilla favorites and domain counts.",
+  "pred": "favorites_add_domains"
+ },
+ {
+  "query": "Update request 4291 by Alice Smith to resolved.",
+  "pred": "resolve_escalation"
+ },
+ {
+  "query": "Call Budi from my storage for consistent face.",
+  "pred": "lip_sync_video"
+ },
+ {
+  "query": "First step in converting PDF to CSV",
+  "pred": "convert_document"
+ },
+ {
+  "query": "Claim vanity referral code for sharing agent links",
+  "pred": "ucode_credit_referral_redeem"
+ },
+ {
+  "query": "Update my-first-app logo, description, and category.",
+  "pred": "upload_media"
+ },
+ {
+  "query": "Check lambda dev.genhttp/lambda code in ./src/handlers for errors.",
+  "pred": "post_debug_code"
+ }
+]

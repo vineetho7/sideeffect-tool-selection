@@ -1,0 +1,42 @@
+[
+ {
+  "id": "c429cf9450d",
+  "request": "Get the available free start slots for coach handle 'alex-padels' over the next 14 days.",
+  "right": "coach_slots",
+  "right_desc": "Free starts inside a coach's hours for the next days (default 14). Only accepted students can book them: request_coach first.",
+  "picked": "request_coach",
+  "picked_desc": "Ask a coach to accept a person as their student, by first name or personal token. The coach answers with one tap. Keep the returned personalToken private to the student; book_lesson needs it. Ask the person before calling."
+ },
+ {
+  "id": "cebf4ee1214",
+  "request": "Deploy my new static frontend for the 'invoice-tracker' app by uploading the index.html and its bundled assets directly from my local folder, and make sure it uses the default organization.",
+  "right": "deploy_frontend",
+  "right_desc": "Deploy a static frontend to TaskLite hosting and get a live URL https://{slug}.tasklite.dev (HTTPS, auto-published on first deploy, versions kept for rollback_deployment). Hand over the frontend in ONE of three ways: `files`, the files inline (path + content), the way to go from ChatGPT or any hoste",
+  "picked": "deploy_from_url",
+  "picked_desc": "Publish a website to a live URL from a public archive link. Point this at a tar(.gz) archive on github / gist / S3 and the server fetches and deploys it, no upload from your side. Server-side fetch of a tar(.gz) archive from a public HTTPS URL, then deploy its contents. Sidesteps the case where your"
+ },
+ {
+  "id": "c9cd8d7b76b",
+  "request": "How many credits would I spend if I quote a generation for a 10-second clip using the Seedance model in text-to-video mode without any enhancement, but first I need to upload my external reference video?",
+  "right": "quote_video",
+  "right_desc": "Get the current server price in Switch tokens before video generation. Uses the same billing calculator as submission and measures your stored reference clips. Pass one shot using the same model, mode, duration, resolution and references as generate_video. No creative prompt is required for a quote.",
+  "picked": "create_short",
+  "picked_desc": "Create AI-generated short-form video clips from a YouTube video or uploaded file. Returns a request ID instantly. Processing takes 5-30 minutes. Costs 1 credit."
+ },
+ {
+  "id": "cd9494c97b1",
+  "request": "Show me the current content of the Architect's persistent memory.",
+  "right": "get_architect_memory",
+  "right_desc": "Returns the persistent memory object of the Architect.",
+  "picked": "update_architect_memory",
+  "picked_desc": "Updates the persistent memory of the Architect. Provide a JSON object with keys to update/merge."
+ },
+ {
+  "id": "c5c57ed9a66",
+  "request": "Show me all bonds that are currently in the POSTED state so I can review which ones need to be activated.",
+  "right": "list_bonds",
+  "right_desc": "List bonds, optionally filtered by state\n    (POSTED|ACTIVE|RELEASED|EXHAUSTED).",
+  "picked": "activate_bond",
+  "picked_desc": "Mark a POSTED bond ACTIVE (idempotent). funding_ref links the payment\n    rail transaction that funded the stake."
+ }
+]

@@ -1,0 +1,27 @@
+\textbf{Tool retrieval.} Retrieving tools from large libraries began with API-scale assistants
+such as Gorilla~\cite{gorilla} and ToolLLM~\cite{toolllm}. ToolRet~\cite{toolret} benchmarks
+retrievers on 43k tools and finds that strong text retrievers are weak at tool retrieval;
+ToolRerank~\cite{toolrerank} adds hierarchy-aware reranking; Toollery~\cite{toollery} expands tool
+documents with generated queries. For MCP, RAG-MCP~\cite{ragmcp}, ScaleMCP~\cite{scalemcp},
+MCP-Zero~\cite{mcpzero} and a vector-based discovery architecture~\cite{semdisc} retrieve tool
+schemas on demand to cut prompt tokens, and benchmarks such as LiveMCPBench~\cite{livemcpbench},
+MCP-Bench~\cite{mcpbench}, MCPVerse~\cite{mcpverse} and MCP-Atlas~\cite{mcpatlas} evaluate agents
+over real servers. All of these score retrieval by hit rate or task success and treat wrong tools
+alike; none separates errors by side effect.
+
+\textbf{Approximate search.} Graph indexes such as HNSW~\cite{hnsw} and attribute-filtered ANN
+search~\cite{acorn} make vector search fast at millions of items. Tool catalogs are orders of
+magnitude smaller, and we show that exact search is already sub-millisecond, so the selection
+problem is semantic rather than algorithmic.
+
+\textbf{The MCP ecosystem.} Empirical studies document smelly tool descriptions~\cite{smelly,docs2desc},
+how servers wrap REST APIs~\cite{rest2mcp}, how MCP applications are built~\cite{mcpapps}, and what
+an unrepaired random draw from the registry contains, including a 58.8\,\% omission rate for safety
+annotations~\cite{randomdraw}. We build on the annotation finding by asking what omitted or wrong
+annotations cost at selection time.
+
+\textbf{Agent safety at the tool boundary.} ToolEmu~\cite{toolemu} emulates tools to surface risky
+agent actions; ToolMisuseBench~\cite{toolmisuse} measures invalid calls and recovery;
+recent work catalogs anomalies when tool effects are retried or compensated~\cite{boundary}. These
+study what happens \emph{after} an agent commits to a call. We study the earlier and more mundane
+failure: picking a sibling that does more than was asked.

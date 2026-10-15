@@ -1,0 +1,14 @@
+plain_n0_qwen3emb_qwen3.5-latest_k15 100/1386 acc=82.0 eta=3234s
+plain_n0_qwen3emb_qwen3.5-latest_k15 200/1386 acc=80.0 eta=2962s
+plain_n0_qwen3emb_qwen3.5-latest_k15 300/1386 acc=80.7 eta=2682s
+plain_n0_qwen3emb_qwen3.5-latest_k15 400/1386 acc=80.8 eta=2442s
+plain_n0_qwen3emb_qwen3.5-latest_k15 500/1386 acc=80.4 eta=2214s
+plain_n0_qwen3emb_qwen3.5-latest_k15 600/1386 acc=79.2 eta=1983s
+plain_n0_qwen3emb_qwen3.5-latest_k15 700/1386 acc=80.3 eta=1750s
+plain_n0_qwen3emb_qwen3.5-latest_k15 800/1386 acc=80.9 eta=1498s
+plain_n0_qwen3emb_qwen3.5-latest_k15 900/1386 acc=80.4 eta=1238s
+plain_n0_qwen3emb_qwen3.5-latest_k15 1000/1386 acc=79.7 eta=983s
+plain_n0_qwen3emb_qwen3.5-latest_k15 1100/1386 acc=79.5 eta=726s
+plain_n0_qwen3emb_qwen3.5-latest_k15 1200/1386 acc=79.4 eta=473s
+plain_n0_qwen3emb_qwen3.5-latest_k15 1300/1386 acc=79.7 eta=218s
+DONE plain_n0_qwen3emb_qwen3.5-latest_k15: acc=79.4 incand=94.7 ptok=727

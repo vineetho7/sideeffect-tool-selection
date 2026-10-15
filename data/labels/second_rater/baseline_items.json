@@ -1,0 +1,74 @@
+[
+ {
+  "id": "bfb2eb1bcd2",
+  "request": "Please update the checkout for order ID modmillennialdesigns-1001 to remove the gift item and recalculate the final total with any applicable taxes.",
+  "right": "update_checkout",
+  "right_desc": "Updates a checkout. Returns checkout details, including line items, totals, and any applicable discounts or taxes.\n\nPrices in the response are integers in the currency's ISO 4217 minor units, paired with\na currency code: {\"amount\": 600, \"currency\": \"USD\"} is $6.00 and {\"amount\": 2500,\n\"currency\": \"U",
+  "picked": "update_order_item",
+  "picked_desc": "Update a line item on an order (quantity, unit price, discount, name, or SKU). Recomputes the order total. Only allowed while the order is pending or confirmed; otherwise it fails with 409 CONFLICT \"Order lines can only be changed while the order is pending or confirmed\" (stock is committed from pro"
+ },
+ {
+  "id": "b010bca2d4a",
+  "request": "Reply to the post with ID 12345 saying that the AI build I just ran is ready for review.",
+  "right": "reply_to_post",
+  "right_desc": "Reply to a post \u2014 join the thread under it as the key's owner. Write scope. A reply is NOT a broadcast: it lands in one thread (the parent's author + thread watchers), not the For You feed, so it rides a SEPARATE, looser budget (30 replies/hour) and NEVER consumes your 10 posts/hour broadcast cap \u2014 ",
+  "picked": "reply",
+  "picked_desc": "Reply to a post or to a reply. Leave replyTo empty to reply to the post itself; pass a reply id from list_replies to nest a reply under that reply. Like publish, this returns before the reply is live unless you pass wait: true, which holds the response until it is out (up to 10 seconds). Otherwise c"
+ },
+ {
+  "id": "b5ff59233f1",
+  "request": "Generate the voiceover audio for project com.framesail/framesail using block IDs 'blk-001', 'blk-002' and the TTS model 'neural-v4' with dry run enabled to preview the changes before committing.",
+  "right": "voiceover_generate",
+  "right_desc": "Generate voice block audio. Every speaker needs a voice first, and\nevery asset a reference image. Without voice_block_ids it fills every\nblock with no audio, skipping ones already generating. A model must\nmatch the project's voice engine. An existing storyboard retimes to the\nnew audio on its own.",
+  "picked": "voiceover_batch",
+  "picked_desc": "Set voiceover text and/or trigger speech generation for any number of clips in a single call.\n\nEach entry chooses its own action:\n- \"set_text\"          \u2014 set transcript for a clip (clip_index + text)\n- \"generate_speech\"   \u2014 async TTS for a clip (returns immediately)\n- \"set_and_generate\"  \u2014 set text "
+ },
+ {
+  "id": "b8b60c11545",
+  "request": "Send an outreach email from agent 7f3a9b2c to external supplier john.smith@logistics-partner.com with the title 'Q4 Freight Rate Review' and body 'Please review the attached rates for our upcoming quarter,' ensuring the reply-to address defaults to the organization owner.",
+  "right": "agent_outreach",
+  "right_desc": "Email outside addresses (suppliers, carriers). to is a string email, { email }, or { emails } (max 5). Not to=all and not a Hub user_id / role \u2014 those are agent_notify. Linked agents set Reply-To to an org member (default OWNER). No action buttons. Channel is email.",
+  "picked": "sendEmail",
+  "picked_desc": "Use this when the user has confirmed a new outbound email. Sends real email through Primitive's relay and can wait for the first SMTP delivery outcome, or schedule the send for a future time with scheduled_at. IMPORTANT: `from` is YOUR OWN complete mailbox address, never the recipient's. Use sender_"
+ },
+ {
+  "id": "b3456aa2677",
+  "request": "Check my weekly list status for the 'not-for-humans' service using my session handle to see if I've qualified for the current reward pool.",
+  "right": "get_arcade_player_status",
+  "right_desc": "Read queue, match, and weekly-list status using a game-only handle.",
+  "picked": "campaigns_me",
+  "picked_desc": "Requires a JWT. Whether you claimed today's campaign bonus (and on which post), your daily streak, and the last 14 days."
+ },
+ {
+  "id": "be8534213c6",
+  "request": "Please activate the new data processing capabilities for my workspace using my standard credentials so I can start utilizing them immediately under the self-service policy.",
+  "right": "activate_capabilities",
+  "right_desc": "Explicitly opt in under the installation operator's self-service policy. Requires commons-upgrade/1 consent. Does not enroll credits, issue funds, broaden existing keys, or override administrator revocation. Create a matching scoped key afterward.",
+  "picked": "semantic_policy_update",
+  "picked_desc": "Opt in or out of semantic features using existing user authorization and scope. Global flags still apply. allow_private explicitly permits provider processing of your private memory, contact notes, request objectives and task context. Use current revision. Changes skip historical backfill. automatic"
+ },
+ {
+  "id": "bec986a5c67",
+  "request": "Start the site rules check decision guide to determine which lever applies for com.strrulescheck/site",
+  "right": "checker_start",
+  "right_desc": "The first question of the Which lever applies? decision guide.",
+  "picked": "submit_enquiry",
+  "picked_desc": "Submits an enquiry to STR Rules Check \u2014 NOT a purchase, NOT a guaranteed quote. Step 1: call with the answers (keyed by field key from enquiry_fields) and consent=true; it validates and returns a summary, the consent line and a confirmation token \u2014 show the person the summary and the consent line. S"
+ },
+ {
+  "id": "b3e79a0ead1",
+  "request": "Close the Salesforce CRM connector now since we are shutting down our sales reporting dashboard for today.",
+  "right": "close_connector",
+  "right_desc": "Close CRM sales platform: leads, opportunities (pipeline deals), activities (calls/emails/notes/meetings), full-text search, and organization users (sales reps). Use for sales pipeline reporting, lead/contact lookup, rep-level activity attribution, and sales-funnel analytics. Auth: OAuth 2.0. When t",
+  "picked": "disable_connector",
+  "picked_desc": "Hide a connector's tools from the active tool list for the current user. Use when the user says they don't use a service or wants to pause a connector, such as 'disable Shopify' or 'hide TikTok'. The connector remains configured and can be restored with enable_connector. Disabled connectors still ap"
+ },
+ {
+  "id": "bb1c52173f7",
+  "request": "Retrieve the latest status and results for my ongoing network topology analysis using task ID NET-9921 and access token AUTH-X7K.",
+  "right": "get_expert_task",
+  "right_desc": "Poll an expert research task by opaque ID and access token.",
+  "picked": "get_task_status",
+  "picked_desc": "Returns an automated feedback task by task_id, with the same status, progress, findings and per-analysis errors as start_innovation_feedback. Refreshes active analyses and saves their status and available findings in Lightbringer. Succeeded, partially_succeeded and failed are terminal; queued and ru"
+ }
+]

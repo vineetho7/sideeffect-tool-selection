@@ -1,0 +1,64 @@
+\textbf{Lessons for teams building tool-enabled agents.}
+
+\emph{L1: never execute the retriever's top hit.} Retriever-only routing, the cheapest
+design and a tempting one for latency (a guard on it still needs an intent call), escalates side effects on \GRNonePoolConf\,\% of requests (verified) and selects a writing tool for
+\RWRetRate\,\% of read requests. An
+LLM selector over a short list lowers that risk but does not remove it (Table~\ref{tab:main}),
+and the escalations that remain come from both stages: a selector that picks the stronger sibling
+with the right tool in view, and a retriever that leaves the right tool out while the selector
+rarely declines (Table~\ref{tab:split}).
+
+\emph{L2: verify side-effect metrics before trusting them, with more than one rater.} Scored
+automatically, escalation appeared to grow with catalog size, and two of every three flags were
+false. Severity labels inherit the ecosystem's noisy annotations, so an evaluation of tool search
+should report human-verified escalations, or at least the precision of its severity labels. Humans
+disagree too: our two raters agreed only slightly ($\kappa=\IndKappa$) before a joint review resolved all but one
+case, and one rater's blind
+labels would have multiplied the sensitivity estimate several-fold. Teams should write the rubric down,
+double-rate a sample and report how much the result depends on the rater.
+
+\emph{L3: put side-effect metadata in the policy, not in the prompt.} The servers' own
+annotations and our inferred tags moved accuracy by about a point and did not measurably change
+escalation: the verb in the tool name already carries that information. Metadata pays off where code acts on it, in the guard.
+
+\emph{L4: lengthen the shortlist with siblings, and test it on your model.} Sibling expansion gave
+2.6--4.5 accuracy points for the three larger selectors. A plain shortlist of the same length gave
+Gemma3 and Phi-4 nothing or less, and recovered most of the gain only for Qwen3.5, so ``just
+retrieve more'' is not a reliable substitute. Siblings are what the selector must tell apart, which
+makes them a natural way to fill a longer list, but we have not isolated their effect from that of
+the tags and ordering the sibling variant also adds.
+Neither change moves escalation measurably.
+
+\emph{L5: choose the guard by the confirmations you can afford.} Holding every increase in side
+effect removes almost all escalation but asks for confirmation on 15--20\,\% of calls, depending on the selector; guards
+that only police reads or deletions ask less often but miss the most common real case, a read
+request answered by a create. Most needless holds trace to fuzzy operation boundaries, not to the
+guard itself. Table~\ref{tab:checklist} condenses the lessons into a checklist.
+
+\begin{table}[t]\centering
+\caption{Checklist for teams building tool-selecting agents, from our results.}\label{tab:checklist}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.36\columnwidth}p{0.58\columnwidth}}\toprule
+situation & what our evidence supports\\\midrule
+tools chosen by embedding similarity & do not execute the top hit unchecked; add an LLM selector and a guard (L1)\\
+tools carry read-only or destructive hints & enforce them in code, never trust them blindly; many are missing or wrong (L3)\\
+similar operations on one resource & compare sibling-aware shortlists with a plain shortlist of the same length on your model (L4)\\
+a stronger side effect is possible & choose a guard policy and measure how many correct calls it holds (L5)\\
+evaluating tool selection & report read-to-write violations, human-verified, with how much they depend on the rater (L2)\\
+\bottomrule\end{tabular}\end{table}
+
+\textbf{Where this applies.} The consequences are largest for cloud and infrastructure consoles,
+source hosting and CI automation, issue trackers and messaging. The catalog contains such tools,
+although authenticated servers of these kinds are under-represented (Section~\ref{sec:threats}). An operator who asks an agent to inspect a deployment or list open
+incidents should not have the request routed to the tool that restarts or closes them; in our benchmark a
+retriever-only router selects such a tool for \RWRetRate\,\% of read requests (verified). These are
+selections on a targeted benchmark; we executed no tool and observed no production incident.
+
+\textbf{Implications for tool and protocol designers.} Three ecosystem habits make side effects
+hard to police. (i)~Annotations are optional and often absent, including on tools that
+delete. (ii)~\texttt{destructiveHint} conflates ``overwrites an existing value'' with ``deletes
+or cannot be undone'', so a guard keyed on it holds ordinary edits. (iii)~\emph{Mode-switch} tools
+(a cancel tool with a preview flag, an \texttt{action} parameter selecting list, set or delete)
+give one name to operations of different severity, so neither retrieval nor a guard can tell a
+read from a delete before the arguments are filled. Splitting such tools and adding an explicit
+operation class to tool metadata would let hosts enforce what the hints only suggest.
