@@ -77,3 +77,9 @@ Restoring the `*_cache.json.gz` files into `data/processed/` reuses the original
 Run one Ollama model at a time on a 24 GB machine; `run_all.sh` and `run_terse.sh` already do.
 
 **Tests:** `python -m unittest discover -s tests -v` (CPU only, no data needed).
+
+## License
+
+Code: MIT (see `LICENSE`). Our queries, labels and results: CC BY 4.0.
+Tool names and descriptions harvested from the MCP registry remain the property of their publishers
+and are included only for research reproducibility.
